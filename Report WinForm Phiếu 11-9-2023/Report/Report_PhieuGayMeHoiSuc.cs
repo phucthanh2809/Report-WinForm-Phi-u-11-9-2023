@@ -1,6 +1,7 @@
 ﻿using DevExpress.Drawing;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
+using Report_WinForm_Phiếu_11_9_2023.Model;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,19 +19,18 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
         private TopMarginBand topMarginBand1;
         private DetailBand detailBand1;
         private BottomMarginBand bottomMarginBand1;
-
+        public void InitData(PhieuGayMeHoiSuc_Model model)
+        {
+            objectDataSource1.DataSource = model;
+        }
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
             this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable15 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell121 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell122 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel628 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable14 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell119 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -63,6 +63,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel323 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel318 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel47 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel629 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPanel7 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrLabel621 = new DevExpress.XtraReports.UI.XRLabel();
@@ -829,8 +830,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
@@ -844,6 +845,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // topMarginBand1
@@ -886,7 +888,6 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable15,
             this.xrTable14,
             this.xrTable13,
             this.xrTable12,
@@ -899,67 +900,17 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel324,
             this.xrLabel323,
             this.xrLabel318,
-            this.xrLabel47});
+            this.xrLabel47,
+            this.xrLabel629});
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseBorders = false;
             this.xrTableCell1.Weight = 0.95361290104208185D;
             // 
-            // xrTable15
-            // 
-            this.xrTable15.Borders = DevExpress.XtraPrinting.BorderSide.Right;
-            this.xrTable15.LocationFloat = new DevExpress.Utils.PointFloat(0.2477744F, 661.4999F);
-            this.xrTable15.Name = "xrTable15";
-            this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow15});
-            this.xrTable15.SizeF = new System.Drawing.SizeF(173.0011F, 59.5813F);
-            this.xrTable15.StylePriority.UseBorders = false;
-            // 
-            // xrTableRow15
-            // 
-            this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell121,
-            this.xrTableCell122});
-            this.xrTableRow15.Name = "xrTableRow15";
-            this.xrTableRow15.Weight = 1D;
-            // 
-            // xrTableCell121
-            // 
-            this.xrTableCell121.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrTableCell121.Multiline = true;
-            this.xrTableCell121.Name = "xrTableCell121";
-            this.xrTableCell121.StylePriority.UseFont = false;
-            this.xrTableCell121.StylePriority.UseTextAlignment = false;
-            this.xrTableCell121.Text = "Quan sát";
-            this.xrTableCell121.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell121.Weight = 0.51205179459007255D;
-            // 
-            // xrTableCell122
-            // 
-            this.xrTableCell122.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel628});
-            this.xrTableCell122.Multiline = true;
-            this.xrTableCell122.Name = "xrTableCell122";
-            this.xrTableCell122.Weight = 1.2179481291159824D;
-            // 
-            // xrLabel628
-            // 
-            this.xrLabel628.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
-            this.xrLabel628.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrLabel628.LocationFloat = new DevExpress.Utils.PointFloat(4.577637E-05F, 60F);
-            this.xrLabel628.Multiline = true;
-            this.xrLabel628.Name = "xrLabel628";
-            this.xrLabel628.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel628.SizeF = new System.Drawing.SizeF(121.7948F, 14.99997F);
-            this.xrLabel628.StylePriority.UseBorderDashStyle = false;
-            this.xrLabel628.StylePriority.UseBorders = false;
-            this.xrLabel628.StylePriority.UsePadding = false;
-            // 
             // xrTable14
             // 
             this.xrTable14.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable14.LocationFloat = new DevExpress.Utils.PointFloat(0.2477786F, 570F);
+            this.xrTable14.LocationFloat = new DevExpress.Utils.PointFloat(0.2477786F, 568F);
             this.xrTable14.Name = "xrTable14";
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1066,7 +1017,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // xrTable13
             // 
             this.xrTable13.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable13.LocationFloat = new DevExpress.Utils.PointFloat(0.2477786F, 482.8578F);
+            this.xrTable13.LocationFloat = new DevExpress.Utils.PointFloat(0.2477786F, 480.8578F);
             this.xrTable13.Name = "xrTable13";
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1173,7 +1124,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // xrTable12
             // 
             this.xrTable12.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(0.2477576F, 391.7178F);
+            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(0.2477576F, 389.7178F);
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1212,7 +1163,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel334.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel334.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel334.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel334.LocationFloat = new DevExpress.Utils.PointFloat(5.057454E-05F, 376.2373F);
+            this.xrLabel334.LocationFloat = new DevExpress.Utils.PointFloat(5.057454E-05F, 374.2373F);
             this.xrLabel334.Multiline = true;
             this.xrLabel334.Name = "xrLabel334";
             this.xrLabel334.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1230,7 +1181,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel333.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel333.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel333.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel333.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 361.2373F);
+            this.xrLabel333.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 359.2373F);
             this.xrLabel333.Multiline = true;
             this.xrLabel333.Name = "xrLabel333";
             this.xrLabel333.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1248,7 +1199,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel332.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel332.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel332.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel332.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 346.2373F);
+            this.xrLabel332.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 344.2373F);
             this.xrLabel332.Multiline = true;
             this.xrLabel332.Name = "xrLabel332";
             this.xrLabel332.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1266,7 +1217,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel331.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel331.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel331.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel331.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 331.2373F);
+            this.xrLabel331.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 329.2373F);
             this.xrLabel331.Multiline = true;
             this.xrLabel331.Name = "xrLabel331";
             this.xrLabel331.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1284,7 +1235,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel330.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel330.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel330.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel330.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 316.2373F);
+            this.xrLabel330.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 314.2373F);
             this.xrLabel330.Multiline = true;
             this.xrLabel330.Name = "xrLabel330";
             this.xrLabel330.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1302,7 +1253,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel325.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel325.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel325.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel325.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 301.0373F);
+            this.xrLabel325.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 299.2373F);
             this.xrLabel325.Multiline = true;
             this.xrLabel325.Name = "xrLabel325";
             this.xrLabel325.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1321,7 +1272,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel324.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel324.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel324.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel324.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 286.0373F);
+            this.xrLabel324.LocationFloat = new DevExpress.Utils.PointFloat(5.534291E-05F, 284.2373F);
             this.xrLabel324.Multiline = true;
             this.xrLabel324.Name = "xrLabel324";
             this.xrLabel324.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1340,7 +1291,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel323.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel323.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel323.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel323.LocationFloat = new DevExpress.Utils.PointFloat(0.2477722F, 271.0373F);
+            this.xrLabel323.LocationFloat = new DevExpress.Utils.PointFloat(0.2477722F, 269.2373F);
             this.xrLabel323.Multiline = true;
             this.xrLabel323.Name = "xrLabel323";
             this.xrLabel323.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1358,7 +1309,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel318.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel318.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrLabel318.Font = new DevExpress.Drawing.DXFont("Times New Roman", 8F);
-            this.xrLabel318.LocationFloat = new DevExpress.Utils.PointFloat(0F, 256.0373F);
+            this.xrLabel318.LocationFloat = new DevExpress.Utils.PointFloat(0F, 254.2373F);
             this.xrLabel318.Multiline = true;
             this.xrLabel318.Name = "xrLabel318";
             this.xrLabel318.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1379,12 +1330,28 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel47.Multiline = true;
             this.xrLabel47.Name = "xrLabel47";
             this.xrLabel47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel47.SizeF = new System.Drawing.SizeF(173.2478F, 254.8F);
+            this.xrLabel47.SizeF = new System.Drawing.SizeF(173.2478F, 253F);
             this.xrLabel47.StylePriority.UseBorders = false;
             this.xrLabel47.StylePriority.UseFont = false;
             this.xrLabel47.Text = "Đánh giá trước mổ\r\n- ASA: 1 2 3 4 5\r\n- Dạ dày đầy / cấp cứu\r\n- Mallampati: 1 2 3 " +
     "4\r\n- Dị ứng:\r\n- Tiền sử / Thuốc dùng liên quan GMSH\r\n\r\n\r\nBất thường lâm sàng / c" +
     "ận lâm sàng liên quan GMSH";
+            // 
+            // xrLabel629
+            // 
+            this.xrLabel629.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrLabel629.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel629.LocationFloat = new DevExpress.Utils.PointFloat(0.2477786F, 659.5F);
+            this.xrLabel629.Multiline = true;
+            this.xrLabel629.Name = "xrLabel629";
+            this.xrLabel629.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel629.SizeF = new System.Drawing.SizeF(51.20551F, 86.85913F);
+            this.xrLabel629.StylePriority.UseBorders = false;
+            this.xrLabel629.StylePriority.UseFont = false;
+            this.xrLabel629.StylePriority.UsePadding = false;
+            this.xrLabel629.StylePriority.UseTextAlignment = false;
+            this.xrLabel629.Text = "Quan sát";
+            this.xrLabel629.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell2
             // 
@@ -10667,6 +10634,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel46
             // 
+            this.xrLabel46.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TacDung]")});
             this.xrLabel46.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel46.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(546.8133F, 138.0002F);
@@ -10695,6 +10664,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel44
             // 
+            this.xrLabel44.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TienMe]")});
             this.xrLabel44.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel44.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel44.LocationFloat = new DevExpress.Utils.PointFloat(302.8416F, 138.0002F);
@@ -10723,6 +10694,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel42
             // 
+            this.xrLabel42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Nam]")});
             this.xrLabel42.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel42.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(190.1282F, 138.0002F);
@@ -10751,6 +10724,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel40
             // 
+            this.xrLabel40.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Thang]")});
             this.xrLabel40.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel40.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(128.8034F, 138.0002F);
@@ -10779,6 +10754,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel38
             // 
+            this.xrLabel38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Ngay]")});
             this.xrLabel38.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel38.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(51.45299F, 138.0002F);
@@ -10807,6 +10784,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel36
             // 
+            this.xrLabel36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BSGayMe]")});
             this.xrLabel36.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel36.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(447.2072F, 115.0002F);
@@ -10835,6 +10814,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel34
             // 
+            this.xrLabel34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BSPhauThuat]")});
             this.xrLabel34.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel34.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel34.LocationFloat = new DevExpress.Utils.PointFloat(102.0085F, 115.0002F);
@@ -10863,6 +10844,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel32
             // 
+            this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TuThe]")});
             this.xrLabel32.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel32.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(498.3759F, 69.00014F);
@@ -10891,6 +10874,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel30
             // 
+            this.xrLabel30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PPVoCam]")});
             this.xrLabel30.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel30.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(137.5641F, 92.00017F);
@@ -10919,6 +10904,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel28
             // 
+            this.xrLabel28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PPPhauThuat]")});
             this.xrLabel28.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel28.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(152.5641F, 69.00014F);
@@ -10947,6 +10934,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel26
             // 
+            this.xrLabel26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ChuanDoan]")});
             this.xrLabel26.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel26.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(87.56411F, 46.0001F);
@@ -10988,6 +10977,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel24
             // 
+            this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NhomMau]")});
             this.xrLabel24.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel24.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(690.7699F, 23.00009F);
@@ -11003,6 +10994,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel22
             // 
+            this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ChieuCao]")});
             this.xrLabel22.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel22.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(564.0812F, 23.00009F);
@@ -11031,6 +11024,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel20
             // 
+            this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CanNang]")});
             this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel20.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(452.9482F, 23.00008F);
@@ -11072,6 +11067,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel18
             // 
+            this.xrLabel18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Giuong]")});
             this.xrLabel18.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel18.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(344.9998F, 23.00007F);
@@ -11087,6 +11084,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel16
             // 
+            this.xrLabel16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Buong]")});
             this.xrLabel16.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel16.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(237.0724F, 23.00005F);
@@ -11115,6 +11114,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel14
             // 
+            this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Khoa2]")});
             this.xrLabel14.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel14.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(51.45298F, 23.00005F);
@@ -11143,6 +11144,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrCheckBox2
             // 
+            this.xrCheckBox2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([GioiTinh]=\'Nữ\',true ,false)")});
             this.xrCheckBox2.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F);
             this.xrCheckBox2.GlyphOptions.Alignment = DevExpress.Utils.HorzAlignment.Far;
             this.xrCheckBox2.GlyphOptions.Style = DevExpress.XtraPrinting.GlyphStyle.YesNoBox;
@@ -11157,6 +11160,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             this.xrCheckBox1.CheckBoxState = DevExpress.XtraPrinting.CheckBoxState.Checked;
             this.xrCheckBox1.Checked = true;
+            this.xrCheckBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([GioiTinh]=\'Nam\',true ,false)")});
             this.xrCheckBox1.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F);
             this.xrCheckBox1.GlyphOptions.Alignment = DevExpress.Utils.HorzAlignment.Far;
             this.xrCheckBox1.GlyphOptions.Style = DevExpress.XtraPrinting.GlyphStyle.YesNo;
@@ -11169,6 +11174,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel12
             // 
+            this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tuoi]")});
             this.xrLabel12.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel12.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(584.9789F, 1.525879E-05F);
@@ -11197,6 +11204,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel10
             // 
+            this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HoTen]")});
             this.xrLabel10.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel10.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(128.8034F, 1.525879E-05F);
@@ -11240,6 +11249,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel8
             // 
+            this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Khoa1]")});
             this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel8.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(51.75218F, 46.00002F);
@@ -11268,6 +11279,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             // 
             // xrLabel6
             // 
+            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoVaoVien]")});
             this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel6.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(637.0144F, 22.99998F);
@@ -11346,6 +11359,11 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.xrLabel1.Text = "SỞ Y TẾ TP. HỒ CHÍ MINH";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(Report_WinForm_Phiếu_11_9_2023.Model.PhieuGayMeHoiSuc_Model);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // Report_PhieuGayMeHoiSuc
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -11353,13 +11371,15 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.detailBand1,
             this.bottomMarginBand1,
             this.ReportHeader});
+            this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            this.objectDataSource1});
+            this.DataSource = this.objectDataSource1;
             this.Margins = new DevExpress.Drawing.DXMargins(60F, 39F, 75.00001F, 47.41512F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();
@@ -11373,6 +11393,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -12206,10 +12227,8 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
         private XRLabel xrLabel624;
         private XRLabel xrLabel623;
         private XRLabel xrLabel622;
-        private XRTable xrTable15;
-        private XRTableRow xrTableRow15;
-        private XRTableCell xrTableCell121;
-        private XRTableCell xrTableCell122;
-        private XRLabel xrLabel628;
+        private XRLabel xrLabel629;
+        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource1;
+        private IContainer components;
     }
 }

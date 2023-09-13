@@ -15,8 +15,11 @@ namespace Report_WinForm_Phiếu_11_9_2023.CustomControl
         public TextboxCustom()
         {
             InitializeComponent();
+            _textBox = textBox2;
+            textEdt = _textBox.Text;
         }
         public String textEdt { get; set; }
+        public TextBox _textBox {  get; set; }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

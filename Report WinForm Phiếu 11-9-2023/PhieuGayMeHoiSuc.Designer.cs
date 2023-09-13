@@ -187,15 +187,16 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSGayMe.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbbBSGayMe.FormattingEnabled = true;
             this.cbbBSGayMe.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "O",
-            "AB"});
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
             this.cbbBSGayMe.Location = new System.Drawing.Point(873, 468);
             this.cbbBSGayMe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSGayMe.Name = "cbbBSGayMe";
             this.cbbBSGayMe.Size = new System.Drawing.Size(457, 39);
-            this.cbbBSGayMe.TabIndex = 48;
+            this.cbbBSGayMe.TabIndex = 35;
             // 
             // cbbBSPhauThuat
             // 
@@ -203,15 +204,16 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSPhauThuat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbbBSPhauThuat.FormattingEnabled = true;
             this.cbbBSPhauThuat.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "O",
-            "AB"});
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
             this.cbbBSPhauThuat.Location = new System.Drawing.Point(219, 468);
             this.cbbBSPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSPhauThuat.Name = "cbbBSPhauThuat";
             this.cbbBSPhauThuat.Size = new System.Drawing.Size(490, 39);
-            this.cbbBSPhauThuat.TabIndex = 47;
+            this.cbbBSPhauThuat.TabIndex = 33;
             // 
             // txtTacDung
             // 
@@ -340,7 +342,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label23.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(206, 46);
-            this.label23.TabIndex = 33;
+            this.label23.TabIndex = 34;
             this.label23.Text = "- BS Phẫu thuật:";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -441,6 +443,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbRH.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbbRH.FormattingEnabled = true;
             this.cbbRH.Items.AddRange(new object[] {
+            "",
             "+",
             "-"});
             this.cbbRH.Location = new System.Drawing.Point(831, 209);
@@ -873,7 +876,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // btnSave
             // 
             this.btnSave.Caption = "Lưu";
-            this.btnSave.Enabled = false;
             this.btnSave.Id = 1;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.LargeImage")));
@@ -919,6 +921,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnSaveandPrint.ItemAppearance.Pressed.Options.UseFont = true;
             this.btnSaveandPrint.Name = "btnSaveandPrint";
             this.btnSaveandPrint.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnSaveandPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveandPrint_ItemClick);
             // 
             // barDockControlTop
             // 

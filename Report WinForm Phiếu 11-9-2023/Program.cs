@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Report_WinForm_Phiếu_11_9_2023.Report;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhieuGayMeHoiSuc());
+            Application.Run(new View_PhieuGayMeHoiSuc());
         }
     }
 }

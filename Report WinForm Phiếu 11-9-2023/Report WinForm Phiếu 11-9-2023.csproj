@@ -107,6 +107,7 @@
     <Compile Include="In_PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\PhieuGayMeHoiSuc_Model.cs" />
     <Compile Include="PhieuGayMeHoiSuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +134,12 @@
     <Compile Include="Report\Report_PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\View_PhieuGayMeHoiSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\View_PhieuGayMeHoiSuc.Designer.cs">
+      <DependentUpon>View_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CustomControl\TextboxCustom.resx">
       <DependentUpon>TextboxCustom.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,9 +158,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report\Report_PhieuGayMeHoiSuc.resx">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\View_PhieuGayMeHoiSuc.resx">
+      <DependentUpon>View_PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,4 +1,5 @@
-﻿using Report_WinForm_Phiếu_11_9_2023.Report;
+﻿using Report_WinForm_Phiếu_11_9_2023.Model;
+using Report_WinForm_Phiếu_11_9_2023.Report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
 {
     public partial class In_PhieuGayMeHoiSuc : Form
     {
-        public In_PhieuGayMeHoiSuc()
+        PhieuGayMeHoiSuc_Model currentModel = new PhieuGayMeHoiSuc_Model();
+        public In_PhieuGayMeHoiSuc(PhieuGayMeHoiSuc_Model model)
         {
             InitializeComponent();
+            currentModel = model;
             LoadSource();
         }
 
@@ -23,6 +26,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             Report_PhieuGayMeHoiSuc s = new Report_PhieuGayMeHoiSuc();
             documentViewer1.DocumentSource = s;
+            s.InitData(currentModel);
             s.CreateDocument();
         }
 
