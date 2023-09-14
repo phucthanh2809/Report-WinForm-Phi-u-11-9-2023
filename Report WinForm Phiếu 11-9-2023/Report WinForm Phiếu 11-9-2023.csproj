@@ -34,13 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="barcode">
-      <HintPath>D:\test_pm\test_pm\barcode.dll</HintPath>
+      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\barcode.dll</HintPath>
     </Reference>
     <Reference Include="BusinessCommon">
-      <HintPath>D:\test_pm\test_pm\BusinessCommon.dll</HintPath>
+      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\BusinessCommon.dll</HintPath>
     </Reference>
     <Reference Include="ControlProject1510">
-      <HintPath>D:\test_pm\test_pm\ControlProject1510.dll</HintPath>
+      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\ControlProject1510.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -128,28 +128,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\Report_PhieuGayMeHoiSuc.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report\Report_PhieuGayMeHoiSuc.Designer.cs">
-      <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Report\View_PhieuGayMeHoiSuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Report\View_PhieuGayMeHoiSuc.Designer.cs">
-      <DependentUpon>View_PhieuGayMeHoiSuc.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="CustomControl\TextboxCustom.resx">
-      <DependentUpon>TextboxCustom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="In_PhieuGayMeHoiSuc.resx">
-      <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhieuGayMeHoiSuc.resx">
-      <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
