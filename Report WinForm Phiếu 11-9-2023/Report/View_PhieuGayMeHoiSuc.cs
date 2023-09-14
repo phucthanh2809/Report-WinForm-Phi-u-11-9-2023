@@ -108,7 +108,6 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
                         SqlCommand command = new SqlCommand(query, sqlConnection);
                         command.ExecuteNonQuery();
                         MessageBox.Show("Xóa thành công!");
-                        LoadData();
                     }
                     catch (Exception)
                     {
@@ -118,6 +117,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
                     {
                         sqlConnection.Close();
                     }
+                    LoadData();
                 }
             }
         }
