@@ -34,13 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="barcode">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\barcode.dll</HintPath>
+      <HintPath>D:\test_pm\test_pm\barcode.dll</HintPath>
     </Reference>
     <Reference Include="BusinessCommon">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\BusinessCommon.dll</HintPath>
+      <HintPath>D:\test_pm\test_pm\BusinessCommon.dll</HintPath>
     </Reference>
     <Reference Include="ControlProject1510">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\ControlProject1510.dll</HintPath>
+      <HintPath>D:\test_pm\test_pm\ControlProject1510.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -93,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
