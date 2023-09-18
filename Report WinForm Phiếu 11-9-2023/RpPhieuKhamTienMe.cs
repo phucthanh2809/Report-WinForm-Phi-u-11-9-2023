@@ -23,10 +23,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             InitializeComponent();
             LoadRP();
+            
         }
         private void LoadRP()
         {
-            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien";
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C WHERE A.SoVaoVien = '"+PhieuKhamTienMe.a+"' AND  A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien";
             DataTable tb = comm.GetDataTable(mconnectstring, msql, "PhieuKhamTienMe");
             BaoCao.Load(Application.StartupPath + @"\PhieuKhamTienMe.rpt");
             BaoCao.SetDataSource(tb);

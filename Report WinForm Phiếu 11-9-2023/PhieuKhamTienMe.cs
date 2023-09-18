@@ -22,6 +22,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             InitializeComponent();
             LoadCbo();
         }
+        public static string a;
         private void LoadCbo()
         {
             //cboChuẩn đoán
@@ -72,15 +73,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboThuocDangSuDung.ValueMember = "MaThuoc";
             cboThuocDangSuDung.CustomAlignment = new string[] { "l", "l" };
             cboThuocDangSuDung.CustomColumnStyle = new string[] { "t", "t" };
-            //cboXNCanLuuY
+            //cboXNDeNghi
             msql = "SELECT * FROM [dbo].[XN_tabKieuXN]";
             DataTable XN = comm.GetDataTable(mconnectstring, msql, "tabDanhMucThuoc");
-            cboXNCanLuuY.DataSource = XN.Copy();
-            cboXNCanLuuY.DisplayMember = "TypeName";
-            cboXNCanLuuY.ValueMember = "Type";
-            cboXNCanLuuY.CustomAlignment = new string[] { "l", "l" };
-            cboXNCanLuuY.CustomColumnStyle = new string[] { "t", "t" };
-            //cboXNDeNghi
             cboXNDeNghi.DataSource = XN.Copy();
             cboXNDeNghi.DisplayMember = "TypeName";
             cboXNDeNghi.ValueMember = "Type";
@@ -108,6 +103,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboBSKhamTienMe.ValueMember = "MABACSI";
             cboBSKhamTienMe.CustomAlignment = new string[] { "l", "l" };
             cboBSKhamTienMe.CustomColumnStyle = new string[] { "t", "t" };
+            //cboNhomMau 
+            msql = "SELECT * FROM [dbo].[tabNhomMau]";
+            DataTable Mau = comm.GetDataTable(mconnectstring, msql, "tabNhomMau");
+            cboNhomMau.DataSource = Mau.Copy();
+            cboNhomMau.DisplayMember = "TenNhomMau";
+            cboNhomMau.ValueMember = "MaNhomMau";
+            cboNhomMau.CustomAlignment = new string[] { "l", "l" };
+            cboNhomMau.CustomColumnStyle = new string[] { "t", "t" };
 
         }
         //Nút thêm
@@ -148,7 +151,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             msql = "INSERT INTO [dbo].[tabKhamLamSang]" +
                 "([SoVaoVien],[Mach],[HA],[T],[Cao],[CanNang],[DTMiengHaNho],[DTCamLem],[DTCoNgan],[DTNguaCoKho],[DTGayXuongHamNiengHam],[DTRangLungLay],[MallaI],[MallaII],[MallaIII],[MallaIV],[TimMachBT],[TimMachBatThuong],[TimMachBatThuongLiDo],[HoHapBT],[ThanKinhBT],[NoiTietBT],[CoXuongKhopBT],[XNCanLuuY],[XNDeNghi],[ASAI],[ASAII],[ASAIII],[ASAIV],[ChuongTrinh],[CapCuu],[BanKhan])" +
-                "VALUES(N'" + txtSoVaoVien.Text + "',N'" + txtMach.Text + "','" + txtHA.Text + "','" + txtT.Text + "','" + txtCao.Text + "','" + txtCanNang.Text + "','"+chkMiengHaNho.Checked+ "','" + chkCamLem.Checked + "','" + chkCoNgan.Checked + "','" + chkNguaCoKho.Checked + "','" + chkGayXuongHamNiengHam.Checked + "','" + chkRangLungLay.Checked + "','" + chkMallaI.Checked + "','" + chkMallaII.Checked + "','" + chkMallaIII.Checked + "','" + chkMallaIV.Checked + "','" + chkTimMachBT.Checked + "','" + chkTimMachBatThuong.Checked + "',N'" + txtTimMachBatThuong.Text + "','" + chkHoHapBT.Checked + "','" + chkThanKinhBT.Checked + "','" + chkNoiTietBT.Checked + "','" + chkCoXuongKhopBT.Checked + "',N'" + cboXNCanLuuY.SelectedValue + "',N'" + cboXNDeNghi.SelectedValue + "','" + chkASAI.Checked + "','" + chkASAII.Checked + "','" + chkASAIII.Checked + "','" + chkASAIV.Checked + "','" + chkChuongTrinh.Checked + "','" + chkCapCuu.Checked + "','" + chkBanKhan.Checked + "')";
+                "VALUES(N'" + txtSoVaoVien.Text + "',N'" + txtMach.Text + "','" + txtHA.Text + "','" + txtT.Text + "','" + txtCao.Text + "','" + txtCanNang.Text + "','"+chkMiengHaNho.Checked+ "','" + chkCamLem.Checked + "','" + chkCoNgan.Checked + "','" + chkNguaCoKho.Checked + "','" + chkGayXuongHamNiengHam.Checked + "','" + chkRangLungLay.Checked + "','" + chkMallaI.Checked + "','" + chkMallaII.Checked + "','" + chkMallaIII.Checked + "','" + chkMallaIV.Checked + "','" + chkTimMachBT.Checked + "','" + chkTimMachBatThuong.Checked + "',N'" + txtTimMachBatThuong.Text + "','" + chkHoHapBT.Checked + "','" + chkThanKinhBT.Checked + "','" + chkNoiTietBT.Checked + "','" + chkCoXuongKhopBT.Checked + "',N'" + txtXNCanLuuY.Text + "',N'" + cboXNDeNghi.SelectedValue + "','" + chkASAI.Checked + "','" + chkASAII.Checked + "','" + chkASAIII.Checked + "','" + chkASAIV.Checked + "','" + chkChuongTrinh.Checked + "','" + chkCapCuu.Checked + "','" + chkBanKhan.Checked + "')";
             comm.RunSQL(mconnectstring, msql);
         }
         //Thêm thông tin khám tiền mê
@@ -156,7 +159,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             msql = "INSERT INTO [dbo].[tabPhieuKhamTienMe]" +
                    "([SoVaoVien],[PPVCDNMeNKQ],[PPVCDNMeNMC],[PPVCDNDatCVP],[PPVCDNMeNoiPQ],[PPVCDNTeXuongCung],[PPVCDNDoHADMXL],[PPVCDNMeMaskTQ],[PPVCDNTeTKVung],[PPVCDNCEC],[PPVCDNMeMask],[PPVCDNTeTaiCho],[PPVCDNTMHH],[PPVCDNTeTM],[PPVCDNNSHH],[PPVCDNBisEntropy],[PPVCDNTienMe],[PPVCDNSieuAmTQ],[PPVCDNDienNao],[DichTruyen],[ThuocTienMe],[YLenhKhac],[NhinSuaTu],[UongNuocDuongDen],[KhaNangTruyenMau],[NhomMau],[HCL],[Khac],[NgayThangNam],[BSKhamTienMe])" +
-                   " VALUES('" + txtSoVaoVien.Text + "','" + chkMeNKQ.Checked + "','" + chkMeNMC.Checked + "','" + chkDatCVP.Checked + "','" + chkMeNoiPQ.Checked + "','" + chkTeXuongCung.Checked + "','" + chkDoHADMXL.Checked + "','" + chkMeMaskTQ.Checked + "','" + chkTeTKVung.Checked + "','" + chkCEC.Checked + "','" + chkMeMask.Checked + "','" + chkTeTaiCho.Checked + "','" + chkTMHH.Checked + "','" + chkTeTM.Checked + "','" + chkNSHH.Checked + "','" + chkBis.Checked + "','" + chkTienMe.Checked + "','" + chkSieuAmTQ.Checked + "','" + chkDienNao.Checked + "',N'" + cboDichTruyen.SelectedValue + "',N'" + cboThuocTienMe.SelectedValue + "',N'" + txtYLenhKhac.Text + "',N'" + nmNhinSuaTu.Value + "',N'" + nmUongNuocDuongDen.Value + "','" + chkKhaNangTruyenMau.Checked + "',N'" + txtNhomMau.Text + "',N'" + txtHCL.Text + "',N'" + txtKhac.Text + "','" + Convert.ToDateTime(dtChonNgay.Value).ToString("yyyy-MM-dd") + "',N'" + cboBSKhamTienMe.SelectedValue + "')";
+                   " VALUES('" + txtSoVaoVien.Text + "','" + chkMeNKQ.Checked + "','" + chkMeNMC.Checked + "','" + chkDatCVP.Checked + "','" + chkMeNoiPQ.Checked + "','" + chkTeXuongCung.Checked + "','" + chkDoHADMXL.Checked + "','" + chkMeMaskTQ.Checked + "','" + chkTeTKVung.Checked + "','" + chkCEC.Checked + "','" + chkMeMask.Checked + "','" + chkTeTaiCho.Checked + "','" + chkTMHH.Checked + "','" + chkTeTM.Checked + "','" + chkNSHH.Checked + "','" + chkBis.Checked + "','" + chkTienMe.Checked + "','" + chkSieuAmTQ.Checked + "','" + chkDienNao.Checked + "',N'" + cboDichTruyen.SelectedValue + "',N'" + cboThuocTienMe.SelectedValue + "',N'" + txtYLenhKhac.Text + "',N'" + nmNhinSuaTu.Value + "',N'" + nmUongNuocDuongDen.Value + "','" + chkKhaNangTruyenMau.Checked + "',N'" + cboNhomMau.SelectedValue + "',N'" + txtHCL.Text + "',N'" + txtKhac.Text + "','" + Convert.ToDateTime(dtChonNgay.Value).ToString("yyyy-MM-dd") + "',N'" + cboBSKhamTienMe.SelectedValue + "')";
             comm.RunSQL(mconnectstring, msql);
         }
         //Nút xóa 
@@ -205,7 +208,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             msql = "UPDATE [dbo].[tabKhamLamSang]" +
                    "SET [Mach] = N'" + txtMach.Text + "',[HA] = '" + txtHA.Text + "',[T] = '" + txtT.Text + "',[Cao] = '" + txtCao.Text + "',[CanNang] = '" + txtCanNang.Text + "',[DTMiengHaNho] = '"+chkMiengHaNho.Checked+ "',[DTCamLem] = '" + chkCamLem.Checked + "',[DTCoNgan] = '" + chkCoNgan.Checked + "',[DTNguaCoKho] = '" + chkNguaCoKho.Checked + "',[DTGayXuongHamNiengHam] = '" + chkGayXuongHamNiengHam.Checked + "',[DTRangLungLay] = '" + chkRangLungLay.Checked + "',[MallaI] = '" + chkMallaI.Checked + "',[MallaII] = '" + chkMallaII.Checked + "',[MallaIII] = '" + chkMallaIII.Checked + "'" +
-                   ",[MallaIV] = '" + chkMallaIV.Checked + "',[TimMachBT] = '" + chkTimMachBT.Checked + "',[TimMachBatThuong] = '" + chkTimMachBatThuong.Checked + "',[TimMachBatThuongLiDo] = N'" + txtTimMachBatThuong.Text + "',[HoHapBT] = '" + chkHoHapBT.Checked + "',[ThanKinhBT] = '" + chkThanKinhBT.Checked + "',[NoiTietBT] = '" + chkNoiTietBT.Checked + "',[CoXuongKhopBT] = '" + chkCoXuongKhopBT.Checked + "',[XNCanLuuY] = N'" + cboXNCanLuuY.SelectedValue + "',[XNDeNghi] = N'" + cboXNDeNghi.SelectedValue + "',[ASAI] = '" + chkASAI.Checked + "',[ASAII] = '" + chkASAII.Checked + "'" +
+                   ",[MallaIV] = '" + chkMallaIV.Checked + "',[TimMachBT] = '" + chkTimMachBT.Checked + "',[TimMachBatThuong] = '" + chkTimMachBatThuong.Checked + "',[TimMachBatThuongLiDo] = N'" + txtTimMachBatThuong.Text + "',[HoHapBT] = '" + chkHoHapBT.Checked + "',[ThanKinhBT] = '" + chkThanKinhBT.Checked + "',[NoiTietBT] = '" + chkNoiTietBT.Checked + "',[CoXuongKhopBT] = '" + chkCoXuongKhopBT.Checked + "',[XNCanLuuY] = N'" + txtXNCanLuuY.Text + "',[XNDeNghi] = N'" + cboXNDeNghi.SelectedValue + "',[ASAI] = '" + chkASAI.Checked + "',[ASAII] = '" + chkASAII.Checked + "'" +
                    ",[ASAIII] = '" + chkASAIII.Checked + "',[ASAIV] = '" + chkASAIV.Checked + "',[ChuongTrinh] = '" + chkChuongTrinh.Checked + "',[CapCuu] = '" + chkCapCuu.Checked + "',[BanKhan] = '" + chkBanKhan.Checked + "' WHERE [SoVaoVien] = '" + txtSoVaoVien.Text + "'";
             comm.RunSQL(mconnectstring, msql);
         }
@@ -215,13 +218,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             msql = "UPDATE [dbo].[tabPhieuKhamTienMe]" +
                    "SET [PPVCDNMeNKQ] = '" + chkMeNKQ.Checked + "',[PPVCDNMeNMC] = '" + chkMeNMC.Checked + "',[PPVCDNDatCVP] = '" + chkDatCVP.Checked + "',[PPVCDNMeNoiPQ] = '" + chkMeNoiPQ.Checked + "',[PPVCDNTeXuongCung] = '" + chkTeXuongCung.Checked + "',[PPVCDNDoHADMXL] = '" + chkDoHADMXL.Checked + "',[PPVCDNMeMaskTQ] = '" + chkMeMaskTQ.Checked + "',[PPVCDNTeTKVung] = '" + chkTeTKVung.Checked + "',[PPVCDNCEC] = '" + chkCEC.Checked + "',[PPVCDNMeMask] = '" + chkMeMask.Checked + "',[PPVCDNTeTaiCho] = '" + chkTeTaiCho.Checked + "',[PPVCDNTMHH] = '" + chkTMHH.Checked + "'" +
                    ",[PPVCDNTeTM] = '" + chkTeTM.Checked + "',[PPVCDNNSHH] = '" + chkNSHH.Checked + "',[PPVCDNBisEntropy] = '" + chkBis.Checked + "',[PPVCDNTienMe] = '" + chkTienMe.Checked + "',[PPVCDNSieuAmTQ] = '" + chkSieuAmTQ.Checked + "',[PPVCDNDienNao] = '" + chkDienNao.Checked + "',[DichTruyen] = N'" + cboDichTruyen.SelectedValue + "', [ThuocTienMe] = N'" + cboThuocTienMe.SelectedValue + "', [YLenhKhac] = N'" + txtYLenhKhac.Text + "', [NhinSuaTu] = N'" + nmNhinSuaTu.Value + "', [UongNuocDuongDen] = N'" + nmUongNuocDuongDen.Value + "', [KhaNangTruyenMau] = '" + chkKhaNangTruyenMau.Checked + "'" +
-                   ",[NhomMau] = N'" + txtNhomMau.Text + "', [HCL] = N'" + txtHCL.Text + "', [Khac] = N'" + txtKhac.Text + "', [NgayThangNam] = '" + Convert.ToDateTime(dtChonNgay.Value).ToString("yyyy-MM-dd") + "',[BSKhamTienMe] = N'" + cboBSKhamTienMe.SelectedValue + "' WHERE [SoVaoVien] = '" + txtSoVaoVien.Text + "'";
+                   ",[NhomMau] = N'" + cboNhomMau.SelectedValue + "', [HCL] = N'" + txtHCL.Text + "', [Khac] = N'" + txtKhac.Text + "', [NgayThangNam] = '" + Convert.ToDateTime(dtChonNgay.Value).ToString("yyyy-MM-dd") + "',[BSKhamTienMe] = N'" + cboBSKhamTienMe.SelectedValue + "' WHERE [SoVaoVien] = '" + txtSoVaoVien.Text + "'";
             comm.RunSQL(mconnectstring, msql);
         }
         //Ghi XML
         private void btnGhiXML_Click(object sender, EventArgs e)
         {
-            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien";
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C,[dbo].[tabMaBS] as BS,[dbo].[tabMACHUYENKHOA] AS KHOA,[dbo].[tabCDSPK] AS CHUANDOAN, [dbo].[tabPhuongPhapPhauThuat] AS PHAUTHUAT, [dbo].[tabMABENH] AS BENH, [dbo].[tabDanhMucThuoc] AS THUOC,[dbo].[tabGioiTinh] AS GIOITINH,[dbo].[XN_tabKieuXN] AS XN, [dbo].[tabDichTruyen] AS DICHTRUYEN, [dbo].[tabNhomMau] AS MAU " +
+                   "WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien AND C.BSKhamTienMe = BS.MABACSI AND A.Khoa = KHOA.TENTAT AND A.ChuanDoan = CHUANDOAN.MaChanDoan AND A.PhuongPhapPhauThuat = PHAUTHUAT.TenTat AND A.BenhDangDieuTri = BENH.MaBenh AND A.ThuocDangSuDung = THUOC.MaThuoc AND A.GioiTinh = GIOITINH.IDGioiTinh AND B.XNDeNghi = XN.Type AND C.DichTruyen = DICHTRUYEN.MaDichTruyen AND C.ThuocTienMe = THUOC.MaThuoc AND C.NhomMau = MAU.MaNhomMau ";
             DataTable tb = comm.GetDataTable(mconnectstring, msql, "PhieuKhamTienMe");
             tb.WriteXmlSchema(@"D:\PhieuKhamTienMe.xsd", true);
             ev.QFrmThongBao("Đã ghi thành công");
@@ -467,7 +471,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void txtTimMachBatThuong_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ev.Qtxt_KeyPress_To_ComboBox_Focus(sender, e, cboXNCanLuuY);
+            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtXNCanLuuY);
         }
 
         private void txtTimMachBatThuong_Leave(object sender, EventArgs e)
@@ -475,17 +479,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             txtTimMachBatThuong.xActive = false;
             ev.Qtxt_Leave(sender, e);
         }
-
-        private void cboXNCanLuuY_Enter(object sender, EventArgs e)
-        {
-            ev.Qcbo_Enter(sender, e);
-        }
-
-        private void cboXNCanLuuY_Leave(object sender, EventArgs e)
-        {
-            ev.Qcbo_Leave(sender, e);
-        }
-
         private void cboXNDeNghi_Enter(object sender, EventArgs e)
         {
             ev.Qcbo_Enter(sender, e);
@@ -524,7 +517,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void txtYLenhKhac_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtNhomMau);
+            ev.Qtxt_KeyPress_To_ComboBox_Focus(sender, e, cboNhomMau);
         }
 
         private void txtYLenhKhac_Leave(object sender, EventArgs e)
@@ -532,24 +525,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             txtYLenhKhac.xActive = false;
             ev.Qtxt_Leave(sender, e);
         }
-
-        private void txtNhomMau_Enter(object sender, EventArgs e)
-        {
-            txtNhomMau.xActive = true;
-            ev.Qtxt_Enter(sender, e);
-        }
-
-        private void txtNhomMau_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtHCL);
-        }
-
-        private void txtNhomMau_Leave(object sender, EventArgs e)
-        {
-            txtNhomMau.xActive = false;
-            ev.Qtxt_Leave(sender, e);
-        }
-
         private void txtHCL_Enter(object sender, EventArgs e)
         {
             txtHCL.xActive = true;
@@ -618,11 +593,28 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
 
         }
-
         private void txtIn_Click(object sender, EventArgs e)
         {
+            a = txtSoVaoVien.Text;
             RpPhieuKhamTienMe RPPhieuKhamTienMe = new RpPhieuKhamTienMe();
             RPPhieuKhamTienMe.ShowDialog();
+        }
+
+        private void txtXNCanLuuY_Enter(object sender, EventArgs e)
+        {
+            txtXNCanLuuY.xActive = true;
+            ev.Qtxt_Enter(sender, e);
+        }
+
+        private void txtXNCanLuuY_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ev.Qtxt_KeyPress_To_ComboBox_Focus(sender, e, cboXNDeNghi);
+        }
+
+        private void txtXNCanLuuY_Leave(object sender, EventArgs e)
+        {
+            txtXNCanLuuY.xActive = false;
+            ev.Qtxt_Leave(sender, e);
         }
     }
 }

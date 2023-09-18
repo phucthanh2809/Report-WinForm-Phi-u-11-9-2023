@@ -50,7 +50,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cRPPhieuKhamTienMe);
             this.Name = "RpPhieuKhamTienMe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RpPhieuKhamTienMe";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
