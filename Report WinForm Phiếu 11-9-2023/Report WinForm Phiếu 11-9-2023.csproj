@@ -33,14 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="barcode">
       <HintPath>D:\test_pm\test_pm\barcode.dll</HintPath>
+      <HintPath>D:\Phòng IT\File download\test_pm\barcode.dll</HintPath>
     </Reference>
     <Reference Include="BusinessCommon">
+      <HintPath>D:\Phòng IT\File download\test_pm\BusinessCommon.dll</HintPath>
       <HintPath>D:\test_pm\test_pm\BusinessCommon.dll</HintPath>
     </Reference>
     <Reference Include="ControlProject1510">
       <HintPath>D:\test_pm\test_pm\ControlProject1510.dll</HintPath>
+      <HintPath>D:\Phòng IT\File download\test_pm\ControlProject1510.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -66,6 +70,9 @@
     <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -153,6 +160,15 @@
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <Compile Include="RpGiayCamDoanChapNhanGayMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RpGiayCamDoanChapNhanGayMe.Designer.cs">
+      <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GiayCamDoanChapNhanGayMeHoiSuc.resx">
+      <DependentUpon>GiayCamDoanChapNhanGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -163,6 +179,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RpGiayCamDoanChapNhanGayMe.resx">
+      <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\Report_PhieuGayMeHoiSuc.resx">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
