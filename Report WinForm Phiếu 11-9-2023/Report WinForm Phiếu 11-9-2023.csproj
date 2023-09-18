@@ -143,6 +143,9 @@
     <EmbeddedResource Include="CustomControl\TextboxCustom.resx">
       <DependentUpon>TextboxCustom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="In_PhieuGayMeHoiSuc.resx">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
