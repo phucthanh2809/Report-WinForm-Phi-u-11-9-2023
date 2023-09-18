@@ -29,7 +29,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiayCamDoanChapNhanGayMeHoiSuc));
             this.TabControlChinh = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -625,9 +625,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // dgrPhieuCamDoanGayMe
             // 
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgrPhieuCamDoanGayMe.ColumnHeadersHeight = 95;
             this.dgrPhieuCamDoanGayMe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cIDPhieuChapNhanGayMe,

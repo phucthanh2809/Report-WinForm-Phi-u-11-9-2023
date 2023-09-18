@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label40.Text" xml:space="preserve">
-    <value>Tôi đã đọc bản cam kết với tinh thần hoàn toàn minh mẫn và hiểu biết. Tôi thật sự thông suốt tất cả các vấn đề mà Bác sĩ đã giải thích về tiến trình gây mê hồi sức cho người nhà của tôi. Tôi hoàn toàn chịu trách nhiệm với quyết định đồng ý cho Bác sĩ gây mê hồi sức cho người nhà của tôi ./.</value>
-  </data>
   <metadata name="cIDPhieuChapNhanGayMe.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -210,6 +207,9 @@
   <metadata name="cSua.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="label40.Text" xml:space="preserve">
+    <value>Tôi đã đọc bản cam kết với tinh thần hoàn toàn minh mẫn và hiểu biết. Tôi thật sự thông suốt tất cả các vấn đề mà Bác sĩ đã giải thích về tiến trình gây mê hồi sức cho người nhà của tôi. Tôi hoàn toàn chịu trách nhiệm với quyết định đồng ý cho Bác sĩ gây mê hồi sức cho người nhà của tôi ./.</value>
+  </data>
   <data name="label38.Text" xml:space="preserve">
     <value>Sau khi nghe bác sĩ cho biết tình trạng bệnh của bé và những nguy hiểm của bệnh nếu không thực hiện phẫu thuật, thủ thuật, gây mê hồi sức và những rủi ro có thể xảy ra do bệnh tật khi tiến hành phẫu thuật, thủ thuật, gây mê hồi sức, tôi tự nguyện viết giấy cam đoan này:</value>
   </data>
