@@ -233,7 +233,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         //Load
         private void LoadGridView()
         {
-            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabGioiTinh] as B,[dbo].[tabMACHUYENKHOA] as C where A.GioiTinh = B.IDGioiTinh AND A.Khoa=C.TENTAT ";
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabGioiTinh] as B,[dbo].[tabMACHUYENKHOA] as C,[dbo].[tabCDSPK] as D,[dbo].[tabPhuongPhapPhauThuat] as E  where A.GioiTinh = B.IDGioiTinh AND A.Khoa=C.TENTAT AND A.ChuanDoan = D.MaChanDoan AND A.PhuongPhapPhauThuat = E.TenTat";
             DataTable thongtinbn = comm.GetDataTable(mconnectstring, msql, "thongtinbn");
             dgrThongTinBN.AutoGenerateColumns = false;
             dgrThongTinBN.DataSource = thongtinbn;

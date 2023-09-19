@@ -187,6 +187,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cMaHoSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cChuanDoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cPPPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelTong.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -1540,6 +1542,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cKhoa,
             this.cMaHoSo,
             this.cGioiTinh,
+            this.cChuanDoan,
+            this.cPPPT,
             this.cXoa});
             this.dgrThongTinBN.Location = new System.Drawing.Point(4, 8);
             this.dgrThongTinBN.Name = "dgrThongTinBN";
@@ -2207,6 +2211,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cNgaySinh.HeaderText = "Ngày sinh";
             this.cNgaySinh.Name = "cNgaySinh";
             this.cNgaySinh.ReadOnly = true;
+            this.cNgaySinh.Width = 150;
             // 
             // cNgayNhapVien
             // 
@@ -2214,6 +2219,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cNgayNhapVien.HeaderText = "Ngày Nhập Viện ";
             this.cNgayNhapVien.Name = "cNgayNhapVien";
             this.cNgayNhapVien.ReadOnly = true;
+            this.cNgayNhapVien.Width = 150;
             // 
             // cKhoa
             // 
@@ -2221,6 +2227,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cKhoa.HeaderText = "Khoa";
             this.cKhoa.Name = "cKhoa";
             this.cKhoa.ReadOnly = true;
+            this.cKhoa.Width = 200;
             // 
             // cMaHoSo
             // 
@@ -2228,6 +2235,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cMaHoSo.HeaderText = "Số Hồ Sơ ";
             this.cMaHoSo.Name = "cMaHoSo";
             this.cMaHoSo.ReadOnly = true;
+            this.cMaHoSo.Width = 150;
             // 
             // cGioiTinh
             // 
@@ -2235,6 +2243,22 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cGioiTinh.HeaderText = "Giới Tính";
             this.cGioiTinh.Name = "cGioiTinh";
             this.cGioiTinh.ReadOnly = true;
+            // 
+            // cChuanDoan
+            // 
+            this.cChuanDoan.DataPropertyName = "TenChanDoan";
+            this.cChuanDoan.HeaderText = "Chuẩn Đoán";
+            this.cChuanDoan.Name = "cChuanDoan";
+            this.cChuanDoan.ReadOnly = true;
+            this.cChuanDoan.Width = 200;
+            // 
+            // cPPPT
+            // 
+            this.cPPPT.DataPropertyName = "TenPhuongPhapPhauThuat";
+            this.cPPPT.HeaderText = "Phương Pháp Phẫu Thuật";
+            this.cPPPT.Name = "cPPPT";
+            this.cPPPT.ReadOnly = true;
+            this.cPPPT.Width = 200;
             // 
             // cXoa
             // 
@@ -2434,6 +2458,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.DataGridViewTextBoxColumn cKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cMaHoSo;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cChuanDoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cPPPT;
         private System.Windows.Forms.DataGridViewImageColumn cXoa;
     }
 }
