@@ -192,7 +192,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbPPVoCam.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbPPVoCam.Name = "cbbPPVoCam";
             this.cbbPPVoCam.Size = new System.Drawing.Size(1075, 33);
-            this.cbbPPVoCam.TabIndex = 51;
+            this.cbbPPVoCam.TabIndex = 16;
             // 
             // cbbPPPhauThuat
             // 
@@ -211,7 +211,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbPPPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbPPPhauThuat.Name = "cbbPPPhauThuat";
             this.cbbPPPhauThuat.Size = new System.Drawing.Size(574, 33);
-            this.cbbPPPhauThuat.TabIndex = 50;
+            this.cbbPPPhauThuat.TabIndex = 14;
             // 
             // cbbChuanDoan
             // 
@@ -230,7 +230,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbChuanDoan.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbChuanDoan.Name = "cbbChuanDoan";
             this.cbbChuanDoan.Size = new System.Drawing.Size(1182, 33);
-            this.cbbChuanDoan.TabIndex = 49;
+            this.cbbChuanDoan.TabIndex = 13;
             // 
             // cbbKhoa2
             // 
@@ -247,7 +247,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbKhoa2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbKhoa2.Name = "cbbKhoa2";
             this.cbbKhoa2.Size = new System.Drawing.Size(401, 33);
-            this.cbbKhoa2.TabIndex = 48;
+            this.cbbKhoa2.TabIndex = 7;
             // 
             // cbbKhoa1
             // 
@@ -264,7 +264,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbKhoa1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbKhoa1.Name = "cbbKhoa1";
             this.cbbKhoa1.Size = new System.Drawing.Size(401, 33);
-            this.cbbKhoa1.TabIndex = 47;
+            this.cbbKhoa1.TabIndex = 3;
             // 
             // cbbBSGayMe
             // 
@@ -283,7 +283,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSGayMe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSGayMe.Name = "cbbBSGayMe";
             this.cbbBSGayMe.Size = new System.Drawing.Size(457, 33);
-            this.cbbBSGayMe.TabIndex = 35;
+            this.cbbBSGayMe.TabIndex = 18;
             // 
             // cbbBSPhauThuat
             // 
@@ -300,7 +300,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSPhauThuat.Name = "cbbBSPhauThuat";
             this.cbbBSPhauThuat.Size = new System.Drawing.Size(490, 33);
-            this.cbbBSPhauThuat.TabIndex = 33;
+            this.cbbBSPhauThuat.TabIndex = 17;
             // 
             // txtTacDung
             // 
@@ -311,7 +311,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtTacDung.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtTacDung.Name = "txtTacDung";
             this.txtTacDung.Size = new System.Drawing.Size(237, 46);
-            this.txtTacDung.TabIndex = 46;
+            this.txtTacDung.TabIndex = 23;
             this.txtTacDung.textEdt = null;
             // 
             // label29
@@ -334,7 +334,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtTienMe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtTienMe.Name = "txtTienMe";
             this.txtTienMe.Size = new System.Drawing.Size(287, 46);
-            this.txtTienMe.TabIndex = 44;
+            this.txtTienMe.TabIndex = 22;
             this.txtTienMe.textEdt = null;
             // 
             // label28
@@ -355,7 +355,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtNam.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtNam.Name = "txtNam";
             this.txtNam.Size = new System.Drawing.Size(106, 46);
-            this.txtNam.TabIndex = 42;
+            this.txtNam.TabIndex = 21;
             this.txtNam.textEdt = null;
             // 
             // label27
@@ -376,7 +376,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtThang.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtThang.Name = "txtThang";
             this.txtThang.Size = new System.Drawing.Size(77, 46);
-            this.txtThang.TabIndex = 40;
+            this.txtThang.TabIndex = 20;
             this.txtThang.textEdt = null;
             // 
             // label26
@@ -397,7 +397,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtNgay.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtNgay.Name = "txtNgay";
             this.txtNgay.Size = new System.Drawing.Size(77, 46);
-            this.txtNgay.TabIndex = 38;
+            this.txtNgay.TabIndex = 19;
             this.txtNgay.textEdt = null;
             // 
             // label25
@@ -453,7 +453,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtTuThe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtTuThe.Name = "txtTuThe";
             this.txtTuThe.Size = new System.Drawing.Size(384, 46);
-            this.txtTuThe.TabIndex = 30;
+            this.txtTuThe.TabIndex = 15;
             this.txtTuThe.textEdt = null;
             // 
             // label21
@@ -504,7 +504,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbNhomMau.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbNhomMau.Name = "cbbNhomMau";
             this.cbbNhomMau.Size = new System.Drawing.Size(121, 33);
-            this.cbbNhomMau.TabIndex = 22;
+            this.cbbNhomMau.TabIndex = 12;
             // 
             // label17
             // 
@@ -538,7 +538,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtChieuCao.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtChieuCao.Name = "txtChieuCao";
             this.txtChieuCao.Size = new System.Drawing.Size(155, 46);
-            this.txtChieuCao.TabIndex = 19;
+            this.txtChieuCao.TabIndex = 11;
             this.txtChieuCao.textEdt = null;
             // 
             // label15
@@ -573,7 +573,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtCanNang.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtCanNang.Name = "txtCanNang";
             this.txtCanNang.Size = new System.Drawing.Size(155, 46);
-            this.txtCanNang.TabIndex = 16;
+            this.txtCanNang.TabIndex = 10;
             this.txtCanNang.textEdt = null;
             // 
             // label13
@@ -596,7 +596,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtGiuong.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtGiuong.Name = "txtGiuong";
             this.txtGiuong.Size = new System.Drawing.Size(90, 46);
-            this.txtGiuong.TabIndex = 14;
+            this.txtGiuong.TabIndex = 9;
             this.txtGiuong.textEdt = null;
             // 
             // label12
@@ -619,7 +619,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtBuong.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtBuong.Name = "txtBuong";
             this.txtBuong.Size = new System.Drawing.Size(98, 46);
-            this.txtBuong.TabIndex = 12;
+            this.txtBuong.TabIndex = 8;
             this.txtBuong.textEdt = null;
             // 
             // label11
@@ -658,7 +658,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
             this.cbbGioiTinh.Size = new System.Drawing.Size(121, 33);
-            this.cbbGioiTinh.TabIndex = 8;
+            this.cbbGioiTinh.TabIndex = 6;
             // 
             // label9
             // 
@@ -680,7 +680,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtTuoi.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtTuoi.Name = "txtTuoi";
             this.txtTuoi.Size = new System.Drawing.Size(87, 46);
-            this.txtTuoi.TabIndex = 6;
+            this.txtTuoi.TabIndex = 5;
             this.txtTuoi.textEdt = null;
             // 
             // label8
@@ -784,7 +784,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtSoVaoVien.BackColor = System.Drawing.Color.Transparent;
             this.txtSoVaoVien.Location = new System.Drawing.Point(164, 44);
-            this.txtSoVaoVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoVaoVien.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoVaoVien.Name = "txtSoVaoVien";
             this.txtSoVaoVien.Size = new System.Drawing.Size(221, 44);
             this.txtSoVaoVien.TabIndex = 2;

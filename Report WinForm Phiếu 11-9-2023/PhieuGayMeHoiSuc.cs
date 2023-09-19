@@ -37,7 +37,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 state = true;
             }
             LoadData();
-            txtSoVaoVien.TextBoxKeyPress += TxtSoVaoVien_TextBoxKeyPress; ;
+            txtSoVaoVien.TextBoxKeyPress += TxtSoVaoVien_TextBoxKeyPress;
         }
 
         private void TxtSoVaoVien_TextBoxKeyPress(object sender, KeyPressEventArgs e)
