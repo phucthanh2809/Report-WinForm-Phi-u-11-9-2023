@@ -33,18 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="barcode">
       <HintPath>D:\test_pm\test_pm\barcode.dll</HintPath>
-      <HintPath>D:\Phòng IT\File download\test_pm\barcode.dll</HintPath>
+      <HintPath>CoppyDev\barcode.dll</HintPath>
     </Reference>
     <Reference Include="BusinessCommon">
       <HintPath>D:\Phòng IT\File download\test_pm\BusinessCommon.dll</HintPath>
-      <HintPath>D:\test_pm\test_pm\BusinessCommon.dll</HintPath>
+      <HintPath>CoppyDev\BusinessCommon.dll</HintPath>
     </Reference>
     <Reference Include="ControlProject1510">
       <HintPath>D:\test_pm\test_pm\ControlProject1510.dll</HintPath>
-      <HintPath>D:\Phòng IT\File download\test_pm\ControlProject1510.dll</HintPath>
+      <HintPath>CoppyDev\ControlProject1510.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
@@ -120,72 +119,6 @@
     </Reference>
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Charts.v22.2.Core">
-      <HintPath>customDLL\DevExpress.Charts.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v22.2">
-      <HintPath>customDLL\DevExpress.Data.Desktop.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.v22.2">
-      <HintPath>customDLL\DevExpress.Data.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.DataAccess.v22.2">
-      <HintPath>customDLL\DevExpress.DataAccess.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Drawing.v22.2">
-      <HintPath>customDLL\DevExpress.Drawing.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Office.v22.2.Core">
-      <HintPath>customDLL\DevExpress.Office.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v22.2.Core">
-      <HintPath>customDLL\DevExpress.Pdf.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v22.2.Drawing">
-      <HintPath>customDLL\DevExpress.Pdf.v22.2.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v22.2.Core">
-      <HintPath>customDLL\DevExpress.PivotGrid.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v22.2.Core">
-      <HintPath>customDLL\DevExpress.Printing.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v22.2.Core">
-      <HintPath>customDLL\DevExpress.RichEdit.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v22.2.Export">
-      <HintPath>customDLL\DevExpress.RichEdit.v22.2.Export.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v22.2.Core">
-      <HintPath>customDLL\DevExpress.Sparkline.v22.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v22.2">
-      <HintPath>customDLL\DevExpress.Utils.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpo.v22.2">
-      <HintPath>customDLL\DevExpress.Xpo.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraBars.v22.2">
-      <HintPath>customDLL\DevExpress.XtraBars.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v22.2">
-      <HintPath>customDLL\DevExpress.XtraCharts.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v22.2">
-      <HintPath>customDLL\DevExpress.XtraEditors.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraLayout.v22.2">
-      <HintPath>customDLL\DevExpress.XtraLayout.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v22.2">
-      <HintPath>customDLL\DevExpress.XtraPrinting.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v22.2">
-      <HintPath>customDLL\DevExpress.XtraReports.v22.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v22.2">
-      <HintPath>customDLL\DevExpress.XtraTreeList.v22.2.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
@@ -266,7 +199,13 @@
     <Compile Include="In_PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BacSi.cs" />
+    <Compile Include="Model\ChuanDoan.cs" />
+    <Compile Include="Model\Khoa.cs" />
+    <Compile Include="Model\NhomMau.cs" />
     <Compile Include="Model\PhieuGayMeHoiSuc_Model.cs" />
+    <Compile Include="Model\PhuongPhapPhauThuat.cs" />
+    <Compile Include="Model\PhuongPhapVoCam.cs" />
     <Compile Include="PhieuGayMeHoiSuc.cs">
       <SubType>Form</SubType>
     </Compile>

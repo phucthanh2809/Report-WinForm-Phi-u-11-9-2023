@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="connectStr" xml:space="preserve">
-    <value>Data Source=.;Initial Catalog=GiayCamDoanChapNhanGayMeHoiSuc;User ID=sa;Password=123</value>
+    <value>Data Source=.;Initial Catalog=ITTT;User ID=sa;Password=170501</value>
   </data>
 </root>

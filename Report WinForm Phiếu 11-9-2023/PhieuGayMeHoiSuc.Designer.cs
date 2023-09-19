@@ -33,6 +33,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuGayMeHoiSuc));
             this.mainPanel = new System.Windows.Forms.Panel();
             this.pnlThongTin = new System.Windows.Forms.Panel();
+            this.cbbPPVoCam = new System.Windows.Forms.ComboBox();
+            this.cbbPPPhauThuat = new System.Windows.Forms.ComboBox();
+            this.cbbChuanDoan = new System.Windows.Forms.ComboBox();
+            this.cbbKhoa2 = new System.Windows.Forms.ComboBox();
+            this.cbbKhoa1 = new System.Windows.Forms.ComboBox();
             this.cbbBSGayMe = new System.Windows.Forms.ComboBox();
             this.cbbBSPhauThuat = new System.Windows.Forms.ComboBox();
             this.txtTacDung = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
@@ -47,16 +52,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.txtPPVoCam = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label22 = new System.Windows.Forms.Label();
             this.txtTuThe = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label21 = new System.Windows.Forms.Label();
-            this.txtPPPhauThuat = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtChuanDoan = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label19 = new System.Windows.Forms.Label();
-            this.cbbRH = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.cbbNhomMau = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -69,7 +69,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label12 = new System.Windows.Forms.Label();
             this.txtBuong = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtKhoa2 = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label10 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -77,7 +76,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label8 = new System.Windows.Forms.Label();
             this.txtTenBenhNhan = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtKhoa = new Report_WinForm_Phiếu_11_9_2023.CustomControl.TextboxCustom();
             this.label5 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -115,9 +113,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.mainPanel.Controls.Add(this.pnlThongTin);
             this.mainPanel.Controls.Add(this.topPanel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 42);
+            this.mainPanel.Location = new System.Drawing.Point(0, 32);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1364, 712);
+            this.mainPanel.Size = new System.Drawing.Size(1364, 722);
             this.mainPanel.TabIndex = 0;
             // 
             // pnlThongTin
@@ -127,6 +125,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlThongTin.BackColor = System.Drawing.Color.White;
             this.pnlThongTin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlThongTin.Controls.Add(this.cbbPPVoCam);
+            this.pnlThongTin.Controls.Add(this.cbbPPPhauThuat);
+            this.pnlThongTin.Controls.Add(this.cbbChuanDoan);
+            this.pnlThongTin.Controls.Add(this.cbbKhoa2);
+            this.pnlThongTin.Controls.Add(this.cbbKhoa1);
             this.pnlThongTin.Controls.Add(this.cbbBSGayMe);
             this.pnlThongTin.Controls.Add(this.cbbBSPhauThuat);
             this.pnlThongTin.Controls.Add(this.txtTacDung);
@@ -141,16 +144,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.pnlThongTin.Controls.Add(this.label25);
             this.pnlThongTin.Controls.Add(this.label24);
             this.pnlThongTin.Controls.Add(this.label23);
-            this.pnlThongTin.Controls.Add(this.txtPPVoCam);
             this.pnlThongTin.Controls.Add(this.label22);
             this.pnlThongTin.Controls.Add(this.txtTuThe);
             this.pnlThongTin.Controls.Add(this.label21);
-            this.pnlThongTin.Controls.Add(this.txtPPPhauThuat);
             this.pnlThongTin.Controls.Add(this.label20);
-            this.pnlThongTin.Controls.Add(this.txtChuanDoan);
             this.pnlThongTin.Controls.Add(this.label19);
-            this.pnlThongTin.Controls.Add(this.cbbRH);
-            this.pnlThongTin.Controls.Add(this.label18);
             this.pnlThongTin.Controls.Add(this.cbbNhomMau);
             this.pnlThongTin.Controls.Add(this.label17);
             this.pnlThongTin.Controls.Add(this.label16);
@@ -163,7 +161,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.pnlThongTin.Controls.Add(this.label12);
             this.pnlThongTin.Controls.Add(this.txtBuong);
             this.pnlThongTin.Controls.Add(this.label11);
-            this.pnlThongTin.Controls.Add(this.txtKhoa2);
             this.pnlThongTin.Controls.Add(this.label10);
             this.pnlThongTin.Controls.Add(this.cbbGioiTinh);
             this.pnlThongTin.Controls.Add(this.label9);
@@ -171,13 +168,103 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.pnlThongTin.Controls.Add(this.label8);
             this.pnlThongTin.Controls.Add(this.txtTenBenhNhan);
             this.pnlThongTin.Controls.Add(this.label7);
-            this.pnlThongTin.Controls.Add(this.txtKhoa);
             this.pnlThongTin.Controls.Add(this.label5);
             this.pnlThongTin.Font = new System.Drawing.Font("Stop", 8.25F);
             this.pnlThongTin.Location = new System.Drawing.Point(12, 115);
             this.pnlThongTin.Name = "pnlThongTin";
-            this.pnlThongTin.Size = new System.Drawing.Size(1338, 589);
+            this.pnlThongTin.Size = new System.Drawing.Size(1338, 599);
             this.pnlThongTin.TabIndex = 1;
+            // 
+            // cbbPPVoCam
+            // 
+            this.cbbPPVoCam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbPPVoCam.BackColor = System.Drawing.Color.White;
+            this.cbbPPVoCam.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbbPPVoCam.FormattingEnabled = true;
+            this.cbbPPVoCam.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
+            this.cbbPPVoCam.Location = new System.Drawing.Point(255, 410);
+            this.cbbPPVoCam.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.cbbPPVoCam.Name = "cbbPPVoCam";
+            this.cbbPPVoCam.Size = new System.Drawing.Size(1075, 33);
+            this.cbbPPVoCam.TabIndex = 51;
+            // 
+            // cbbPPPhauThuat
+            // 
+            this.cbbPPPhauThuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbPPPhauThuat.BackColor = System.Drawing.Color.White;
+            this.cbbPPPhauThuat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbbPPPhauThuat.FormattingEnabled = true;
+            this.cbbPPPhauThuat.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
+            this.cbbPPPhauThuat.Location = new System.Drawing.Point(255, 344);
+            this.cbbPPPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.cbbPPPhauThuat.Name = "cbbPPPhauThuat";
+            this.cbbPPPhauThuat.Size = new System.Drawing.Size(574, 33);
+            this.cbbPPPhauThuat.TabIndex = 50;
+            // 
+            // cbbChuanDoan
+            // 
+            this.cbbChuanDoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbChuanDoan.BackColor = System.Drawing.Color.White;
+            this.cbbChuanDoan.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbbChuanDoan.FormattingEnabled = true;
+            this.cbbChuanDoan.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
+            this.cbbChuanDoan.Location = new System.Drawing.Point(148, 278);
+            this.cbbChuanDoan.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.cbbChuanDoan.Name = "cbbChuanDoan";
+            this.cbbChuanDoan.Size = new System.Drawing.Size(1182, 33);
+            this.cbbChuanDoan.TabIndex = 49;
+            // 
+            // cbbKhoa2
+            // 
+            this.cbbKhoa2.BackColor = System.Drawing.Color.White;
+            this.cbbKhoa2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbbKhoa2.FormattingEnabled = true;
+            this.cbbKhoa2.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
+            this.cbbKhoa2.Location = new System.Drawing.Point(120, 146);
+            this.cbbKhoa2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.cbbKhoa2.Name = "cbbKhoa2";
+            this.cbbKhoa2.Size = new System.Drawing.Size(401, 33);
+            this.cbbKhoa2.TabIndex = 48;
+            // 
+            // cbbKhoa1
+            // 
+            this.cbbKhoa1.BackColor = System.Drawing.Color.White;
+            this.cbbKhoa1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cbbKhoa1.FormattingEnabled = true;
+            this.cbbKhoa1.Items.AddRange(new object[] {
+            "Nguyễn Văn A",
+            "Nguyễn Văn B",
+            "Nguyễn Văn C",
+            "Nguyễn Văn D",
+            "Trần Thị Hồng A"});
+            this.cbbKhoa1.Location = new System.Drawing.Point(120, 11);
+            this.cbbKhoa1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.cbbKhoa1.Name = "cbbKhoa1";
+            this.cbbKhoa1.Size = new System.Drawing.Size(401, 33);
+            this.cbbKhoa1.TabIndex = 47;
             // 
             // cbbBSGayMe
             // 
@@ -195,7 +282,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSGayMe.Location = new System.Drawing.Point(873, 468);
             this.cbbBSGayMe.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSGayMe.Name = "cbbBSGayMe";
-            this.cbbBSGayMe.Size = new System.Drawing.Size(457, 39);
+            this.cbbBSGayMe.Size = new System.Drawing.Size(457, 33);
             this.cbbBSGayMe.TabIndex = 35;
             // 
             // cbbBSPhauThuat
@@ -212,7 +299,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbBSPhauThuat.Location = new System.Drawing.Point(219, 468);
             this.cbbBSPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbBSPhauThuat.Name = "cbbBSPhauThuat";
-            this.cbbBSPhauThuat.Size = new System.Drawing.Size(490, 39);
+            this.cbbBSPhauThuat.Size = new System.Drawing.Size(490, 33);
             this.cbbBSPhauThuat.TabIndex = 33;
             // 
             // txtTacDung
@@ -341,22 +428,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label23.Location = new System.Drawing.Point(7, 468);
             this.label23.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(206, 46);
+            this.label23.Size = new System.Drawing.Size(206, 33);
             this.label23.TabIndex = 34;
             this.label23.Text = "- BS Phẫu thuật:";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtPPVoCam
-            // 
-            this.txtPPVoCam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPPVoCam.BackColor = System.Drawing.Color.Transparent;
-            this.txtPPVoCam.Location = new System.Drawing.Point(329, 402);
-            this.txtPPVoCam.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.txtPPVoCam.Name = "txtPPVoCam";
-            this.txtPPVoCam.Size = new System.Drawing.Size(1001, 46);
-            this.txtPPVoCam.TabIndex = 32;
-            this.txtPPVoCam.textEdt = null;
             // 
             // label22
             // 
@@ -364,7 +439,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label22.Location = new System.Drawing.Point(7, 402);
             this.label22.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(316, 46);
+            this.label22.Size = new System.Drawing.Size(242, 46);
             this.label22.TabIndex = 31;
             this.label22.Text = "- Phương pháp vô cảm:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,38 +467,16 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label21.Text = "Tư thế:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtPPPhauThuat
-            // 
-            this.txtPPPhauThuat.BackColor = System.Drawing.Color.Transparent;
-            this.txtPPPhauThuat.Location = new System.Drawing.Point(329, 336);
-            this.txtPPPhauThuat.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.txtPPPhauThuat.Name = "txtPPPhauThuat";
-            this.txtPPPhauThuat.Size = new System.Drawing.Size(496, 46);
-            this.txtPPPhauThuat.TabIndex = 28;
-            this.txtPPPhauThuat.textEdt = null;
-            // 
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(7, 336);
             this.label20.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(316, 46);
+            this.label20.Size = new System.Drawing.Size(242, 46);
             this.label20.TabIndex = 27;
             this.label20.Text = "- Phương pháp phẫu thuật:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtChuanDoan
-            // 
-            this.txtChuanDoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtChuanDoan.BackColor = System.Drawing.Color.Transparent;
-            this.txtChuanDoan.Location = new System.Drawing.Point(188, 270);
-            this.txtChuanDoan.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.txtChuanDoan.Name = "txtChuanDoan";
-            this.txtChuanDoan.Size = new System.Drawing.Size(1142, 46);
-            this.txtChuanDoan.TabIndex = 26;
-            this.txtChuanDoan.textEdt = null;
             // 
             // label19
             // 
@@ -431,38 +484,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label19.Location = new System.Drawing.Point(7, 270);
             this.label19.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(175, 46);
+            this.label19.Size = new System.Drawing.Size(135, 46);
             this.label19.TabIndex = 25;
             this.label19.Text = "- Chuẩn đoán:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cbbRH
-            // 
-            this.cbbRH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbRH.BackColor = System.Drawing.Color.White;
-            this.cbbRH.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cbbRH.FormattingEnabled = true;
-            this.cbbRH.Items.AddRange(new object[] {
-            "",
-            "+",
-            "-"});
-            this.cbbRH.Location = new System.Drawing.Point(831, 209);
-            this.cbbRH.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.cbbRH.Name = "cbbRH";
-            this.cbbRH.Size = new System.Drawing.Size(121, 39);
-            this.cbbRH.TabIndex = 24;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(757, 204);
-            this.label18.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 46);
-            this.label18.TabIndex = 23;
-            this.label18.Text = "RH:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cbbNhomMau
             // 
@@ -475,17 +500,17 @@ namespace Report_WinForm_Phiếu_11_9_2023
             "B",
             "O",
             "AB"});
-            this.cbbNhomMau.Location = new System.Drawing.Point(630, 209);
+            this.cbbNhomMau.Location = new System.Drawing.Point(865, 215);
             this.cbbNhomMau.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbNhomMau.Name = "cbbNhomMau";
-            this.cbbNhomMau.Size = new System.Drawing.Size(121, 39);
+            this.cbbNhomMau.Size = new System.Drawing.Size(121, 33);
             this.cbbNhomMau.TabIndex = 22;
             // 
             // label17
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(479, 204);
+            this.label17.Location = new System.Drawing.Point(714, 205);
             this.label17.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(145, 46);
@@ -520,10 +545,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(958, 207);
+            this.label15.Location = new System.Drawing.Point(992, 207);
             this.label15.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(145, 46);
+            this.label15.Size = new System.Drawing.Size(111, 46);
             this.label15.TabIndex = 18;
             this.label15.Text = "Chiều cao:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -609,18 +634,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label11.Text = "Buồng:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtKhoa2
-            // 
-            this.txtKhoa2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKhoa2.BackColor = System.Drawing.Color.Transparent;
-            this.txtKhoa2.Location = new System.Drawing.Point(120, 138);
-            this.txtKhoa2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.txtKhoa2.Name = "txtKhoa2";
-            this.txtKhoa2.Size = new System.Drawing.Size(401, 46);
-            this.txtKhoa2.TabIndex = 10;
-            this.txtKhoa2.textEdt = null;
-            // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -644,7 +657,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbbGioiTinh.Location = new System.Drawing.Point(1209, 77);
             this.cbbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
-            this.cbbGioiTinh.Size = new System.Drawing.Size(121, 39);
+            this.cbbGioiTinh.Size = new System.Drawing.Size(121, 33);
             this.cbbGioiTinh.TabIndex = 8;
             // 
             // label9
@@ -705,21 +718,12 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label7.Text = "- Họ tên người bệnh:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtKhoa
-            // 
-            this.txtKhoa.BackColor = System.Drawing.Color.Transparent;
-            this.txtKhoa.Location = new System.Drawing.Point(105, 3);
-            this.txtKhoa.Name = "txtKhoa";
-            this.txtKhoa.Size = new System.Drawing.Size(420, 46);
-            this.txtKhoa.TabIndex = 2;
-            this.txtKhoa.textEdt = null;
-            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(7, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 46);
+            this.label5.Size = new System.Drawing.Size(107, 46);
             this.label5.TabIndex = 1;
             this.label5.Text = "Khoa:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -780,6 +784,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtSoVaoVien.BackColor = System.Drawing.Color.Transparent;
             this.txtSoVaoVien.Location = new System.Drawing.Point(164, 44);
+            this.txtSoVaoVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSoVaoVien.Name = "txtSoVaoVien";
             this.txtSoVaoVien.Size = new System.Drawing.Size(221, 44);
             this.txtSoVaoVien.TabIndex = 2;
@@ -933,7 +938,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1364, 42);
+            this.barDockControlTop.Size = new System.Drawing.Size(1364, 32);
             // 
             // barDockControlBottom
             // 
@@ -947,17 +952,17 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 42);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 32);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 712);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 722);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1364, 42);
+            this.barDockControlRight.Location = new System.Drawing.Point(1364, 32);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 712);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 722);
             // 
             // barButtonItem5
             // 
@@ -1022,7 +1027,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnlThongTin;
         private System.Windows.Forms.Label label5;
-        private CustomControl.TextboxCustom txtKhoa;
         private CustomControl.TextboxCustom txtSoVaoVien;
         private CustomControl.TextboxCustom txtTenBenhNhan;
         private System.Windows.Forms.Label label7;
@@ -1030,7 +1034,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label label9;
         private CustomControl.TextboxCustom txtTuoi;
-        private CustomControl.TextboxCustom txtKhoa2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private CustomControl.TextboxCustom txtBuong;
@@ -1040,21 +1043,16 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private CustomControl.TextboxCustom txtCanNang;
         private System.Windows.Forms.Label label13;
         private CustomControl.TextboxCustom txtGiuong;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox cbbNhomMau;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private CustomControl.TextboxCustom txtChieuCao;
-        private System.Windows.Forms.ComboBox cbbRH;
-        private CustomControl.TextboxCustom txtChuanDoan;
         private System.Windows.Forms.Label label19;
-        private CustomControl.TextboxCustom txtPPPhauThuat;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private CustomControl.TextboxCustom txtTuThe;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private CustomControl.TextboxCustom txtPPVoCam;
         private System.Windows.Forms.Label label22;
         private CustomControl.TextboxCustom txtTacDung;
         private System.Windows.Forms.Label label29;
@@ -1070,5 +1068,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private System.Windows.Forms.ComboBox cbbBSGayMe;
         private System.Windows.Forms.ComboBox cbbBSPhauThuat;
+        private System.Windows.Forms.ComboBox cbbKhoa2;
+        private System.Windows.Forms.ComboBox cbbKhoa1;
+        private System.Windows.Forms.ComboBox cbbPPVoCam;
+        private System.Windows.Forms.ComboBox cbbPPPhauThuat;
+        private System.Windows.Forms.ComboBox cbbChuanDoan;
     }
 }

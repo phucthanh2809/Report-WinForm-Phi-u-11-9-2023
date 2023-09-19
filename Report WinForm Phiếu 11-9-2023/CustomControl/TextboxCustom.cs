@@ -25,5 +25,13 @@ namespace Report_WinForm_Phiếu_11_9_2023.CustomControl
         {
             textEdt = textBox2.Text;
         }
+        public event KeyPressEventHandler TextBoxKeyPress;
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxKeyPress?.Invoke(sender, e);
+        }
+
+
     }
 }

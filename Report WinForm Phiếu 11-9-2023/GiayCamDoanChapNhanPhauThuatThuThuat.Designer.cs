@@ -214,7 +214,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cTrangThai,
             this.cDongYPhauThuat,
             this.cKhongDongYPhauThuat});
-            this.dgrBenhNhanKhamBenh.Location = new System.Drawing.Point(69, 119);
+            this.dgrBenhNhanKhamBenh.Location = new System.Drawing.Point(677, 282);
             this.dgrBenhNhanKhamBenh.Name = "dgrBenhNhanKhamBenh";
             this.dgrBenhNhanKhamBenh.Size = new System.Drawing.Size(428, 150);
             this.dgrBenhNhanKhamBenh.TabIndex = 70;
@@ -359,7 +359,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboChuanDoan.LinkedTextBox = this.linktxtChuanDoan;
             this.cboChuanDoan.Location = new System.Drawing.Point(261, 90);
             this.cboChuanDoan.Name = "cboChuanDoan";
-            this.cboChuanDoan.Size = new System.Drawing.Size(843, 30);
+            this.cboChuanDoan.Size = new System.Drawing.Size(848, 30);
             this.cboChuanDoan.TabIndex = 67;
             // 
             // cboHoTenBS
@@ -399,7 +399,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboDanhXungGD.LinkedTextBox = null;
             this.cboDanhXungGD.Location = new System.Drawing.Point(322, 416);
             this.cboDanhXungGD.Name = "cboDanhXungGD";
-            this.cboDanhXungGD.Size = new System.Drawing.Size(783, 30);
+            this.cboDanhXungGD.Size = new System.Drawing.Size(788, 30);
             this.cboDanhXungGD.TabIndex = 65;
             // 
             // cbo_Khoa
@@ -420,7 +420,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbo_Khoa.LinkedTextBox = null;
             this.cbo_Khoa.Location = new System.Drawing.Point(322, 479);
             this.cbo_Khoa.Name = "cbo_Khoa";
-            this.cbo_Khoa.Size = new System.Drawing.Size(782, 30);
+            this.cbo_Khoa.Size = new System.Drawing.Size(787, 30);
             this.cbo_Khoa.TabIndex = 64;
             // 
             // cboTrangThai
@@ -438,7 +438,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboTrangThai.FormattingEnabled = true;
             this.cboTrangThai.LinkedColumnIndex = 0;
             this.cboTrangThai.LinkedTextBox = null;
-            this.cboTrangThai.Location = new System.Drawing.Point(566, 512);
+            this.cboTrangThai.Location = new System.Drawing.Point(571, 512);
             this.cboTrangThai.Name = "cboTrangThai";
             this.cboTrangThai.Size = new System.Drawing.Size(538, 30);
             this.cboTrangThai.TabIndex = 63;
@@ -458,7 +458,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboQuocTich.FormattingEnabled = true;
             this.cboQuocTich.LinkedColumnIndex = 0;
             this.cboQuocTich.LinkedTextBox = null;
-            this.cboQuocTich.Location = new System.Drawing.Point(819, 316);
+            this.cboQuocTich.Location = new System.Drawing.Point(824, 316);
             this.cboQuocTich.Name = "cboQuocTich";
             this.cboQuocTich.Size = new System.Drawing.Size(286, 30);
             this.cboQuocTich.TabIndex = 62;
@@ -491,7 +491,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cChuanDoan,
             this.cPhuongPhap,
             this.cBienChung});
-            this.dgrBacSi.Location = new System.Drawing.Point(541, 43);
+            this.dgrBacSi.Location = new System.Drawing.Point(806, 155);
             this.dgrBacSi.Name = "dgrBacSi";
             this.dgrBacSi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgrBacSi.Size = new System.Drawing.Size(315, 150);
@@ -595,7 +595,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.chkNu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkNu.AutoSize = true;
             this.chkNu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNu.Location = new System.Drawing.Point(1052, 282);
+            this.chkNu.Location = new System.Drawing.Point(1057, 282);
             this.chkNu.Name = "chkNu";
             this.chkNu.Size = new System.Drawing.Size(52, 25);
             this.chkNu.TabIndex = 48;
@@ -607,7 +607,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.chkNam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkNam.AutoSize = true;
             this.chkNam.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNam.Location = new System.Drawing.Point(980, 282);
+            this.chkNam.Location = new System.Drawing.Point(985, 282);
             this.chkNam.Name = "chkNam";
             this.chkNam.Size = new System.Drawing.Size(64, 25);
             this.chkNam.TabIndex = 47;
@@ -622,7 +622,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtHoTenDanhXung.Location = new System.Drawing.Point(322, 448);
             this.txtHoTenDanhXung.Name = "txtHoTenDanhXung";
             this.txtHoTenDanhXung.ReadOnly = true;
-            this.txtHoTenDanhXung.Size = new System.Drawing.Size(782, 29);
+            this.txtHoTenDanhXung.Size = new System.Drawing.Size(787, 29);
             this.txtHoTenDanhXung.TabIndex = 45;
             this.txtHoTenDanhXung.TabStop = false;
             this.txtHoTenDanhXung.Enter += new System.EventHandler(this.HoTenThanNhan_Enter);
@@ -636,7 +636,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(112, 384);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(992, 29);
+            this.txtDiaChi.Size = new System.Drawing.Size(997, 29);
             this.txtDiaChi.TabIndex = 44;
             this.txtDiaChi.Enter += new System.EventHandler(this.txtDiaChi_Enter);
             this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
@@ -646,7 +646,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtNoiLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoiLamViec.Location = new System.Drawing.Point(819, 350);
+            this.txtNoiLamViec.Location = new System.Drawing.Point(824, 350);
             this.txtNoiLamViec.Name = "txtNoiLamViec";
             this.txtNoiLamViec.Size = new System.Drawing.Size(285, 29);
             this.txtNoiLamViec.TabIndex = 43;
@@ -661,7 +661,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtDanToc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDanToc.Location = new System.Drawing.Point(102, 316);
             this.txtDanToc.Name = "txtDanToc";
-            this.txtDanToc.Size = new System.Drawing.Size(584, 29);
+            this.txtDanToc.Size = new System.Drawing.Size(589, 29);
             this.txtDanToc.TabIndex = 42;
             this.txtDanToc.Enter += new System.EventHandler(this.txtDanToc_Enter);
             this.txtDanToc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDanToc_KeyPress);
@@ -671,7 +671,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtTuoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuoi.Location = new System.Drawing.Point(819, 282);
+            this.txtTuoi.Location = new System.Drawing.Point(824, 282);
             this.txtTuoi.Name = "txtTuoi";
             this.txtTuoi.Size = new System.Drawing.Size(150, 29);
             this.txtTuoi.TabIndex = 41;
@@ -686,7 +686,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtHoTenBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTenBN.Location = new System.Drawing.Point(102, 282);
             this.txtHoTenBN.Name = "txtHoTenBN";
-            this.txtHoTenBN.Size = new System.Drawing.Size(584, 29);
+            this.txtHoTenBN.Size = new System.Drawing.Size(589, 29);
             this.txtHoTenBN.TabIndex = 40;
             this.txtHoTenBN.Enter += new System.EventHandler(this.txtHoTenBN_Enter);
             this.txtHoTenBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTenBN_KeyPress);
@@ -743,7 +743,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(699, 352);
+            this.label28.Location = new System.Drawing.Point(704, 352);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(107, 21);
             this.label28.TabIndex = 35;
@@ -754,7 +754,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(718, 318);
+            this.label29.Location = new System.Drawing.Point(723, 318);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(88, 21);
             this.label29.TabIndex = 34;
@@ -765,7 +765,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(758, 284);
+            this.label30.Location = new System.Drawing.Point(763, 284);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(48, 21);
             this.label30.TabIndex = 33;
@@ -830,7 +830,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtPhuongPhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhuongPhap.Location = new System.Drawing.Point(334, 127);
             this.txtPhuongPhap.Name = "txtPhuongPhap";
-            this.txtPhuongPhap.Size = new System.Drawing.Size(771, 29);
+            this.txtPhuongPhap.Size = new System.Drawing.Size(776, 29);
             this.txtPhuongPhap.TabIndex = 13;
             this.txtPhuongPhap.Enter += new System.EventHandler(this.txtPhuongPhap_Enter);
             this.txtPhuongPhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhuongPhap_KeyPress);
@@ -843,7 +843,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtBienChung.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBienChung.Location = new System.Drawing.Point(245, 162);
             this.txtBienChung.Name = "txtBienChung";
-            this.txtBienChung.Size = new System.Drawing.Size(860, 29);
+            this.txtBienChung.Size = new System.Drawing.Size(865, 29);
             this.txtBienChung.TabIndex = 12;
             this.txtBienChung.Enter += new System.EventHandler(this.txtBienChung_Enter);
             this.txtBienChung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBienChung_KeyPress);
@@ -908,7 +908,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(705, 41);
+            this.label4.Location = new System.Drawing.Point(710, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 21);
             this.label4.TabIndex = 2;
