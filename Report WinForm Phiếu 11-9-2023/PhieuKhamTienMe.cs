@@ -222,12 +222,21 @@ namespace Report_WinForm_Phiếu_11_9_2023
             comm.RunSQL(mconnectstring, msql);
         }
         //Ghi XML
-        private void btnGhiXML_Click(object sender, EventArgs e)
+        //private void btnGhiXML_Click(object sender, EventArgs e)
+        //{
+        //    msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C,[dbo].[tabMaBS] as BS,[dbo].[tabMACHUYENKHOA] AS KHOA,[dbo].[tabCDSPK] AS CHUANDOAN, [dbo].[tabPhuongPhapPhauThuat] AS PHAUTHUAT, [dbo].[tabMABENH] AS BENH, [dbo].[tabDanhMucThuoc] AS THUOC,[dbo].[tabGioiTinh] AS GIOITINH,[dbo].[XN_tabKieuXN] AS XN, [dbo].[tabDichTruyen] AS DICHTRUYEN,[dbo].[tabNhomMau] AS MAU WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien AND C.BSKhamTienMe = BS.MABACSI AND A.Khoa = KHOA.TENTAT AND A.ChuanDoan = CHUANDOAN.MaChanDoan AND A.PhuongPhapPhauThuat = PHAUTHUAT.TenTat AND A.BenhDangDieuTri = BENH.MaBenh AND A.ThuocDangSuDung = THUOC.MaThuoc AND A.GioiTinh = GIOITINH.IDGioiTinh AND B.XNDeNghi = XN.Type AND C.DichTruyen = DICHTRUYEN.MaDichTruyen AND C.ThuocTienMe = THUOC.MaThuoc AND c.NhomMau = mau.MaNhomMau ";
+        //    DataTable tb = comm.GetDataTable(mconnectstring, msql, "PhieuKhamTienMe");
+        //    tb.WriteXmlSchema(@"D:\PhieuKhamTienMe.xsd", true);
+        //    ev.QFrmThongBao("Đã ghi thành công");
+        //}
+
+        //Load
+        private void LoadGridView()
         {
-            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C,[dbo].[tabMaBS] as BS,[dbo].[tabMACHUYENKHOA] AS KHOA,[dbo].[tabCDSPK] AS CHUANDOAN, [dbo].[tabPhuongPhapPhauThuat] AS PHAUTHUAT, [dbo].[tabMABENH] AS BENH, [dbo].[tabDanhMucThuoc] AS THUOC,[dbo].[tabGioiTinh] AS GIOITINH,[dbo].[XN_tabKieuXN] AS XN, [dbo].[tabDichTruyen] AS DICHTRUYEN,[dbo].[tabNhomMau] AS MAU WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien AND C.BSKhamTienMe = BS.MABACSI AND A.Khoa = KHOA.TENTAT AND A.ChuanDoan = CHUANDOAN.MaChanDoan AND A.PhuongPhapPhauThuat = PHAUTHUAT.TenTat AND A.BenhDangDieuTri = BENH.MaBenh AND A.ThuocDangSuDung = THUOC.MaThuoc AND A.GioiTinh = GIOITINH.IDGioiTinh AND B.XNDeNghi = XN.Type AND C.DichTruyen = DICHTRUYEN.MaDichTruyen AND C.ThuocTienMe = THUOC.MaThuoc AND c.NhomMau = mau.MaNhomMau ";
-            DataTable tb = comm.GetDataTable(mconnectstring, msql, "PhieuKhamTienMe");
-            tb.WriteXmlSchema(@"D:\PhieuKhamTienMe.xsd", true);
-            ev.QFrmThongBao("Đã ghi thành công");
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabGioiTinh] as B,[dbo].[tabMACHUYENKHOA] as C where A.GioiTinh = B.IDGioiTinh AND A.Khoa=C.TENTAT ";
+            DataTable thongtinbn = comm.GetDataTable(mconnectstring, msql, "thongtinbn");
+            dgrThongTinBN.AutoGenerateColumns = false;
+            dgrThongTinBN.DataSource = thongtinbn;
         }
         private void txtHoTen_Enter(object sender, EventArgs e)
         {
@@ -614,6 +623,42 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             txtXNCanLuuY.xActive = false;
             ev.Qtxt_Leave(sender, e);
+        }
+
+        private void DanhSachBN_Click(object sender, EventArgs e)
+        {
+            LoadGridView();
+            dgrThongTinBN.Visible = true;
+        }
+
+        private void dgrThongTinBN_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            txtHoTen.Text = dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString();
+            txtSoVaoVien.Text = dgrThongTinBN.CurrentRow.Cells["cSoVaoVien"].Value.ToString();
+            dtNgaySinh.Text = dgrThongTinBN.CurrentRow.Cells["cNgaySinh"].Value.ToString();
+            dtNgayNhapVien.Text = dgrThongTinBN.CurrentRow.Cells["cNgayNhapVien"].Value.ToString();
+            txtSoHoSo.Text = dgrThongTinBN.CurrentRow.Cells["cMaHoSo"].Value.ToString();
+            cboKhoa.Text = String.Empty;
+            cboKhoa.SelectedText = dgrThongTinBN.CurrentRow.Cells["cKhoa"].Value.ToString();
+            cboGioiTinh.Text = String.Empty;
+            cboGioiTinh.SelectedText = dgrThongTinBN.CurrentRow.Cells["cGioiTinh"].Value.ToString();
+            if (dgrThongTinBN["cxoa", e.RowIndex] == dgrThongTinBN.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn xóa thông tin phiếu khám của Bệnh Nhân " + dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString() + " này không ?"))
+                {
+                    XoaPhieuKhamLamSang();
+                    XoaPhieuKhamTienMe();
+                    ev.QFrmThongBao("Đã xóa phiếu khám thành công!");
+                    dgrThongTinBN.Visible = false;
+                }
+            }
+            else
+            dgrThongTinBN.Visible = false;
+        }
+
+        private void dgrThongTinBN_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            ev.Qdgr_RowPostPaint(sender, e, dgrThongTinBN);
         }
     }
 }

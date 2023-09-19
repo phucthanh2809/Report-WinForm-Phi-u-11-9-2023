@@ -32,13 +32,13 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panelTong = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnGhiXML = new System.Windows.Forms.Button();
             this.txtIn = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.cboNhomMau = new ControlProject1510.ComboBoxSearch();
             this.cboBSKhamTienMe = new ControlProject1510.ComboBoxSearch();
             this.label36 = new System.Windows.Forms.Label();
             this.txtKhac = new ControlProject1510.XFilteg();
@@ -80,6 +80,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.chkMeNKQ = new System.Windows.Forms.CheckBox();
             this.label74 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtXNCanLuuY = new ControlProject1510.XFilteg();
             this.cboXNDeNghi = new ControlProject1510.ComboBoxSearch();
             this.txtTimMachBatThuong = new ControlProject1510.XFilteg();
             this.chkASAIII = new System.Windows.Forms.CheckBox();
@@ -132,6 +133,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgrThongTinBN = new System.Windows.Forms.DataGridView();
             this.cboThuocDangSuDung = new ControlProject1510.ComboBoxSearch();
             this.cboBenhDangDieuTri = new ControlProject1510.ComboBoxSearch();
             this.chkTe = new System.Windows.Forms.CheckBox();
@@ -153,6 +155,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label19 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.pnHanhChinh = new System.Windows.Forms.Panel();
+            this.DanhSachBN = new System.Windows.Forms.Button();
             this.cboGioiTinh = new ControlProject1510.ComboBoxSearch();
             this.cboKhoa = new ControlProject1510.ComboBoxSearch();
             this.cboPPPT = new ControlProject1510.ComboBoxSearch();
@@ -177,8 +180,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtXNCanLuuY = new ControlProject1510.XFilteg();
-            this.cboNhomMau = new ControlProject1510.ComboBoxSearch();
+            this.cSoVaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNgayNhapVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMaHoSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cXoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelTong.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -187,6 +196,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             ((System.ComponentModel.ISupportInitialize)(this.nmNhinSuaTu)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrThongTinBN)).BeginInit();
             this.pnHanhChinh.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -218,7 +228,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.btnGhiXML);
             this.panel7.Controls.Add(this.txtIn);
             this.panel7.Controls.Add(this.btnLuu);
             this.panel7.Controls.Add(this.btnSua);
@@ -229,18 +238,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1333, 52);
             this.panel7.TabIndex = 34;
-            // 
-            // btnGhiXML
-            // 
-            this.btnGhiXML.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGhiXML.Location = new System.Drawing.Point(739, 5);
-            this.btnGhiXML.Name = "btnGhiXML";
-            this.btnGhiXML.Size = new System.Drawing.Size(92, 42);
-            this.btnGhiXML.TabIndex = 5;
-            this.btnGhiXML.Text = "GhiXML";
-            this.btnGhiXML.UseVisualStyleBackColor = true;
-            this.btnGhiXML.Click += new System.EventHandler(this.btnGhiXML_Click);
             // 
             // txtIn
             // 
@@ -348,8 +345,26 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel6.Controls.Add(this.label74);
             this.panel6.Location = new System.Drawing.Point(0, 806);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1338, 416);
+            this.panel6.Size = new System.Drawing.Size(1333, 416);
             this.panel6.TabIndex = 33;
+            // 
+            // cboNhomMau
+            // 
+            this.cboNhomMau.AutoComplete = false;
+            this.cboNhomMau.AutoDropdown = false;
+            this.cboNhomMau.BackColorEven = System.Drawing.Color.White;
+            this.cboNhomMau.BackColorOdd = System.Drawing.Color.White;
+            this.cboNhomMau.ColumnNames = "TenNhomMau";
+            this.cboNhomMau.ColumnWidthDefault = 100;
+            this.cboNhomMau.ColumnWidths = "";
+            this.cboNhomMau.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboNhomMau.FormattingEnabled = true;
+            this.cboNhomMau.LinkedColumnIndex = 0;
+            this.cboNhomMau.LinkedTextBox = null;
+            this.cboNhomMau.Location = new System.Drawing.Point(346, 303);
+            this.cboNhomMau.Name = "cboNhomMau";
+            this.cboNhomMau.Size = new System.Drawing.Size(221, 33);
+            this.cboNhomMau.TabIndex = 113;
             // 
             // cboBSKhamTienMe
             // 
@@ -368,7 +383,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboBSKhamTienMe.LinkedTextBox = null;
             this.cboBSKhamTienMe.Location = new System.Drawing.Point(190, 377);
             this.cboBSKhamTienMe.Name = "cboBSKhamTienMe";
-            this.cboBSKhamTienMe.Size = new System.Drawing.Size(1140, 33);
+            this.cboBSKhamTienMe.Size = new System.Drawing.Size(1135, 33);
             this.cboBSKhamTienMe.TabIndex = 82;
             this.cboBSKhamTienMe.Enter += new System.EventHandler(this.cboBSKhamTienMe_Enter);
             this.cboBSKhamTienMe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboBSKhamTienMe_KeyPress);
@@ -391,7 +406,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKhac.Location = new System.Drawing.Point(77, 340);
             this.txtKhac.Name = "txtKhac";
-            this.txtKhac.Size = new System.Drawing.Size(1253, 32);
+            this.txtKhac.Size = new System.Drawing.Size(1248, 32);
             this.txtKhac.TabIndex = 81;
             this.txtKhac.xCoTimMoRong = false;
             this.txtKhac.xDataGrid = null;
@@ -428,7 +443,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboThuocTienMe.LinkedTextBox = null;
             this.cboThuocTienMe.Location = new System.Drawing.Point(150, 191);
             this.cboThuocTienMe.Name = "cboThuocTienMe";
-            this.cboThuocTienMe.Size = new System.Drawing.Size(1180, 33);
+            this.cboThuocTienMe.Size = new System.Drawing.Size(1175, 33);
             this.cboThuocTienMe.TabIndex = 74;
             this.cboThuocTienMe.Enter += new System.EventHandler(this.cboThuocTienMe_Enter);
             this.cboThuocTienMe.Leave += new System.EventHandler(this.cboThuocTienMe_Leave);
@@ -450,7 +465,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboDichTruyen.LinkedTextBox = null;
             this.cboDichTruyen.Location = new System.Drawing.Point(150, 153);
             this.cboDichTruyen.Name = "cboDichTruyen";
-            this.cboDichTruyen.Size = new System.Drawing.Size(1180, 33);
+            this.cboDichTruyen.Size = new System.Drawing.Size(1175, 33);
             this.cboDichTruyen.TabIndex = 73;
             this.cboDichTruyen.Enter += new System.EventHandler(this.cboDichTruyen_Enter);
             this.cboDichTruyen.Leave += new System.EventHandler(this.cboDichTruyen_Leave);
@@ -468,7 +483,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtYLenhKhac.Location = new System.Drawing.Point(150, 229);
             this.txtYLenhKhac.Name = "txtYLenhKhac";
-            this.txtYLenhKhac.Size = new System.Drawing.Size(1180, 32);
+            this.txtYLenhKhac.Size = new System.Drawing.Size(1175, 32);
             this.txtYLenhKhac.TabIndex = 75;
             this.txtYLenhKhac.xCoTimMoRong = false;
             this.txtYLenhKhac.xDataGrid = null;
@@ -877,6 +892,23 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1333, 482);
             this.panel4.TabIndex = 31;
+            // 
+            // txtXNCanLuuY
+            // 
+            this.txtXNCanLuuY.Location = new System.Drawing.Point(205, 355);
+            this.txtXNCanLuuY.Name = "txtXNCanLuuY";
+            this.txtXNCanLuuY.Size = new System.Drawing.Size(1125, 32);
+            this.txtXNCanLuuY.TabIndex = 82;
+            this.txtXNCanLuuY.xCoTimMoRong = false;
+            this.txtXNCanLuuY.xDataGrid = null;
+            this.txtXNCanLuuY.xField_Key = "";
+            this.txtXNCanLuuY.xKeep_Old_Value = false;
+            this.txtXNCanLuuY.xTimChinhXac = false;
+            this.txtXNCanLuuY.xTimMoRong = "";
+            this.txtXNCanLuuY.xTimTrenField = null;
+            this.txtXNCanLuuY.Enter += new System.EventHandler(this.txtXNCanLuuY_Enter);
+            this.txtXNCanLuuY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtXNCanLuuY_KeyPress);
+            this.txtXNCanLuuY.Leave += new System.EventHandler(this.txtXNCanLuuY_Leave);
             // 
             // cboXNDeNghi
             // 
@@ -1467,6 +1499,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dgrThongTinBN);
             this.panel2.Controls.Add(this.cboThuocDangSuDung);
             this.panel2.Controls.Add(this.cboBenhDangDieuTri);
             this.panel2.Controls.Add(this.chkTe);
@@ -1491,6 +1524,31 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1333, 324);
             this.panel2.TabIndex = 0;
+            // 
+            // dgrThongTinBN
+            // 
+            this.dgrThongTinBN.AllowUserToAddRows = false;
+            this.dgrThongTinBN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgrThongTinBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrThongTinBN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cSoVaoVien,
+            this.cTenBN,
+            this.cNgaySinh,
+            this.cNgayNhapVien,
+            this.cKhoa,
+            this.cMaHoSo,
+            this.cGioiTinh,
+            this.cXoa});
+            this.dgrThongTinBN.Location = new System.Drawing.Point(4, 8);
+            this.dgrThongTinBN.Name = "dgrThongTinBN";
+            this.dgrThongTinBN.ReadOnly = true;
+            this.dgrThongTinBN.Size = new System.Drawing.Size(1343, 310);
+            this.dgrThongTinBN.TabIndex = 25;
+            this.dgrThongTinBN.Visible = false;
+            this.dgrThongTinBN.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgrThongTinBN_CellMouseClick);
+            this.dgrThongTinBN.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgrThongTinBN_RowPostPaint);
             // 
             // cboThuocDangSuDung
             // 
@@ -1760,6 +1818,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // pnHanhChinh
             // 
+            this.pnHanhChinh.Controls.Add(this.DanhSachBN);
             this.pnHanhChinh.Controls.Add(this.cboGioiTinh);
             this.pnHanhChinh.Controls.Add(this.cboKhoa);
             this.pnHanhChinh.Controls.Add(this.cboPPPT);
@@ -1783,6 +1842,18 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.pnHanhChinh.Name = "pnHanhChinh";
             this.pnHanhChinh.Size = new System.Drawing.Size(1350, 244);
             this.pnHanhChinh.TabIndex = 0;
+            // 
+            // DanhSachBN
+            // 
+            this.DanhSachBN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DanhSachBN.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.DanhSachBN.Location = new System.Drawing.Point(1194, 161);
+            this.DanhSachBN.Name = "DanhSachBN";
+            this.DanhSachBN.Size = new System.Drawing.Size(152, 76);
+            this.DanhSachBN.TabIndex = 87;
+            this.DanhSachBN.Text = "Danh Sách Bệnh Nhân";
+            this.DanhSachBN.UseVisualStyleBackColor = false;
+            this.DanhSachBN.Click += new System.EventHandler(this.DanhSachBN_Click);
             // 
             // cboGioiTinh
             // 
@@ -1844,7 +1915,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboPPPT.LinkedTextBox = null;
             this.cboPPPT.Location = new System.Drawing.Point(251, 204);
             this.cboPPPT.Name = "cboPPPT";
-            this.cboPPPT.Size = new System.Drawing.Size(1095, 33);
+            this.cboPPPT.Size = new System.Drawing.Size(934, 33);
             this.cboPPPT.TabIndex = 9;
             this.cboPPPT.Enter += new System.EventHandler(this.cboPPPT_Enter);
             this.cboPPPT.Leave += new System.EventHandler(this.cboPPPT_Leave);
@@ -1866,7 +1937,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboChuanDoan.LinkedTextBox = null;
             this.cboChuanDoan.Location = new System.Drawing.Point(186, 164);
             this.cboChuanDoan.Name = "cboChuanDoan";
-            this.cboChuanDoan.Size = new System.Drawing.Size(1160, 33);
+            this.cboChuanDoan.Size = new System.Drawing.Size(999, 33);
             this.cboChuanDoan.TabIndex = 8;
             this.cboChuanDoan.Enter += new System.EventHandler(this.cboChuanDoan_Enter);
             this.cboChuanDoan.Leave += new System.EventHandler(this.cboChuanDoan_Leave);
@@ -2115,40 +2186,61 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label3.TabIndex = 5;
             this.label3.Text = "Họ tên bệnh nhân:";
             // 
-            // txtXNCanLuuY
+            // cSoVaoVien
             // 
-            this.txtXNCanLuuY.Location = new System.Drawing.Point(205, 355);
-            this.txtXNCanLuuY.Name = "txtXNCanLuuY";
-            this.txtXNCanLuuY.Size = new System.Drawing.Size(1125, 32);
-            this.txtXNCanLuuY.TabIndex = 82;
-            this.txtXNCanLuuY.xCoTimMoRong = false;
-            this.txtXNCanLuuY.xDataGrid = null;
-            this.txtXNCanLuuY.xField_Key = "";
-            this.txtXNCanLuuY.xKeep_Old_Value = false;
-            this.txtXNCanLuuY.xTimChinhXac = false;
-            this.txtXNCanLuuY.xTimMoRong = "";
-            this.txtXNCanLuuY.xTimTrenField = null;
-            this.txtXNCanLuuY.Enter += new System.EventHandler(this.txtXNCanLuuY_Enter);
-            this.txtXNCanLuuY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtXNCanLuuY_KeyPress);
-            this.txtXNCanLuuY.Leave += new System.EventHandler(this.txtXNCanLuuY_Leave);
+            this.cSoVaoVien.DataPropertyName = "SoVaoVien";
+            this.cSoVaoVien.HeaderText = "Số Vào Viện";
+            this.cSoVaoVien.Name = "cSoVaoVien";
+            this.cSoVaoVien.ReadOnly = true;
             // 
-            // cboNhomMau
+            // cTenBN
             // 
-            this.cboNhomMau.AutoComplete = false;
-            this.cboNhomMau.AutoDropdown = false;
-            this.cboNhomMau.BackColorEven = System.Drawing.Color.White;
-            this.cboNhomMau.BackColorOdd = System.Drawing.Color.White;
-            this.cboNhomMau.ColumnNames = "TenNhomMau";
-            this.cboNhomMau.ColumnWidthDefault = 100;
-            this.cboNhomMau.ColumnWidths = "";
-            this.cboNhomMau.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboNhomMau.FormattingEnabled = true;
-            this.cboNhomMau.LinkedColumnIndex = 0;
-            this.cboNhomMau.LinkedTextBox = null;
-            this.cboNhomMau.Location = new System.Drawing.Point(346, 303);
-            this.cboNhomMau.Name = "cboNhomMau";
-            this.cboNhomMau.Size = new System.Drawing.Size(221, 33);
-            this.cboNhomMau.TabIndex = 113;
+            this.cTenBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cTenBN.DataPropertyName = "HoTen";
+            this.cTenBN.HeaderText = "Họ Tên Bệnh Nhân ";
+            this.cTenBN.Name = "cTenBN";
+            this.cTenBN.ReadOnly = true;
+            // 
+            // cNgaySinh
+            // 
+            this.cNgaySinh.DataPropertyName = "NgaySinh";
+            this.cNgaySinh.HeaderText = "Ngày sinh";
+            this.cNgaySinh.Name = "cNgaySinh";
+            this.cNgaySinh.ReadOnly = true;
+            // 
+            // cNgayNhapVien
+            // 
+            this.cNgayNhapVien.DataPropertyName = "NgayNhapVien";
+            this.cNgayNhapVien.HeaderText = "Ngày Nhập Viện ";
+            this.cNgayNhapVien.Name = "cNgayNhapVien";
+            this.cNgayNhapVien.ReadOnly = true;
+            // 
+            // cKhoa
+            // 
+            this.cKhoa.DataPropertyName = "TENCHUYENKHOA";
+            this.cKhoa.HeaderText = "Khoa";
+            this.cKhoa.Name = "cKhoa";
+            this.cKhoa.ReadOnly = true;
+            // 
+            // cMaHoSo
+            // 
+            this.cMaHoSo.DataPropertyName = "MaHoSo";
+            this.cMaHoSo.HeaderText = "Số Hồ Sơ ";
+            this.cMaHoSo.Name = "cMaHoSo";
+            this.cMaHoSo.ReadOnly = true;
+            // 
+            // cGioiTinh
+            // 
+            this.cGioiTinh.DataPropertyName = "TenGioiTinh";
+            this.cGioiTinh.HeaderText = "Giới Tính";
+            this.cGioiTinh.Name = "cGioiTinh";
+            this.cGioiTinh.ReadOnly = true;
+            // 
+            // cXoa
+            // 
+            this.cXoa.HeaderText = "Xóa";
+            this.cXoa.Name = "cXoa";
+            this.cXoa.ReadOnly = true;
             // 
             // PhieuKhamTienMe
             // 
@@ -2173,6 +2265,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrThongTinBN)).EndInit();
             this.pnHanhChinh.ResumeLayout(false);
             this.pnHanhChinh.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -2205,45 +2298,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private ControlProject1510.XFilteg txtSoHoSo;
         private ControlProject1510.XFilteg txtHoTen;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.CheckBox chkNguaCoKho;
-        private System.Windows.Forms.CheckBox chkCoNgan;
-        private System.Windows.Forms.CheckBox chkCamLem;
-        private System.Windows.Forms.CheckBox chkMiengHaNho;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label33;
-        private ControlProject1510.XFilteg txtCanNang;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label31;
-        private ControlProject1510.XFilteg txtCao;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label29;
-        private ControlProject1510.XFilteg txtT;
-        private System.Windows.Forms.Label label27;
-        private ControlProject1510.XFilteg txtHA;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label26;
-        private ControlProject1510.XFilteg txtMach;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.CheckBox chkChuongTrinh;
-        private System.Windows.Forms.CheckBox chkBanKhan;
-        private System.Windows.Forms.CheckBox chkCapCuu;
-        private System.Windows.Forms.CheckBox chkTimMachBatThuong;
-        private System.Windows.Forms.CheckBox chkHoHapBT;
-        private System.Windows.Forms.CheckBox chkNoiTietBT;
-        private System.Windows.Forms.CheckBox chkThanKinhBT;
-        private System.Windows.Forms.CheckBox chkCoXuongKhopBT;
-        private System.Windows.Forms.CheckBox chkTimMachBT;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
@@ -2282,18 +2336,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.CheckBox chkMeNMC;
         private System.Windows.Forms.CheckBox chkMeNKQ;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.CheckBox chkASAIII;
-        private System.Windows.Forms.CheckBox chkASAI;
-        private System.Windows.Forms.CheckBox chkASAIV;
-        private System.Windows.Forms.CheckBox chkASAII;
-        private System.Windows.Forms.CheckBox chkMallaIII;
-        private System.Windows.Forms.CheckBox chkMallaI;
-        private System.Windows.Forms.CheckBox chkMallaII;
-        private ControlProject1510.XFilteg txtTimMachBatThuong;
-        private System.Windows.Forms.CheckBox chkMallaIV;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.CheckBox chkRangLungLay;
-        private System.Windows.Forms.CheckBox chkGayXuongHamNiengHam;
         private System.Windows.Forms.NumericUpDown nmNhinSuaTu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox chkTe;
@@ -2320,7 +2362,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private ControlProject1510.ComboBoxSearch cboGioiTinh;
         private ControlProject1510.ComboBoxSearch cboThuocDangSuDung;
         private ControlProject1510.ComboBoxSearch cboBenhDangDieuTri;
-        private ControlProject1510.ComboBoxSearch cboXNDeNghi;
         private ControlProject1510.ComboBoxSearch cboThuocTienMe;
         private ControlProject1510.ComboBoxSearch cboDichTruyen;
         private ControlProject1510.XFilteg txtSoVaoVien;
@@ -2330,8 +2371,69 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private ControlProject1510.XFilteg txtKhac;
         private ControlProject1510.ComboBoxSearch cboBSKhamTienMe;
         private System.Windows.Forms.Button txtIn;
-        private System.Windows.Forms.Button btnGhiXML;
-        private ControlProject1510.XFilteg txtXNCanLuuY;
         private ControlProject1510.ComboBoxSearch cboNhomMau;
+        private System.Windows.Forms.Button DanhSachBN;
+        private System.Windows.Forms.Panel panel4;
+        private ControlProject1510.XFilteg txtXNCanLuuY;
+        private ControlProject1510.ComboBoxSearch cboXNDeNghi;
+        private ControlProject1510.XFilteg txtTimMachBatThuong;
+        private System.Windows.Forms.CheckBox chkASAIII;
+        private System.Windows.Forms.CheckBox chkASAI;
+        private System.Windows.Forms.CheckBox chkASAIV;
+        private System.Windows.Forms.CheckBox chkASAII;
+        private System.Windows.Forms.CheckBox chkMallaIII;
+        private System.Windows.Forms.CheckBox chkMallaI;
+        private System.Windows.Forms.CheckBox chkMallaIV;
+        private System.Windows.Forms.CheckBox chkMallaII;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.CheckBox chkChuongTrinh;
+        private System.Windows.Forms.CheckBox chkBanKhan;
+        private System.Windows.Forms.CheckBox chkCapCuu;
+        private System.Windows.Forms.CheckBox chkTimMachBatThuong;
+        private System.Windows.Forms.CheckBox chkHoHapBT;
+        private System.Windows.Forms.CheckBox chkNoiTietBT;
+        private System.Windows.Forms.CheckBox chkThanKinhBT;
+        private System.Windows.Forms.CheckBox chkCoXuongKhopBT;
+        private System.Windows.Forms.CheckBox chkTimMachBT;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label33;
+        private ControlProject1510.XFilteg txtCanNang;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label31;
+        private ControlProject1510.XFilteg txtCao;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label29;
+        private ControlProject1510.XFilteg txtT;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label27;
+        private ControlProject1510.XFilteg txtHA;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label26;
+        private ControlProject1510.XFilteg txtMach;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.CheckBox chkRangLungLay;
+        private System.Windows.Forms.CheckBox chkNguaCoKho;
+        private System.Windows.Forms.CheckBox chkGayXuongHamNiengHam;
+        private System.Windows.Forms.CheckBox chkCoNgan;
+        private System.Windows.Forms.CheckBox chkCamLem;
+        private System.Windows.Forms.CheckBox chkMiengHaNho;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.DataGridView dgrThongTinBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cSoVaoVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cTenBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNgayNhapVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cKhoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMaHoSo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGioiTinh;
+        private System.Windows.Forms.DataGridViewImageColumn cXoa;
     }
 }
