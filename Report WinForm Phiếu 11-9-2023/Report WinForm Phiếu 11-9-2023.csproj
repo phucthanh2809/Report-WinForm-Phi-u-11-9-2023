@@ -276,12 +276,6 @@
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <Compile Include="RpGiayCamDoanChapNhanGayMe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RpGiayCamDoanChapNhanGayMe.Designer.cs">
-      <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="GiayCamDoanChapNhanGayMeHoiSuc.resx">
       <DependentUpon>GiayCamDoanChapNhanGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,9 +294,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.resx">
       <DependentUpon>Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RpGiayCamDoanChapNhanGayMe.resx">
-      <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Report_PhieuGayMeHoiSuc.resx">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
