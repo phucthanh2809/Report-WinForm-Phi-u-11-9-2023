@@ -21,8 +21,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             InitializeComponent();
             LoadCbo();
+            
         }
         public static string a;
+        public static string b;
         private void LoadCbo()
         {
             //cboChuẩn đoán
@@ -65,14 +67,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboBenhDangDieuTri.ValueMember = "MaBenh";
             cboBenhDangDieuTri.CustomAlignment = new string[] { "l", "l" };
             cboBenhDangDieuTri.CustomColumnStyle = new string[] { "t", "t" };
-            //cboThuocDangSuDung
-            msql = "SELECT * FROM [dbo].[tabDanhMucThuoc]";
-            DataTable Thuoc = comm.GetDataTable(mconnectstring, msql, "tabDanhMucThuoc");
-            cboThuocDangSuDung.DataSource = Thuoc.Copy();
-            cboThuocDangSuDung.DisplayMember = "TenThuoc";
-            cboThuocDangSuDung.ValueMember = "MaThuoc";
-            cboThuocDangSuDung.CustomAlignment = new string[] { "l", "l" };
-            cboThuocDangSuDung.CustomColumnStyle = new string[] { "t", "t" };
+            ////cboThuocDangSuDung
+            //msql = "SELECT * FROM [dbo].[tabDanhMucThuoc]";
+            //DataTable Thuoc = comm.GetDataTable(mconnectstring, msql, "tabDanhMucThuoc");
+            //cboThuocDangSuDung.DataSource = Thuoc.Copy();
+            //cboThuocDangSuDung.DisplayMember = "TenThuoc";
+            //cboThuocDangSuDung.ValueMember = "MaThuoc";
+            //cboThuocDangSuDung.CustomAlignment = new string[] { "l", "l" };
+            //cboThuocDangSuDung.CustomColumnStyle = new string[] { "t", "t" };
             //cboXNDeNghi
             msql = "SELECT * FROM [dbo].[XN_tabKieuXN]";
             DataTable XN = comm.GetDataTable(mconnectstring, msql, "tabDanhMucThuoc");
@@ -90,6 +92,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboDichTruyen.CustomAlignment = new string[] { "l", "l" };
             cboDichTruyen.CustomColumnStyle = new string[] { "t", "t" };
             //cboThuocTienMe
+            msql = "SELECT * FROM [dbo].[tabDanhMucThuoc]";
+            DataTable Thuoc = comm.GetDataTable(mconnectstring, msql, "tabDanhMucThuoc");
             cboThuocTienMe.DataSource = Thuoc.Copy();
             cboThuocTienMe.DisplayMember = "TenThuoc";
             cboThuocTienMe.ValueMember = "MaThuoc";
@@ -113,36 +117,119 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboNhomMau.CustomColumnStyle = new string[] { "t", "t" };
 
         }
+        private void ResetForm()
+        {
+            // Clear textboxes
+            txtHoTen.Text = string.Empty;
+            txtSoVaoVien.Text = string.Empty;
+            txtSoHoSo.Text = string.Empty;
+            txtYLenhKhac.Text = string.Empty;
+            txtHCL.Text = string.Empty;
+            txtKhac.Text = string.Empty;
+            txtXNCanLuuY.Text = string.Empty;
+            txtMach.Text = string.Empty;
+            txtHA.Text = string.Empty;
+            txtT.Text = string.Empty;
+            txtCao.Text = string.Empty;
+            txtCanNang.Text = string.Empty;
+            txtTimMachBatThuong.Text = string.Empty;
+            txtXNCanLuuY.Text = string.Empty;
+            txtGiaDinh.Text = string.Empty;
+            txtSanKhoa.Text = string.Empty;
+            txtDiUng.Text = string.Empty;
+            txtTaiBien.Text = string.Empty;
+
+            // Uncheck checkboxes
+            chkDiUng.Checked = false;
+            chkHenSuyen.Checked = false;
+            chkBenhLyDongCamMau.Checked = false;
+            chkPhauThuat.Checked = false;
+            chkMe.Checked = false;
+            chkTe.Checked = false;
+            chkTaiBien.Checked = false;
+            chkMiengHaNho.Checked = false;
+            chkCamLem.Checked = false;
+            chkCoNgan.Checked = false;
+            chkNguaCoKho.Checked = false;
+            chkGayXuongHamNiengHam.Checked = false;
+            chkRangLungLay.Checked = false;
+            chkMallaI.Checked = false;
+            chkMallaII.Checked = false;
+            chkMallaIII.Checked = false;
+            chkMallaIV.Checked = false;
+            chkTimMachBT.Checked = false;
+            chkTimMachBatThuong.Checked = false;
+            chkHoHapBT.Checked = false;
+            chkThanKinhBT.Checked = false;
+            chkNoiTietBT.Checked = false;
+            chkCoXuongKhopBT.Checked = false;
+            chkCapCuu.Checked = false;
+            chkBanKhan.Checked = false;
+            chkASAI.Checked = false;
+            chkASAII.Checked = false;
+            chkASAIII.Checked = false;
+            chkASAIV.Checked = false;
+            chkKhaNangTruyenMau.Checked = false;
+            chkMeNKQ.Checked = false;
+            chkMeNMC.Checked = false;
+            chkDatCVP.Checked = false; 
+            chkMeNoiPQ.Checked = false;
+            chkTeXuongCung.Checked = false;
+            chkDoHADMXL.Checked = false;
+            chkMeMaskTQ.Checked = false;
+            chkTeTKVung.Checked = false;
+            chkCEC.Checked = false;
+            chkMeMask.Checked = false;
+            chkTeTaiCho.Checked = false;
+            chkTMHH.Checked = false;
+            chkTeTM.Checked = false;
+            chkNSHH.Checked = false;
+            chkBis.Checked = false;
+            chkTienMe.Checked = false;
+            chkSieuAmTQ.Checked = false;
+            chkDienNao.Checked = false;
+            chkChuongTrinh.Checked = false;
+
+
+            // Reset NumericUpDown control to its minimum value (if applicable)
+            nmNhinSuaTu.Value = nmNhinSuaTu.Minimum;
+            nmUongNuocDuongDen.Value = nmUongNuocDuongDen.Minimum;
+
+            // You can reset other controls as needed
+        }
+
         //Nút thêm
-            private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtHoTen.Text.Trim() != "")
             {
-                if (txtHoTen.Text.Trim() != "" )
+                if (ev.QFrmThongBao_YesNo("Hãy kiểm tra lại thật kĩ các thông tin trước khi lưu nhé! ^-^"))
                 {
-                    if (ev.QFrmThongBao_YesNo("Hãy kiểm tra lại thật kĩ các thông tin trước khi lưu nhé! ^-^"))
+                    if (dtNgaySinh.Value < dtNgayNhapVien.Value)
                     {
-                        if (dtNgaySinh.Value < dtNgayNhapVien.Value)
-                        {
-                            ThemThongTinBN();
-                            ThemThongTinKhamLamSang();
-                            ThemThongTinKhamTienMe();
-                            ev.QFrmThongBao("Đã lưu thành công");
-                        }
-                        else
-                            ev.QFrmThongBaoError("Vui lòng chọn lại Ngày sinh hoặc Ngày nhập viện. Ngày sinh không thể lớn hơn Ngày nhập viện và ngược lại!");
+                        ThemThongTinBN();
+                        ThemThongTinKhamLamSang();
+                        ThemThongTinKhamTienMe();
+                        ev.QFrmThongBao("Đã lưu thành công");
+                        ResetForm();
                     }
                     else
-                        ev.QFrmThongBao("Bạn đã chọn bỏ qua! Vui lòng hãy điền đầy đủ các thông tin và kiểm tra thật kĩ nhé! ^-^");
+                        ev.QFrmThongBaoError("Vui lòng chọn lại Ngày sinh hoặc Ngày nhập viện. Ngày sinh không thể lớn hơn Ngày nhập viện và ngược lại!");
                 }
                 else
-                    ev.QFrmThongBaoError("Vui lòng nhập đầy đủ thông tin");
-                    txtHoTen.Focus();
+                    ev.QFrmThongBao("Bạn đã chọn bỏ qua! Vui lòng hãy điền đầy đủ các thông tin và kiểm tra thật kĩ nhé! ^-^");
             }
+            else
+                ev.QFrmThongBaoError("Vui lòng nhập đầy đủ thông tin");
+            txtHoTen.Focus();
+
+        }
         //Lưu thông tin BN
         private void ThemThongTinBN()
         {
             msql = "INSERT INTO [dbo].[tabThongTinBenhNhan]" +
                 "([SoVaoVien],[HoTen],[NgaySinh],[NgayNhapVien],[Khoa],[MaHoSo],[GioiTinh],[ChuanDoan],[PhuongPhapPhauThuat],[GiaDinh],[SanKhoa],[DiUng],[TenDiUng],[HenSuyen],[BenhLyDongCamMau],[PhauThuat],[Me],[Te],[TaiBien],[TenTaiBien],[BenhDangDieuTri],[ThuocDangSuDung])" +
-                "VALUES (N'" + txtSoVaoVien.Text + "',N'" + txtHoTen.Text + "','" + Convert.ToDateTime(dtNgaySinh.Value).ToString("yyyy-MM-dd") + "','" + Convert.ToDateTime(dtNgayNhapVien.Value).ToString("yyyy-MM-dd") + "',N'" + cboKhoa.SelectedValue + "',N'" + txtSoHoSo.Text + "',N'" + cboGioiTinh.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + cboPPPT.SelectedValue + "',N'" + txtGiaDinh.Text + "',N'" + txtSanKhoa.Text + "','" + chkDiUng.Checked + "',N'" + txtDiUng.Text + "','" + chkHenSuyen.Checked + "','" + chkBenhLyDongCamMau.Checked + "','" + chkPhauThuat.Checked + "','" + chkMe.Checked + "','" + chkTe.Checked + "','" + chkTaiBien.Checked + "',N'" + txtTaiBien.Text + "',N'" + cboBenhDangDieuTri.SelectedValue + "',N'" + cboThuocDangSuDung.SelectedValue + "')";
+                "VALUES (N'" + txtSoVaoVien.Text + "',N'" + txtHoTen.Text + "','" + Convert.ToDateTime(dtNgaySinh.Value).ToString("yyyy-MM-dd") + "','" + Convert.ToDateTime(dtNgayNhapVien.Value).ToString("yyyy-MM-dd") + "',N'" + cboKhoa.SelectedValue + "',N'" + txtSoHoSo.Text + "',N'" + cboGioiTinh.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + cboPPPT.SelectedValue + "',N'" + txtGiaDinh.Text + "',N'" + txtSanKhoa.Text + "','" + chkDiUng.Checked + "',N'" + txtDiUng.Text + "','" + chkHenSuyen.Checked + "','" + chkBenhLyDongCamMau.Checked + "','" + chkPhauThuat.Checked + "','" + chkMe.Checked + "','" + chkTe.Checked + "','" + chkTaiBien.Checked + "',N'" + txtTaiBien.Text + "',N'" + cboBenhDangDieuTri.SelectedValue + "',N'" + txtThuocDangSuDung.Text + "')";
             comm.RunSQL(mconnectstring, msql);
         }
 
@@ -163,15 +250,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             comm.RunSQL(mconnectstring, msql);
         }
         //Nút xóa 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (ev.QFrmThongBao_YesNo("Bạn có chắc chắn muốn xóa thông tin này không??"))
-            {
-                XoaPhieuKhamLamSang();
-                XoaPhieuKhamTienMe();
-                ev.QFrmThongBao("Đã xóa phiếu thành công");
-            }  
-        }
+        
         //Xóa phiếu khám tiền mê
         private void XoaPhieuKhamTienMe()
         {
@@ -185,7 +264,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             comm.RunSQL(mconnectstring, msql);
         }
         //Nút sửa
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnLuuSua_Click(object sender, EventArgs e)
         {
             if (ev.QFrmThongBao_YesNo("Hãy kiểm tra lại thật kĩ các thông tin trước khi sửa nhé! ^-^"))
             {
@@ -193,6 +272,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 SuaThongTinKhamLamSang();
                 SuaThongTinKhamTienMe();
                 ev.QFrmThongBao("Đã sửa phiếu thành công");
+                btnThem.Visible = true;
             }
         }
         //Sửa Thông tin BN 
@@ -200,7 +280,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             msql = "UPDATE[dbo].[tabThongTinBenhNhan]" +
                    "SET [HoTen] = '" + txtHoTen.Text + "',[NgaySinh] = '" + Convert.ToDateTime(dtNgaySinh.Value).ToString("yyyy-MM-dd") + "' ,[NgayNhapVien] = '" + Convert.ToDateTime(dtNgayNhapVien.Value).ToString("yyyy-MM-dd") + "',[Khoa] = N'" + cboKhoa.SelectedValue + "',[MaHoSo] = N'" + txtSoHoSo.Text + "',[GioiTinh] = N'" + cboGioiTinh.SelectedValue + "',[ChuanDoan] = N'" + cboChuanDoan.SelectedValue + "',[PhuongPhapPhauThuat] = N'" + cboPPPT.SelectedValue + "',[GiaDinh] = N'" + txtGiaDinh.Text + "',[SanKhoa] = N'" + txtSanKhoa.Text + "',[DiUng] = '" + chkDiUng.Checked + "',[TenDiUng] = N'" + txtDiUng.Text + "',[HenSuyen] = '" + chkHenSuyen.Checked + "'" +
-                   ",[BenhLyDongCamMau] = '" + chkBenhLyDongCamMau.Checked + "',[PhauThuat] = '" + chkPhauThuat.Checked + "',[Me] = '" + chkMe.Checked + "',[Te] = '" + chkTe.Checked + "',[TaiBien] = '" + chkTaiBien.Checked + "',[TenTaiBien] = N'" + txtTaiBien.Text + "',[BenhDangDieuTri] = N'" + cboBenhDangDieuTri.SelectedValue + "',[ThuocDangSuDung] = N'" + cboThuocDangSuDung.SelectedValue + "' WHERE [SoVaoVien] = '" + txtSoVaoVien.Text + "'";
+                   ",[BenhLyDongCamMau] = '" + chkBenhLyDongCamMau.Checked + "',[PhauThuat] = '" + chkPhauThuat.Checked + "',[Me] = '" + chkMe.Checked + "',[Te] = '" + chkTe.Checked + "',[TaiBien] = '" + chkTaiBien.Checked + "',[TenTaiBien] = N'" + txtTaiBien.Text + "',[BenhDangDieuTri] = N'" + cboBenhDangDieuTri.SelectedValue + "',[ThuocDangSuDung] = N'" + txtThuocDangSuDung.Text + "' WHERE [SoVaoVien] = '" + txtSoVaoVien.Text + "'";
             comm.RunSQL(mconnectstring, msql);
         }
         //Sửa Khám Lâm Sàng 
@@ -231,12 +311,122 @@ namespace Report_WinForm_Phiếu_11_9_2023
         //}
 
         //Load
-        private void LoadGridView()
+        private void LoadGridViewThongTinBN()
         {
             msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabGioiTinh] as B,[dbo].[tabMACHUYENKHOA] as C,[dbo].[tabCDSPK] as D,[dbo].[tabPhuongPhapPhauThuat] as E  where A.GioiTinh = B.IDGioiTinh AND A.Khoa=C.TENTAT AND A.ChuanDoan = D.MaChanDoan AND A.PhuongPhapPhauThuat = E.TenTat";
             DataTable thongtinbn = comm.GetDataTable(mconnectstring, msql, "thongtinbn");
             dgrThongTinBN.AutoGenerateColumns = false;
             dgrThongTinBN.DataSource = thongtinbn;
+
+            //txtHoTen.Text = dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString();
+            //txtSoVaoVien.Text = dgrThongTinBN.CurrentRow.Cells["cSoVaoVien"].Value.ToString();
+            //dtNgaySinh.Text = dgrThongTinBN.CurrentRow.Cells["cNgaySinh"].Value.ToString();
+            //dtNgayNhapVien.Text = dgrThongTinBN.CurrentRow.Cells["cNgayNhapVien"].Value.ToString();
+            //txtSoHoSo.Text = dgrThongTinBN.CurrentRow.Cells["cMaHoSo"].Value.ToString();
+            //cboKhoa.Text = String.Empty;
+            //cboKhoa.SelectedText = dgrThongTinBN.CurrentRow.Cells["cKhoa"].Value.ToString();
+            //cboGioiTinh.Text = String.Empty;
+            //cboGioiTinh.SelectedText = dgrThongTinBN.CurrentRow.Cells["cGioiTinh"].Value.ToString();
+            //cboChuanDoan.Text = String.Empty;
+            //cboChuanDoan.SelectedText = dgrThongTinBN.CurrentRow.Cells["cChuanDoan"].Value.ToString();
+            //cboPPPT.Text = String.Empty;
+            //cboPPPT.SelectedText = dgrThongTinBN.CurrentRow.Cells["cPPPT"].Value.ToString();
+        }
+        private void LoadGridViewThongTinPhieuKham()
+        {
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C,[dbo].[tabMaBS] as BS,[dbo].[tabMACHUYENKHOA] AS KHOA,[dbo].[tabCDSPK] AS CHUANDOAN, [dbo].[tabPhuongPhapPhauThuat] AS PHAUTHUAT, [dbo].[tabMABENH] AS BENH, [dbo].[tabDanhMucThuoc] AS THUOC,[dbo].[tabGioiTinh] AS GIOITINH,[dbo].[XN_tabKieuXN] AS XN, [dbo].[tabDichTruyen] AS DICHTRUYEN,[dbo].[tabNhomMau] AS MAU WHERE A.SoVaoVien = '"+txtTimBN.Text+"' AND A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien AND C.BSKhamTienMe = BS.MABACSI AND A.Khoa = KHOA.TENTAT AND A.ChuanDoan = CHUANDOAN.MaChanDoan AND A.PhuongPhapPhauThuat = PHAUTHUAT.TenTat AND A.BenhDangDieuTri = BENH.MaBenh AND A.GioiTinh = GIOITINH.IDGioiTinh AND B.XNDeNghi = XN.Type AND C.DichTruyen = DICHTRUYEN.MaDichTruyen AND C.ThuocTienMe = THUOC.MaThuoc AND c.NhomMau = mau.MaNhomMau";
+            DataTable thongtinphieukham = comm.GetDataTable(mconnectstring, msql, "thongtinphieukham");
+            dgrPhieuKham.AutoGenerateColumns = false;
+            dgrPhieuKham.DataSource = thongtinphieukham;
+
+            txtHoTen.Text = dgrPhieuKham.CurrentRow.Cells["cHoTen1"].Value.ToString();
+            txtSoVaoVien.Text = dgrPhieuKham.CurrentRow.Cells["cSoVaoVien1"].Value.ToString();
+            dtNgaySinh.Text = dgrPhieuKham.CurrentRow.Cells["cNgaySinh1"].Value.ToString();
+            dtNgayNhapVien.Text = dgrPhieuKham.CurrentRow.Cells["cNgayNhapVien1"].Value.ToString();
+            txtSoHoSo.Text = dgrPhieuKham.CurrentRow.Cells["cSoHoSo"].Value.ToString();
+
+            cboKhoa.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cKhoa1"].Value.ToString();
+
+            cboGioiTinh.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cGioiTinh1"].Value.ToString();
+            cboChuanDoan.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cChuanDoan1"].Value.ToString();
+
+            cboPPPT.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cPPPT1"].Value.ToString();
+
+            txtGiaDinh.Text = dgrPhieuKham.CurrentRow.Cells["cGiaDinh"].Value.ToString();
+            txtSanKhoa.Text = dgrPhieuKham.CurrentRow.Cells["cSanKhoa"].Value.ToString();
+            txtDiUng.Text = dgrPhieuKham.CurrentRow.Cells["cDiUngTen"].Value.ToString();
+            chkDiUng.Checked= bool.Parse(dgrPhieuKham.CurrentRow.Cells["cDiUng"].Value.ToString());
+            chkHenSuyen.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cHen"].Value.ToString());
+            chkBenhLyDongCamMau.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cBenhLyDongCamMau"].Value.ToString());
+            chkPhauThuat.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cPhauThuat"].Value.ToString());
+            chkMe.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMe"].Value.ToString());
+            chkTe.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTe"].Value.ToString());
+            chkTaiBien.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTaiBien"].Value.ToString());
+            txtTaiBien.Text = dgrPhieuKham.CurrentRow.Cells["cTaiBienTen"].Value.ToString();
+
+            cboBenhDangDieuTri.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cBenhDangDieuTri"].Value.ToString();
+            //cboThuocDangSuDung.Text = String.Empty;
+            //cboThuocDangSuDung.SelectedText = dgrPhieuKham.CurrentRow.Cells["cThuocDangSuDung"].Value.ToString();
+            txtThuocDangSuDung.Text = dgrPhieuKham.CurrentRow.Cells["cThuocDangSuDung"].Value.ToString();
+            txtMach.Text = dgrPhieuKham.CurrentRow.Cells["cMach"].Value.ToString();
+            txtHA.Text = dgrPhieuKham.CurrentRow.Cells["cHa"].Value.ToString();
+            txtT.Text = dgrPhieuKham.CurrentRow.Cells["cT"].Value.ToString();
+            txtCao.Text = dgrPhieuKham.CurrentRow.Cells["cCao"].Value.ToString();
+            txtCanNang.Text = dgrPhieuKham.CurrentRow.Cells["cCanNang"].Value.ToString();
+            chkMiengHaNho.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMiengHaNho"].Value.ToString());
+            chkCoNgan.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cCoNgan"].Value.ToString());
+            chkGayXuongHamNiengHam.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cGayXuongHam"].Value.ToString());
+            chkCamLem.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cCamLem"].Value.ToString());
+            chkNguaCoKho.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cNguaCoKho"].Value.ToString());
+            chkRangLungLay.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cRangLungLay"].Value.ToString());
+            chkMallaI.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMallaI"].Value.ToString());
+            chkMallaII.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMallaII"].Value.ToString());
+            chkMallaIII.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMallaIII"].Value.ToString());
+            chkMallaIV.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMallaIV"].Value.ToString());
+            chkTimMachBT.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTimMachBinhThuong"].Value.ToString());
+            chkTimMachBatThuong.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTimMachBatThuong"].Value.ToString());
+            txtTimMachBatThuong.Text = dgrPhieuKham.CurrentRow.Cells["cTimMachBatThuongLiDo"].Value.ToString();
+            chkHoHapBT.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cHoHapBinhThuong"].Value.ToString());
+            chkThanKinhBT.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cThanKinhBinhThuong"].Value.ToString());
+            chkNoiTietBT.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cNoiTiet"].Value.ToString());
+            chkCoXuongKhopBT.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cCoXuongKhop"].Value.ToString());
+            txtXNCanLuuY.Text = dgrPhieuKham.CurrentRow.Cells["cXNLuuY"].Value.ToString();
+            cboXNDeNghi.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cXNDeNghi"].Value.ToString();
+            chkASAI.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cASAI"].Value.ToString());
+            chkASAII.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cASAII"].Value.ToString());
+            chkASAIII.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cASAIII"].Value.ToString());
+            chkASAIV.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cASAIV"].Value.ToString());
+            chkChuongTrinh.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cChuongTrinh"].Value.ToString());
+            chkCapCuu.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cCapCuu"].Value.ToString());
+            chkBanKhan.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cBanKhan"].Value.ToString());
+            chkMeNKQ.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMeNKQ"].Value.ToString());
+            chkMeNMC.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMeNMC"].Value.ToString());
+            chkDatCVP.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cDatCVP"].Value.ToString());
+            chkMeNoiPQ.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMeNoiPQ"].Value.ToString());
+            chkTeXuongCung.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["CTeXuongCung"].Value.ToString());
+            chkDoHADMXL.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cDoHADMXL"].Value.ToString());
+            chkMeMaskTQ.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMeMaskTQ"].Value.ToString());
+            chkTeTKVung.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTeTKVung"].Value.ToString());
+            chkCEC.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cCEC"].Value.ToString());
+            chkMeMask.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cMeMask"].Value.ToString());
+            chkTeTaiCho.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTeTaiCHo"].Value.ToString());
+            chkTMHH.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTMHH"].Value.ToString());
+            chkTeTM.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTeTM"].Value.ToString());
+            chkNSHH.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cNSHH"].Value.ToString());
+            chkBis.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cBis"].Value.ToString());
+            chkTienMe.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cTienMe"].Value.ToString());
+            chkSieuAmTQ.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cSieuAmTQ"].Value.ToString());
+            chkDienNao.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cDienNao"].Value.ToString());
+            cboDichTruyen.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cDichTruyen"].Value.ToString();
+            cboThuocTienMe.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cThuocTienMe"].Value.ToString();
+            txtYLenhKhac.Text = dgrPhieuKham.CurrentRow.Cells["cYLenhKhac"].Value.ToString();
+            nmNhinSuaTu.Text = dgrPhieuKham.CurrentRow.Cells["cNhinSuaTu"].Value.ToString();
+            nmUongNuocDuongDen.Text = dgrPhieuKham.CurrentRow.Cells["cUongNuocDuongDen"].Value.ToString();
+            chkKhaNangTruyenMau.Checked = bool.Parse(dgrPhieuKham.CurrentRow.Cells["cKhaNangTruyenMau"].Value.ToString());
+            cboNhomMau.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cNhomMau"].Value.ToString();
+            txtHCL.Text = dgrPhieuKham.CurrentRow.Cells["cHCL"].Value.ToString();
+            txtKhac.Text = dgrPhieuKham.CurrentRow.Cells["cKHac"].Value.ToString();
+            cboBSKhamTienMe.SelectedValue = dgrPhieuKham.CurrentRow.Cells["cBSTienMe"].Value.ToString();
         }
         private void txtHoTen_Enter(object sender, EventArgs e)
         {
@@ -253,6 +443,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             txtSoVaoVien.xActive = true;
             ev.Qtxt_Enter(sender, e);
+            
         }
         private void txtSoVaoVien_Leave_1(object sender, EventArgs e)
         {
@@ -603,6 +794,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         }
         private void txtIn_Click(object sender, EventArgs e)
         {
+            Print();
+        }
+        private void Print()
+        {
             a = txtSoVaoVien.Text;
             RpPhieuKhamTienMe RPPhieuKhamTienMe = new RpPhieuKhamTienMe();
             RPPhieuKhamTienMe.ShowDialog();
@@ -627,7 +822,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void DanhSachBN_Click(object sender, EventArgs e)
         {
-            LoadGridView();
+            LoadGridViewThongTinBN();
             dgrThongTinBN.Visible = true;
         }
 
@@ -638,10 +833,19 @@ namespace Report_WinForm_Phiếu_11_9_2023
             dtNgaySinh.Text = dgrThongTinBN.CurrentRow.Cells["cNgaySinh"].Value.ToString();
             dtNgayNhapVien.Text = dgrThongTinBN.CurrentRow.Cells["cNgayNhapVien"].Value.ToString();
             txtSoHoSo.Text = dgrThongTinBN.CurrentRow.Cells["cMaHoSo"].Value.ToString();
-            cboKhoa.Text = String.Empty;
-            cboKhoa.SelectedText = dgrThongTinBN.CurrentRow.Cells["cKhoa"].Value.ToString();
-            cboGioiTinh.Text = String.Empty;
-            cboGioiTinh.SelectedText = dgrThongTinBN.CurrentRow.Cells["cGioiTinh"].Value.ToString();
+
+            cboKhoa.SelectedValue = dgrThongTinBN.CurrentRow.Cells["cKhoa"].Value.ToString();
+            cboGioiTinh.SelectedValue = dgrThongTinBN.CurrentRow.Cells["cGioiTinh"].Value.ToString();
+            cboChuanDoan.SelectedValue = dgrThongTinBN.CurrentRow.Cells["cChuanDoan"].Value.ToString();
+            cboPPPT.SelectedValue = dgrThongTinBN.CurrentRow.Cells["cPPPT"].Value.ToString();
+            if (dgrThongTinBN["cSua", e.RowIndex] == dgrThongTinBN.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn sửa thông tin phiếu khám của Bệnh Nhân " + dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString() + " này không ?"))
+                {
+                    btnLuuSua.Visible = true;
+                    btnThem.Visible = false;
+                }
+            }
             if (dgrThongTinBN["cxoa", e.RowIndex] == dgrThongTinBN.CurrentCell)
             {
                 if (ev.QFrmThongBao_YesNo("Bạn có muốn xóa thông tin phiếu khám của Bệnh Nhân " + dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString() + " này không ?"))
@@ -649,7 +853,15 @@ namespace Report_WinForm_Phiếu_11_9_2023
                     XoaPhieuKhamLamSang();
                     XoaPhieuKhamTienMe();
                     ev.QFrmThongBao("Đã xóa phiếu khám thành công!");
-                    dgrThongTinBN.Visible = false;
+                    dgrThongTinBN.Visible = false;  
+                }
+            }
+            if (dgrThongTinBN["cPrint", e.RowIndex] == dgrThongTinBN.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn in phiếu khám của Bệnh Nhân " + dgrThongTinBN.CurrentRow.Cells["cTenBN"].Value.ToString() + " này không ?"))
+                {
+                    
+                    Print();
                 }
             }
             else
@@ -659,6 +871,51 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private void dgrThongTinBN_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             ev.Qdgr_RowPostPaint(sender, e, dgrThongTinBN);
+        }
+
+        private void dgrThongTinBN_MouseLeave(object sender, EventArgs e)
+        {
+            dgrThongTinBN.Visible = false;
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            if (ev.QFrmThongBao_YesNo("Bạn có chắc muốn Reset Phiếu lại không? "))
+            {
+                ResetForm();
+            }
+            else
+                txtHoTen.Focus();
+        }
+        private void txtTimBN_Leave_1(object sender, EventArgs e)
+        {
+            //if (txtHoTen.Text == "")
+            //{
+                
+            //    ev.QFrmThongBao("Không tìm thấy Bệnh Nhân");
+            //}
+            //else
+                LoadGridViewThongTinPhieuKham();
+        }
+
+        private void txtGhiXML_Click(object sender, EventArgs e)
+        {
+            msql = "SELECT * FROM [dbo].[tabThongTinBenhNhan] as A,[dbo].[tabKhamLamSang] as B,[dbo].[tabPhieuKhamTienMe] as C,[dbo].[tabMaBS] as BS,[dbo].[tabMACHUYENKHOA] AS KHOA,[dbo].[tabCDSPK] AS CHUANDOAN, [dbo].[tabPhuongPhapPhauThuat] AS PHAUTHUAT, [dbo].[tabMABENH] AS BENH, [dbo].[tabDanhMucThuoc] AS THUOC,[dbo].[tabGioiTinh] AS GIOITINH,[dbo].[XN_tabKieuXN] AS XN, [dbo].[tabDichTruyen] AS DICHTRUYEN,[dbo].[tabNhomMau] AS MAU WHERE A.SoVaoVien = B.SoVaoVien AND A.SoVaoVien = C.SoVaoVien AND C.BSKhamTienMe = BS.MABACSI AND A.Khoa = KHOA.TENTAT AND A.ChuanDoan = CHUANDOAN.MaChanDoan AND A.PhuongPhapPhauThuat = PHAUTHUAT.TenTat AND A.BenhDangDieuTri = BENH.MaBenh AND A.ThuocDangSuDung = THUOC.MaThuoc AND A.GioiTinh = GIOITINH.IDGioiTinh AND B.XNDeNghi = XN.Type AND C.DichTruyen = DICHTRUYEN.MaDichTruyen AND C.ThuocTienMe = THUOC.MaThuoc AND c.NhomMau = mau.MaNhomMau ";
+            DataTable tb = comm.GetDataTable(mconnectstring, msql, "PhieuKhamTienMe");
+            tb.WriteXmlSchema(@"D:\PhieuKhamTienMe.xsd", true);
+            ev.QFrmThongBao("Đã ghi thành công");
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (ev.QFrmThongBao_YesNo("Hãy kiểm tra lại thật kĩ các thông tin trước khi sửa nhé! ^-^"))
+            {
+                SuaThongTinBN();
+                SuaThongTinKhamLamSang();
+                SuaThongTinKhamTienMe();
+                ev.QFrmThongBao("Đã sửa phiếu thành công");
+                LoadGridViewThongTinPhieuKham();
+            }
         }
     }
 }

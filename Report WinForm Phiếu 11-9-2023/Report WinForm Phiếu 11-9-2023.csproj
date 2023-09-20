@@ -64,41 +64,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BangKiemAnToanTrongPhauThuatThuThuat.cs">
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BangKiemAnToanTrongPhauThuatThuThuat.Designer.cs">
-      <DependentUpon>BangKiemAnToanTrongPhauThuatThuThuat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanGayMeHoiSuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanGayMeHoiSuc.Designer.cs">
-      <DependentUpon>GiayCamDoanChapNhanGayMeHoiSuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
-      <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhieuGayMeHoiSuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuGayMeHoiSuc.Designer.cs">
-      <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.Designer.cs">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
     </Compile>
     <Compile Include="PhieuKhamTienMe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhieuKhamTienMe.Designer.cs">
       <DependentUpon>PhieuKhamTienMe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhieuThamKhaoBNTruocKhiGayMe-GiaiPhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuThamKhaoBNTruocKhiGayMe-GiaiPhau.Designer.cs">
-      <DependentUpon>PhieuThamKhaoBNTruocKhiGayMe-GiaiPhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +84,9 @@
     <Compile Include="RpPhieuKhamTienMe.Designer.cs">
       <DependentUpon>RpPhieuKhamTienMe.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.resx">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhieuKhamTienMe.resx">
       <DependentUpon>PhieuKhamTienMe.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RpPhieuKhamTienMe.resx">
       <DependentUpon>RpPhieuKhamTienMe.cs</DependentUpon>
@@ -135,6 +115,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\delete icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\4991.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\3076087.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
