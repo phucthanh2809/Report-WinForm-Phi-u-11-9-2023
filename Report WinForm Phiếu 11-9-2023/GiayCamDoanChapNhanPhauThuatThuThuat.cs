@@ -189,16 +189,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         
         private void LoadData()
         {
-            //dgr Bac Si Thực Hiện
-            msql = "SELECT * FROM [BacSiThucHien]";
-            DataTable ncc = comm.GetDataTable(mconnectstring, msql, "BacSiThucHien");
-            dgrBacSi.AutoGenerateColumns = false;
-            dgrBacSi.DataSource = ncc;
-            //dgr Bệnh Nhân Khám Bệnh
-            msql = "SELECT * FROM [BenhNhanKhamBenh]";
-            DataTable bnkb = comm.GetDataTable(mconnectstring, msql, "BenhNhanKhamBenh");
-            dgrBacSi.AutoGenerateColumns = false;
-            dgrBacSi.DataSource = bnkb;
             // cbo Khoa
             msql = "SELECT * FROM [dbo].[Khoa]";
             DataTable k = comm.GetDataTable(mconnectstring, msql, "khoa");
@@ -207,6 +197,12 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboKhoa.ValueMember = "MaKhoa";
             cboKhoa.CustomAlignment = new string[] { "l", "l" };
             cboKhoa.CustomColumnStyle = new string[] { "t", "t" };
+            cbo_Khoa.DataSource = k.Copy();
+            cbo_Khoa.DisplayMember = "TenKhoa";
+            cbo_Khoa.ValueMember = "MaKhoa";
+            cbo_Khoa.CustomAlignment = new string[] { "l", "l" };
+            cbo_Khoa.CustomColumnStyle = new string[] { "t", "t" };
+
             // cbo Tên BS
             msql = "SELECT * FROM [dbo].[BacSi]";
             DataTable bs = comm.GetDataTable(mconnectstring, msql, "BacSi");
@@ -267,7 +263,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
 
         }
-        private void LoadBacSiThucHien()
+        private void LoadLuuBacSiThucHien()
         {
             //msql = "SELECT * FROM dbo.BacSi INNER JOIN dbo.BacSiThucHien ON dbo.BacSi.MaBS = dbo.BacSiThucHien.HoTenBS INNER JOINdbo.ChuanDoan ON dbo.BacSiThucHien.ChuanDoan = dbo.ChuanDoan.MaChuanDoan INNER JOINdbo.Khoa ON dbo.BacSiThucHien.TenKhoa = dbo.Khoa.MaKhoa";
             msql = "INSERT INTO [dbo].[BacSiThucHien]([HoTenBS],[TenKhoa],[ChuanDoan],[PhuongPhap],[BienChung])" +
@@ -276,9 +272,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         }
 
-        private void LoadBenhNhan()
+        private void LoadLuuBenhNhan()
         {
-            msql = "INSERT INTO [dbo].[BenhNhanKhamBenh]([TênBN],[Tuoi],[DanToc],[QuocTich],[TenNgheNghiep],[NoiLamViec],[DiaChi],[TenDanhXung],[HoTenDanhXung],[KhoaDieuTri],[TrangThai],[GioiTinh_Nam],[GioiTinh_Nu],[DongYPhauThuat],[KhongDongYPhauThuat])" +
+            msql = "INSERT INTO [dbo].[BenhNhanKhamBenh]([TenBN],[Tuoi],[DanToc],[QuocTich],[TenNgheNghiep],[NoiLamViec],[DiaChi],[TenDanhXung],[HoTenDanhXung],[KhoaDieuTri],[TrangThai],[GioiTinh_Nam],[GioiTinh_Nu],[DongYPhauThuat],[KhongDongYPhauThuat])" +
                 "VALUES(N'" + txtHoTenBN.Text + "',N'" + txtTuoi.Text + "',N'" + txtDanToc.Text + "',N'" + cboQuocTich.SelectedValue + "',N'" + cboNgheNghiep.SelectedValue + "',N'" + txtNoiLamViec.Text + "',N'" + txtDiaChi.Text + "',N'" + cboDanhXungGD.SelectedValue + "',N'" + txtHoTenDanhXung.Text + "',N'" + cbo_Khoa.SelectedValue + "',N'" + cboTrangThai.SelectedValue + "',N'" + chkNam.Checked + "',N'" + chkNu.Checked + "',N'" + chkDongY.Checked + "',N'" + chkKhongDongY.Checked + "')";
             comm.RunSQL(mconnectstring, msql);
         }
@@ -287,8 +283,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             if (linktxtChuanDoan.Text.Trim() != "" && txtPhuongPhap.Text.Trim() != "" && txtBienChung.Text.Trim() != "" )
             {
-                LoadBacSiThucHien();
-                LoadBenhNhan();
+                LoadLuuBacSiThucHien();
+                LoadLuuBenhNhan();
+                ev.QFrmThongBao("Đã nhập thành công !!");
                 //msql = "INSERT INTO [dbo].[BacSiThucHien]([HoTenBS],[TenKhoa],[ChuanDoan],[PhuongPhap],[BienChung])" +
                 //    "VALUES(N'" + cboHoTenBS.SelectedValue + "',N'" + cboKhoa.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + txtPhuongPhap.Text + "',N'" + txtBienChung.Text + "')";
                 //comm.RunSQL(mconnectstring, msql);
@@ -300,9 +297,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             
         }
 
-        private void dgrBacSi_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
-        {
-            ev.Qdgr_RowPostPaint(sender, e, dgrBacSi);
-        }
+
     }
 }
