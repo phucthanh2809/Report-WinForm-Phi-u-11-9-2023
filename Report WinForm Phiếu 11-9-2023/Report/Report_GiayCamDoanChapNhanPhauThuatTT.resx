@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="documentViewerRibbonController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="xrLabel43.Text" xml:space="preserve">
+    <value>       Tôi đã đọc bản cam kết với tinh thần hoàn toàn minh mẫn và hiểu biết. Tôi thật sự thông suốt tất cả và vấn đề mà Bác sĩ đã giải thích về tiến trình phẫu thuật cho người nhà của tôi. Tôi hoàn toàn chịu trách nhiệm với quyết định đồng ý cho Bác sĩ phẫu thuật/ thủ thuật cho người nhà của tôi./.</value>
+  </data>
+  <data name="xrLabel40.Text" xml:space="preserve">
+    <value>     Sau khi nghe bác sĩ cho biết tình trạng bệnh của bé và những nguy hiểm của bệnh nếu không thực hiện phẫu thuật, thủ thuật và những rủi ro có thể xảy ra do bệnh tật khi tiến hành phẫu thuật, thủ thuật, tôi tự nguyện viết giấy cam đoan này:</value>
+  </data>
 </root>

@@ -120,6 +120,9 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
     </Reference>
@@ -193,6 +196,12 @@
     <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
+      <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="In_PhieuGayMeHoiSuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +212,7 @@
     <Compile Include="Model\ChuanDoan.cs" />
     <Compile Include="Model\Khoa.cs" />
     <Compile Include="Model\NhomMau.cs" />
+    <Compile Include="Model\PhieuCamDoanChapNhanPTTT.cs" />
     <Compile Include="Model\PhieuGayMeHoiSuc_Model.cs" />
     <Compile Include="Model\PhuongPhapPhauThuat.cs" />
     <Compile Include="Model\PhuongPhapVoCam.cs" />
@@ -226,11 +236,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.Designer.cs">
+      <DependentUpon>Report_GiayCamDoanChapNhanPhauThuatTT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\Report_PhieuGayMeHoiSuc.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\Report_PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.Designer.cs">
+      <DependentUpon>Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\View_PhieuGayMeHoiSuc.cs">
       <SubType>Form</SubType>
@@ -243,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.resx">
+      <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="In_PhieuGayMeHoiSuc.resx">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
@@ -270,6 +295,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.resx">
+      <DependentUpon>Report_GiayCamDoanChapNhanPhauThuatTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.resx">
+      <DependentUpon>Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RpGiayCamDoanChapNhanGayMe.resx">
       <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
     </EmbeddedResource>
