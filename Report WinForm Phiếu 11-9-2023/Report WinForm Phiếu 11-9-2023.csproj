@@ -113,8 +113,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalDecisions.Shared.1.0.0\lib\CrystalDecisions.Shared.dll</HintPath>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
@@ -155,20 +156,9 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
-    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -205,12 +195,6 @@
     </Compile>
     <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.Designer.cs">
-      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
     </Compile>
     <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs">
       <SubType>Form</SubType>
@@ -258,12 +242,6 @@
     <Compile Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.Designer.cs">
       <DependentUpon>Report_GiayCamDoanChapNhanPhauThuatTT.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportGiayCamDoanChapNhanPhauThuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReportGiayCamDoanChapNhanPhauThuat.Designer.cs">
-      <DependentUpon>ReportGiayCamDoanChapNhanPhauThuat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Report\Report_PhieuGayMeHoiSuc.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -288,9 +266,6 @@
     <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuat_Chinh.resx">
-      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.resx">
       <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,11 +276,11 @@
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <Compile Include="RpCamDoanPhauThuatThuThuatcs.cs">
+    <Compile Include="RpGiayCamDoanChapNhanGayMe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RpCamDoanPhauThuatThuThuatcs.Designer.cs">
-      <DependentUpon>RpCamDoanPhauThuatThuThuatcs.cs</DependentUpon>
+    <Compile Include="RpGiayCamDoanChapNhanGayMe.Designer.cs">
+      <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GiayCamDoanChapNhanGayMeHoiSuc.resx">
       <DependentUpon>GiayCamDoanChapNhanGayMeHoiSuc.cs</DependentUpon>
@@ -328,8 +303,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RpGiayCamDoanChapNhanGayMe.resx">
       <DependentUpon>RpGiayCamDoanChapNhanGayMe.cs</DependentUpon>
-    <EmbeddedResource Include="ReportGiayCamDoanChapNhanPhauThuat.resx">
-      <DependentUpon>ReportGiayCamDoanChapNhanPhauThuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Report_PhieuGayMeHoiSuc.resx">
       <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
