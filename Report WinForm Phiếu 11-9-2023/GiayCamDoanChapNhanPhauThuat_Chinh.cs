@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +11,21 @@ using BusinessCommon;
 
 namespace Report_WinForm_Phiếu_11_9_2023
 {
-    public partial class GiayCamDoanChapNhanPhauThuatThuThuat : Form
+    public partial class GiayCamDoanChapNhanPhauThuat_Chinh : Form
     {
         public static string mconnectstring = "server=.; database=PhauThuat;uid=sa;pwd=123";
         private clsCommonMethod comm = new clsCommonMethod();
         private clsEventArgs ev = new clsEventArgs("");
         private string msql;
-        public GiayCamDoanChapNhanPhauThuatThuThuat()
+        public GiayCamDoanChapNhanPhauThuat_Chinh()
         {
             InitializeComponent();
             LoadData();
-            
         }
-
-
+        private void btnLoadData_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
         private void txtHoTen_Enter(object sender, EventArgs e)
         {
             ev.Qtxt_Enter(sender, e);
@@ -186,9 +186,19 @@ namespace Report_WinForm_Phiếu_11_9_2023
             ev.Qtxt_KeyPress_To_Button_Focus(sender, e, btnLuu);
         }
 
-        
+
         private void LoadData()
         {
+            //dgr Bac Si Thực Hiện
+            msql = "SELECT * FROM [sl_bsth]";
+            DataTable ncc = comm.GetDataTable(mconnectstring, msql, "BacSiThucHien");
+            dgrBacSi.AutoGenerateColumns = false;
+            dgrBacSi.DataSource = ncc;
+            //dgr Bệnh Nhân Khám Bệnh
+            msql = "SELECT * FROM [BNKhamBenh]";
+            DataTable bnkb = comm.GetDataTable(mconnectstring, msql, "BenhNhanKhamBenh");
+            dgrBenhNhan.AutoGenerateColumns = false;
+            dgrBenhNhan.DataSource = bnkb;
             // cbo Khoa
             msql = "SELECT * FROM [dbo].[Khoa]";
             DataTable k = comm.GetDataTable(mconnectstring, msql, "khoa");
@@ -202,7 +212,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cbo_Khoa.ValueMember = "MaKhoa";
             cbo_Khoa.CustomAlignment = new string[] { "l", "l" };
             cbo_Khoa.CustomColumnStyle = new string[] { "t", "t" };
-
             // cbo Tên BS
             msql = "SELECT * FROM [dbo].[BacSi]";
             DataTable bs = comm.GetDataTable(mconnectstring, msql, "BacSi");
@@ -281,11 +290,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (linktxtChuanDoan.Text.Trim() != "" && txtPhuongPhap.Text.Trim() != "" && txtBienChung.Text.Trim() != "" )
+            if (linktxtChuanDoan.Text.Trim() != "" && txtPhuongPhap.Text.Trim() != "" && txtBienChung.Text.Trim() != "")
             {
                 LoadLuuBacSiThucHien();
                 LoadLuuBenhNhan();
-                ev.QFrmThongBao("Đã nhập thành công !!");
                 //msql = "INSERT INTO [dbo].[BacSiThucHien]([HoTenBS],[TenKhoa],[ChuanDoan],[PhuongPhap],[BienChung])" +
                 //    "VALUES(N'" + cboHoTenBS.SelectedValue + "',N'" + cboKhoa.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + txtPhuongPhap.Text + "',N'" + txtBienChung.Text + "')";
                 //comm.RunSQL(mconnectstring, msql);
@@ -293,10 +301,90 @@ namespace Report_WinForm_Phiếu_11_9_2023
             else
             {
                 ev.QFrmThongBaoError("Vui lòng nhập thông tin đầy đủ");
-            }    
-            
+            }
+
         }
 
+        private void dgrBacSi_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            ev.Qdgr_RowPostPaint(sender, e, dgrBacSi);
+        }
 
+        private void dgrBenhNhan_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            ev.Qdgr_RowPostPaint(sender, e, dgrBenhNhan);
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            GiayCamDoanChapNhanPhauThuatThuThuat f = new GiayCamDoanChapNhanPhauThuatThuThuat();
+            f.ShowDialog();
+        }
+
+        private void XoaPhieu()
+        {
+            msql = "DELETE FROM [dbo].[BacSiThucHien] WHERE PhuongPhap = N'" + dgrBacSi.CurrentRow.Cells["cPhuongPhap"].Value.ToString() + "'";
+            comm.RunSQL(mconnectstring, msql);
+            ev.QFrmThongBao("Đã Xóa thông tin thành công");
+        }
+
+        private void SuaPhieu()
+        {
+            msql = "UPDATE [dbo].[BacSiThucHien] SET[HoTenBS] = N'" + cboHoTenBS.SelectedValue + "',[TenKhoa] = N'" + cboKhoa.SelectedValue + "',[ChuanDoan] = N'" + cboChuanDoan.SelectedValue + "'," +
+                "[PhuongPhap] = N'" + txtPhuongPhap.Text + "',[BienChung] = N'" + txtBienChung.Text + "' where HoTenBS = '" + dgrBacSi.CurrentRow.Cells["cHoTenBS"] + "'";
+            comm.RunSQL(mconnectstring, msql);
+            ev.QFrmThongBao("Đã Sửa thông tin thành công");
+        }
+        private void dgrBacSi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //lấy dữ liệu hiển thị lên checkbox khi click vào
+            if (dgrBacSi["cXoa", e.RowIndex] == dgrBacSi.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn Xóa " + dgrBacSi.CurrentRow.Cells["cHoTenBS"].Value.ToString() + " này không ?"))
+                {
+                    XoaPhieu();
+                }
+            }
+
+            if (dgrBacSi["cSua", e.RowIndex] == dgrBacSi.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn Sửa " + dgrBacSi.CurrentRow.Cells["cHoTenBS"].Value.ToString() + " này không ?"))
+                {
+                    SuaPhieu();
+                }
+            }
+        }
+        private void XoaPhieu1()
+        {
+            msql = "DELETE FROM [dbo].[BenhNhanKhamBenh] WHERE HoTenBN = N'" + dgrBacSi.CurrentRow.Cells["cHoTenBN"].Value.ToString() + "'";
+            comm.RunSQL(mconnectstring, msql);
+            ev.QFrmThongBao("Đã Xóa thông tin thành công");
+        }
+        private void SuaPhieu1()
+        {
+            msql = "UPDATE [dbo].[BenhNhanKhamBenh] SET[TenBN] = N'" + txtHoTenBN.Text + "',[Tuoi] = N'" + txtTuoi.Text + "',[GioiTinh_Nam] = N'" + chkNam.Checked + "'," +
+                "[GioiTinh_Nu] = N'" + chkNu.Checked + "',[DanToc] = N'" + txtDanToc.Text + "',[QuocTich] = N'" + cboQuocTich.SelectedValue + "',[TenNgheNghiep] = N'" + cboNgheNghiep.SelectedValue + "',[NoiLamViec] = N'" + txtNoiLamViec.Text + "',[DiaChi] = N'" + txtDiaChi.Text + "',[TenDanhXung] = N'" + cboDanhXungGD.SelectedValue + "',[HoTenDanhXung] = N'" + txtHoTenDanhXung.Text + "',[KhoaDieuTri] = N'" + cbo_Khoa.SelectedValue + "',[TrangThai] = N'" + cboTrangThai.SelectedValue + "',[DongYPhauThuat] = N'" + chkDongY.Checked + "',[KhongDongYPhauThuat] = N'" + chkKhongDongY.Checked + "' where HoTenBN = '" + dgrBacSi.CurrentRow.Cells["cHoTenBN"] + "'";
+            comm.RunSQL(mconnectstring, msql);
+            ev.QFrmThongBao("Đã Sửa thông tin thành công");
+        }
+
+        private void dgrBenhNhan_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgrBenhNhan["cXoa", e.RowIndex] == dgrBenhNhan.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn Xóa " + dgrBenhNhan.CurrentRow.Cells["cHoTenBN"].Value.ToString() + " này không ?"))
+                {
+                    XoaPhieu1();
+                }
+            }
+            if (dgrBenhNhan["cSua", e.RowIndex] == dgrBenhNhan.CurrentCell)
+            {
+                if (ev.QFrmThongBao_YesNo("Bạn có muốn Sửa " + dgrBenhNhan.CurrentRow.Cells["cHoTenBN"].Value.ToString() + " này không ?"))
+                {
+                    SuaPhieu1();
+                }
+            }
+        }
     }
 }
+
