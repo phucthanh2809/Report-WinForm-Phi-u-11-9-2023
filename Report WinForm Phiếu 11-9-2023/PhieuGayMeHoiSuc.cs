@@ -64,7 +64,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             try
             {
                 sqlConnection.Open();
-
                 // Truy vấn dữ liệu từ bảng ChuanDoan
                 string query = "SELECT MaChanDoan, TenChanDoan FROM tabCDSPK";
                 using (SqlCommand command = new SqlCommand(query, sqlConnection))

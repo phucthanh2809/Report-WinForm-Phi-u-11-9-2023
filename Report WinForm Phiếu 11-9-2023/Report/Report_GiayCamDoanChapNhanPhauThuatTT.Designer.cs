@@ -464,7 +464,7 @@
             // xrCheckBox2
             // 
             this.xrCheckBox2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinh]=2,true , false)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinhso]=2,true , false)\n")});
             this.xrCheckBox2.LocationFloat = new DevExpress.Utils.PointFloat(811.0311F, 294.5768F);
             this.xrCheckBox2.Name = "xrCheckBox2";
             this.xrCheckBox2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -473,7 +473,7 @@
             // xrCheckBox1
             // 
             this.xrCheckBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinh]=1,true , false)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinhso]=1,true , false)")});
             this.xrCheckBox1.LocationFloat = new DevExpress.Utils.PointFloat(752.4615F, 294.5768F);
             this.xrCheckBox1.Name = "xrCheckBox1";
             this.xrCheckBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

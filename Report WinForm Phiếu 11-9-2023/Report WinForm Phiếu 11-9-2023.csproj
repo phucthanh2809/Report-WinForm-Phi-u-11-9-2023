@@ -196,6 +196,12 @@
     <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.Designer.cs">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuat_Chinh.resx">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.resx">
       <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>

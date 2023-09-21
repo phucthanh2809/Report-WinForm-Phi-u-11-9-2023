@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessCommon;
+using DevExpress.Xpo;
+using Report_WinForm_Phiếu_11_9_2023.Model;
 
 namespace Report_WinForm_Phiếu_11_9_2023
 {
@@ -18,14 +20,45 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private clsCommonMethod comm = new clsCommonMethod();
         private clsEventArgs ev = new clsEventArgs("");
         private string msql;
-        public GiayCamDoanChapNhanPhauThuatThuThuat()
+        private int currentID;
+        public GiayCamDoanChapNhanPhauThuatThuThuat(int maphieu)
         {
             InitializeComponent();
-            LoadData();
-            
+            this.currentID = maphieu;
+            LoadCombobox();
+            if (currentID != 0)
+            {
+                LoadData();
+            }
         }
 
+        private void LoadData()
+        {
+            msql = $"SELECT * FROM [GiayCamDoanChapNhanPhauThuatThuThuat] where PhieuID='{currentID}'";
+            DataTable ncc = comm.GetDataTable(mconnectstring, msql, "GiayCamDoan");
+            var row = ncc.Rows[0];
+            cboHoTenBS.SelectedValue = row[1].ToString();
+            cboKhoa.SelectedValue = row[2].ToString();
+            cboChuanDoan.SelectedValue = row[3].ToString();
+            cboPhuongPhap.SelectedValue = row[4].ToString();
+            txtBienChung.Text = row[5].ToString();
+            txtHoTenBN.Text = row[6].ToString();
+            txtTuoi.Text = row[7].ToString();
+            if (row[8].ToString() == "1")
+                btnNam.Checked = true;
+            else btnNu.Checked = true;
+            txtDanToc.Text = row[9].ToString();
+            cboQuocTich.SelectedValue = row[10].ToString();
+            txtNgheNghiep.Text = row[11].ToString();
+            txtNoiLamViec.Text = row[12].ToString();
+            txtDiaChi.Text = row[13].ToString();
+            cboDanhXungGD.Text = row[14].ToString();
+            txtHoTenDanhXung.Text = row[15].ToString();
+            cbo_Khoa.SelectedValue = row[16].ToString();
+            txtTinhTrangBenh.Text = row[17].ToString();
+        }
 
+        #region enter
         private void txtHoTen_Enter(object sender, EventArgs e)
         {
             ev.Qtxt_Enter(sender, e);
@@ -143,7 +176,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void txtChuanDoan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtPhuongPhap);
+            ev.Qtxt_KeyPress_To_ComboBox_Focus(sender, e, cboPhuongPhap);
         }
 
         private void txtPhuongPhap_KeyPress(object sender, KeyPressEventArgs e)
@@ -185,9 +218,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             ev.Qtxt_KeyPress_To_Button_Focus(sender, e, btnLuu);
         }
+        #endregion
 
-        
-        private void LoadData()
+        private void LoadCombobox()
         {
             // cbo Khoa
             msql = "SELECT * FROM [dbo].[tabMACHUYENKHOA]";
@@ -222,36 +255,20 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboChuanDoan.sf = setfocusTensearch;
             // cbo Quốc tịch
             msql = "SELECT * FROM [dbo].[tabQuocGia]";
-            DataTable qt = comm.GetDataTable(mconnectstring, msql, "ChuanDoan");
+            DataTable qt = comm.GetDataTable(mconnectstring, msql, "QuocGia");
             cboQuocTich.DataSource = qt.Copy();
             cboQuocTich.DisplayMember = "TenQuocTich";
             cboQuocTich.ValueMember = "MaQuocTich";
             cboQuocTich.CustomAlignment = new string[] { "l", "l" };
             cboQuocTich.CustomColumnStyle = new string[] { "t", "t" };
-            //cbo Danh Xưng GD
-            //msql = "SELECT * FROM [dbo].[DanhXungGD]";
-            //DataTable dx = comm.GetDataTable(mconnectstring, msql, "DanhXungGD");
-            //cboDanhXungGD.DataSource = dx.Copy();
-            //cboDanhXungGD.DisplayMember = "TenDanhXung";
-            //cboDanhXungGD.ValueMember = "MaDanhXung";
-            //cboDanhXungGD.CustomAlignment = new string[] { "l", "l" };
-            //cboDanhXungGD.CustomColumnStyle = new string[] { "t", "t" };
-            // cbo Trạng Thái
-            //msql = "SELECT * FROM [dbo].[TrangThaiBN]";
-            //DataTable tt = comm.GetDataTable(mconnectstring, msql, "TrangThaiBN");
-            //cboTrangThai.DataSource = tt.Copy();
-            //cboTrangThai.DisplayMember = "TenTrangThai";
-            //cboTrangThai.ValueMember = "MaTrangThai";
-            //cboTrangThai.CustomAlignment = new string[] { "l", "l" };
-            //cboTrangThai.CustomColumnStyle = new string[] { "t", "t" };
-            // cbo Nghề Nghiệp
-            //msql = "SELECT * FROM [dbo].[NgheNghiep]";
-            //DataTable nn = comm.GetDataTable(mconnectstring, msql, "NgheNghiep");
-            //cboNgheNghiep.DataSource = nn.Copy();
-            //cboNgheNghiep.DisplayMember = "TenNgheNghiep";
-            //cboNgheNghiep.ValueMember = "MaNgheNghiep";
-            //cboNgheNghiep.CustomAlignment = new string[] { "l", "l" };
-            //cboNgheNghiep.CustomColumnStyle = new string[] { "t", "t" };
+            // cbo Quốc tịch
+            msql = "SELECT * FROM [dbo].[tabPhuongPhapPhauThuat]";
+            DataTable pp = comm.GetDataTable(mconnectstring, msql, "PPPT");
+            cboPhuongPhap.DataSource = pp.Copy();
+            cboPhuongPhap.DisplayMember = "TenPhuongPhapPhauThuat";
+            cboPhuongPhap.ValueMember = "TenTat";
+            cboPhuongPhap.CustomAlignment = new string[] { "l", "l" };
+            cboPhuongPhap.CustomColumnStyle = new string[] { "t", "t" };
         }
         private int setfocusTensearch()
         {
@@ -259,41 +276,143 @@ namespace Report_WinForm_Phiếu_11_9_2023
             return 1;
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void LoadLuuBacSiThucHien()
-        {
-            //msql = "SELECT * FROM dbo.BacSi INNER JOIN dbo.BacSiThucHien ON dbo.BacSi.MaBS = dbo.BacSiThucHien.HoTenBS INNER JOINdbo.ChuanDoan ON dbo.BacSiThucHien.ChuanDoan = dbo.ChuanDoan.MaChuanDoan INNER JOINdbo.Khoa ON dbo.BacSiThucHien.TenKhoa = dbo.Khoa.MaKhoa";
-            msql = "INSERT INTO [dbo].[BacSiThucHien]([HoTenBS],[TenKhoa],[ChuanDoan],[PhuongPhap],[BienChung])" +
-                    "VALUES(N'" + cboHoTenBS.SelectedValue + "',N'" + cboKhoa.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + txtPhuongPhap.Text + "',N'" + txtBienChung.Text + "')";
-            comm.RunSQL(mconnectstring, msql);
-
-        }
-
-        private void LoadLuuBenhNhan()
-        {
-            msql = "INSERT INTO [dbo].[BenhNhanKhamBenh]([TenBN],[Tuoi],[DanToc],[QuocTich],[TenNgheNghiep],[NoiLamViec],[DiaChi],[TenDanhXung],[HoTenDanhXung],[KhoaDieuTri],[TrangThai],[GioiTinh_Nam],[GioiTinh_Nu],[DongYPhauThuat],[KhongDongYPhauThuat])" +
-                "VALUES(N'" + txtHoTenBN.Text + "',N'" + txtTuoi.Text + "',N'" + txtDanToc.Text + "',N'" + cboQuocTich.SelectedValue + "',N'" + txtNgheNghiep.Text + "',N'" + txtNoiLamViec.Text + "',N'" + txtDiaChi.Text + "',N'" + cboDanhXungGD.SelectedValue + "',N'" + txtHoTenDanhXung.Text + "',N'" + cbo_Khoa.SelectedValue + "',N'" + txtTinhTrangBenh.Text + "',N'" + chkNam.Checked + "',N'" + chkNu.Checked + "',N'" + chkDongY.Checked + "',N'" + chkKhongDongY.Checked + "')";
-            comm.RunSQL(mconnectstring, msql);
-        }
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (linktxtChuanDoan.Text.Trim() != "" && txtPhuongPhap.Text.Trim() != "" && txtBienChung.Text.Trim() != "" )
+            Luu();
+        }
+        int ktraGioiTinh()
+        {
+            if (btnNam.Checked == true)
             {
-                LoadLuuBacSiThucHien();
-                LoadLuuBenhNhan();
-                ev.QFrmThongBao("Đã nhập thành công !!");
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+        bool kTraThongTin()
+        {
+            if (cboHoTenBS.SelectedValue == null || cboKhoa.SelectedValue == null || cboChuanDoan.SelectedValue == null ||
+                cboPhuongPhap.SelectedValue == null || txtBienChung.Text == "" || txtHoTenBN.Text == "" || txtTuoi.Text =="" ||
+                txtDanToc.Text == ""|| cboQuocTich.SelectedValue == null || txtNgheNghiep.Text == "" || txtNoiLamViec.Text == "" ||
+                txtDiaChi.Text =="" || cboDanhXungGD.Text == null || txtHoTenDanhXung.Text == "" || cbo_Khoa.SelectedValue == null || txtTinhTrangBenh.Text == "")
+            {
+                return false;
+            }
+            return true;
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            if (kTraThongTin())
+            {
+                In();
+            }
+            else
+            {
+                ev.QFrmThongBaoError("Vui lòng điền đầy đủ thông tin cần thiết!");
+            }
+        }
+
+        private void btnLuuvaIn_Click(object sender, EventArgs e)
+        {
+            if (kTraThongTin())
+            {
+                try
+                {
+                    if (currentID == 0)
+                    {
+                        //thêm phiếu
+                        msql = $"Execute add_GiayCamDoanPTTT '{cboHoTenBS.SelectedValue.ToString().Trim()}','{cboKhoa.SelectedValue.ToString().Trim()}','{cboChuanDoan.SelectedValue}'," +
+                            $"'{cboPhuongPhap.SelectedValue}',N'{txtBienChung.Text}',N'{txtHoTenBN.Text}','{txtTuoi.Text}','{ktraGioiTinh()}'," +
+                            $"N'{txtDanToc.Text}','{cboQuocTich.SelectedValue}',N'{txtNgheNghiep.Text}',N'{txtNoiLamViec.Text}'," +
+                            $"N'{txtDiaChi.Text}',N'{cboDanhXungGD.Text}',N'{txtHoTenDanhXung.Text}','{cbo_Khoa.SelectedValue.ToString().Trim()}',N'{txtTinhTrangBenh.Text}'";
+                        comm.RunSQL(mconnectstring, msql);
+                    }
+                    else
+                    {
+                        //sửa phiếu
+                        msql = $"Execute up_GiayCamDoanPTTT '{currentID}','{cboHoTenBS.SelectedValue.ToString().Trim()}','{cboKhoa.SelectedValue.ToString().Trim()}','{cboChuanDoan.SelectedValue}'," +
+                            $"'{cboPhuongPhap.SelectedValue}',N'{txtBienChung.Text}',N'{txtHoTenBN.Text}','{txtTuoi.Text}','{ktraGioiTinh()}'," +
+                            $"N'{txtDanToc.Text}','{cboQuocTich.SelectedValue}',N'{txtNgheNghiep.Text}',N'{txtNoiLamViec.Text}'," +
+                            $"N'{txtDiaChi.Text}',N'{cboDanhXungGD.Text}',N'{txtHoTenDanhXung.Text}','{cbo_Khoa.SelectedValue.ToString().Trim()}',N'{txtTinhTrangBenh.Text}'";
+                        comm.RunSQL(mconnectstring, msql);
+                    }
+                    ev.QFrmThongBao("Sửa phiếu thành công !!");
+                    In();
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    ev.QFrmThongBaoError("Lỗi cơ sở dữ liệu, Vui lòng kiểm tra lại");
+                }
             }
             else
             {
                 ev.QFrmThongBaoError("Vui lòng nhập thông tin đầy đủ");
-            }    
-            
+            }
         }
-
-
+        void Luu()
+        {
+            if (kTraThongTin())
+            {
+                try
+                {
+                    if (currentID == 0)
+                    {
+                        //thêm phiếu
+                        msql = $"Execute add_GiayCamDoanPTTT '{cboHoTenBS.SelectedValue.ToString().Trim()}','{cboKhoa.SelectedValue.ToString().Trim()}','{cboChuanDoan.SelectedValue}'," +
+                            $"'{cboPhuongPhap.SelectedValue}',N'{txtBienChung.Text}',N'{txtHoTenBN.Text}','{txtTuoi.Text}','{ktraGioiTinh()}'," +
+                            $"N'{txtDanToc.Text}','{cboQuocTich.SelectedValue}',N'{txtNgheNghiep.Text}',N'{txtNoiLamViec.Text}'," +
+                            $"N'{txtDiaChi.Text}',N'{cboDanhXungGD.Text}',N'{txtHoTenDanhXung.Text}','{cbo_Khoa.SelectedValue.ToString().Trim()}',N'{txtTinhTrangBenh.Text}'";
+                        comm.RunSQL(mconnectstring, msql);
+                    }
+                    else
+                    {
+                        //sửa phiếu
+                        msql = $"Execute up_GiayCamDoanPTTT '{currentID}','{cboHoTenBS.SelectedValue.ToString().Trim()}','{cboKhoa.SelectedValue.ToString().Trim()}','{cboChuanDoan.SelectedValue}'," +
+                            $"'{cboPhuongPhap.SelectedValue}',N'{txtBienChung.Text}',N'{txtHoTenBN.Text}','{txtTuoi.Text}','{ktraGioiTinh()}'," +
+                            $"N'{txtDanToc.Text}','{cboQuocTich.SelectedValue}',N'{txtNgheNghiep.Text}',N'{txtNoiLamViec.Text}'," +
+                            $"N'{txtDiaChi.Text}',N'{cboDanhXungGD.Text}',N'{txtHoTenDanhXung.Text}','{cbo_Khoa.SelectedValue.ToString().Trim()}',N'{txtTinhTrangBenh.Text}'";
+                        comm.RunSQL(mconnectstring, msql);
+                    }
+                    ev.QFrmThongBao("Sửa phiếu thành công !!");
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    ev.QFrmThongBaoError("Lỗi cơ sở dữ liệu, Vui lòng kiểm tra lại");
+                }
+            }
+            else
+            {
+                ev.QFrmThongBaoError("Vui lòng nhập thông tin đầy đủ");
+            }
+        }
+        void In()
+        {
+            PhieuCamDoanChapNhanPTTT model = new PhieuCamDoanChapNhanPTTT();
+            model.IdPhieu = currentID;
+            model.MaBS = cboHoTenBS.SelectedValue.ToString();
+            model.MaKhoa = cboKhoa.SelectedValue.ToString();
+            model.MaChuanDoan = cboChuanDoan.SelectedValue.ToString();
+            model.MaPPTT = cboPhuongPhap.SelectedValue.ToString();
+            model.Bienchung = txtBienChung.Text;
+            model.Tennguoithan = txtHoTenBN.Text;
+            model.Tuoi = Int32.Parse(txtTuoi.Text);
+            model.Gioitinhso = ktraGioiTinh();
+            model.Dantoc = txtDanToc.Text;
+            model.MaQuocTich = cboQuocTich.SelectedValue.ToString();
+            model.Nghenghiep = txtNgheNghiep.Text;
+            model.Noilamviec = txtNoiLamViec.Text;
+            model.Diachi = txtDiaChi.Text;
+            model.Danhxung = cboDanhXungGD.Text;
+            model.Tenbenhnhan = txtHoTenDanhXung.Text;
+            model.MaKhoaDieuTri = cbo_Khoa.SelectedValue.ToString();
+            model.Tinhtrangbenh = txtTinhTrangBenh.Text;
+            In_PhieuCamDoanChapNhanPhauThuatThuThuat phieu = new In_PhieuCamDoanChapNhanPhauThuatThuThuat(model);
+            phieu.ShowDialog();
+        }
     }
 }
