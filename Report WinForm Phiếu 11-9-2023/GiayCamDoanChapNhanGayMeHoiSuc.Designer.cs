@@ -961,10 +961,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.PanelTab2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1342, 703);
+            this.tabPage2.Size = new System.Drawing.Size(1342, 693);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trang 2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -978,7 +978,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.PanelTab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelTab2.Location = new System.Drawing.Point(3, 3);
             this.PanelTab2.Name = "PanelTab2";
-            this.PanelTab2.Size = new System.Drawing.Size(1336, 697);
+            this.PanelTab2.Size = new System.Drawing.Size(1336, 687);
             this.PanelTab2.TabIndex = 0;
             // 
             // panel15

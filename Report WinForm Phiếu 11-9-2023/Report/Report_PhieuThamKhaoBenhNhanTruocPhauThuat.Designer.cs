@@ -33,6 +33,23 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrLabel98 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel96 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel97 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel95 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel94 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel93 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel92 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel91 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel90 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel89 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel88 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel87 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel86 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel85 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel84 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel83 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel82 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel77 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel78 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel79 = new DevExpress.XtraReports.UI.XRLabel();
@@ -178,36 +195,19 @@
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.xrLabel82 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel83 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel84 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel85 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel86 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel87 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel88 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel89 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel90 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel91 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel92 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel93 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel94 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel95 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel96 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel97 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel98 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel100 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel101 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel110 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel109 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel108 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel107 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel106 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel105 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel104 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel102 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel103 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel104 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel105 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel106 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel107 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel108 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel109 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel110 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel101 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel100 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -357,6 +357,167 @@
             this.xrLabel4});
             this.Detail.HeightF = 1718.379F;
             this.Detail.Name = "Detail";
+            // 
+            // xrLabel98
+            // 
+            this.xrLabel98.LocationFloat = new DevExpress.Utils.PointFloat(37.08446F, 1650.885F);
+            this.xrLabel98.Multiline = true;
+            this.xrLabel98.Name = "xrLabel98";
+            this.xrLabel98.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel98.SizeF = new System.Drawing.SizeF(831.9156F, 66.26917F);
+            this.xrLabel98.Text = resources.GetString("xrLabel98.Text");
+            // 
+            // xrLabel96
+            // 
+            this.xrLabel96.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 1615.693F);
+            this.xrLabel96.Multiline = true;
+            this.xrLabel96.Name = "xrLabel96";
+            this.xrLabel96.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel96.SizeF = new System.Drawing.SizeF(27.08334F, 23F);
+            this.xrLabel96.Text = "➢";
+            // 
+            // xrLabel97
+            // 
+            this.xrLabel97.LocationFloat = new DevExpress.Utils.PointFloat(37.08446F, 1615.693F);
+            this.xrLabel97.Multiline = true;
+            this.xrLabel97.Name = "xrLabel97";
+            this.xrLabel97.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel97.SizeF = new System.Drawing.SizeF(596.8124F, 23F);
+            this.xrLabel97.Text = "Có vấn đề gì khác mà Ông, Bà cần lưu ý cho bác sĩ gây mê hồi sức biết không ?";
+            // 
+            // xrLabel95
+            // 
+            this.xrLabel95.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1580.789F);
+            this.xrLabel95.Multiline = true;
+            this.xrLabel95.Name = "xrLabel95";
+            this.xrLabel95.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel95.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel95.Text = "...........................................................";
+            // 
+            // xrLabel94
+            // 
+            this.xrLabel94.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1547.552F);
+            this.xrLabel94.Multiline = true;
+            this.xrLabel94.Name = "xrLabel94";
+            this.xrLabel94.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel94.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel94.Text = "...........................................................";
+            // 
+            // xrLabel93
+            // 
+            this.xrLabel93.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1513.514F);
+            this.xrLabel93.Multiline = true;
+            this.xrLabel93.Name = "xrLabel93";
+            this.xrLabel93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel93.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel93.Text = "..............................................................";
+            // 
+            // xrLabel92
+            // 
+            this.xrLabel92.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1478.674F);
+            this.xrLabel92.Multiline = true;
+            this.xrLabel92.Name = "xrLabel92";
+            this.xrLabel92.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel92.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel92.Text = ".................................................................";
+            // 
+            // xrLabel91
+            // 
+            this.xrLabel91.LocationFloat = new DevExpress.Utils.PointFloat(163.017F, 1580.789F);
+            this.xrLabel91.Multiline = true;
+            this.xrLabel91.Name = "xrLabel91";
+            this.xrLabel91.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel91.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel91.Text = "..............................................................";
+            // 
+            // xrLabel90
+            // 
+            this.xrLabel90.LocationFloat = new DevExpress.Utils.PointFloat(163.0183F, 1547.552F);
+            this.xrLabel90.Multiline = true;
+            this.xrLabel90.Name = "xrLabel90";
+            this.xrLabel90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel90.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel90.Text = "..................................................................";
+            // 
+            // xrLabel89
+            // 
+            this.xrLabel89.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1513.514F);
+            this.xrLabel89.Multiline = true;
+            this.xrLabel89.Name = "xrLabel89";
+            this.xrLabel89.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel89.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel89.Text = ".................................................................";
+            // 
+            // xrLabel88
+            // 
+            this.xrLabel88.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1478.674F);
+            this.xrLabel88.Multiline = true;
+            this.xrLabel88.Name = "xrLabel88";
+            this.xrLabel88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel88.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
+            this.xrLabel88.Text = "...................................................................";
+            // 
+            // xrLabel87
+            // 
+            this.xrLabel87.LocationFloat = new DevExpress.Utils.PointFloat(9.999715F, 1580.789F);
+            this.xrLabel87.Multiline = true;
+            this.xrLabel87.Name = "xrLabel87";
+            this.xrLabel87.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel87.SizeF = new System.Drawing.SizeF(153.0173F, 22.99988F);
+            this.xrLabel87.Text = "- Thuốc khác :";
+            // 
+            // xrLabel86
+            // 
+            this.xrLabel86.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1547.552F);
+            this.xrLabel86.Multiline = true;
+            this.xrLabel86.Name = "xrLabel86";
+            this.xrLabel86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel86.SizeF = new System.Drawing.SizeF(153.0173F, 22.99988F);
+            this.xrLabel86.Text = "- Hạ sốt, giảm đau :";
+            // 
+            // xrLabel85
+            // 
+            this.xrLabel85.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1513.514F);
+            this.xrLabel85.Multiline = true;
+            this.xrLabel85.Name = "xrLabel85";
+            this.xrLabel85.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel85.SizeF = new System.Drawing.SizeF(151.8872F, 22.99988F);
+            this.xrLabel85.Text = "- Chống viêm :";
+            // 
+            // xrLabel84
+            // 
+            this.xrLabel84.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1478.674F);
+            this.xrLabel84.Multiline = true;
+            this.xrLabel84.Name = "xrLabel84";
+            this.xrLabel84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel84.SizeF = new System.Drawing.SizeF(151.8872F, 22.99988F);
+            this.xrLabel84.Text = "- Kháng sinh :";
+            // 
+            // xrLabel83
+            // 
+            this.xrLabel83.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, ((DevExpress.Drawing.DXFontStyle)((DevExpress.Drawing.DXFontStyle.Bold | DevExpress.Drawing.DXFontStyle.Underline))));
+            this.xrLabel83.LocationFloat = new DevExpress.Utils.PointFloat(558.4294F, 1426.083F);
+            this.xrLabel83.Multiline = true;
+            this.xrLabel83.Name = "xrLabel83";
+            this.xrLabel83.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel83.SizeF = new System.Drawing.SizeF(167.8205F, 23F);
+            this.xrLabel83.StylePriority.UseFont = false;
+            this.xrLabel83.StylePriority.UseTextAlignment = false;
+            this.xrLabel83.Text = "Liều dùng mỗi ngày";
+            this.xrLabel83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel82
+            // 
+            this.xrLabel82.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, ((DevExpress.Drawing.DXFontStyle)((DevExpress.Drawing.DXFontStyle.Bold | DevExpress.Drawing.DXFontStyle.Underline))));
+            this.xrLabel82.LocationFloat = new DevExpress.Utils.PointFloat(165.8824F, 1426.083F);
+            this.xrLabel82.Multiline = true;
+            this.xrLabel82.Name = "xrLabel82";
+            this.xrLabel82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel82.SizeF = new System.Drawing.SizeF(85.46747F, 23F);
+            this.xrLabel82.StylePriority.UseFont = false;
+            this.xrLabel82.StylePriority.UseTextAlignment = false;
+            this.xrLabel82.Text = "Tên thuốc";
+            this.xrLabel82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel77
             // 
@@ -696,7 +857,7 @@
             // 
             // xrLabel59
             // 
-            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 1034.67F);
+            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 1045.446F);
             this.xrLabel59.Multiline = true;
             this.xrLabel59.Name = "xrLabel59";
             this.xrLabel59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1874,203 +2035,90 @@
             this.ReportFooter.HeightF = 250.608F;
             this.ReportFooter.Name = "ReportFooter";
             // 
-            // xtraTabbedMdiManager1
+            // xrLabel110
             // 
-            this.xtraTabbedMdiManager1.MdiParent = null;
+            this.xrLabel110.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel110.LocationFloat = new DevExpress.Utils.PointFloat(497.3669F, 224.8713F);
+            this.xrLabel110.Multiline = true;
+            this.xrLabel110.Name = "xrLabel110";
+            this.xrLabel110.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel110.SizeF = new System.Drawing.SizeF(311.6603F, 25.40385F);
+            this.xrLabel110.StylePriority.UseFont = false;
+            this.xrLabel110.StylePriority.UseTextAlignment = false;
+            this.xrLabel110.Text = "Cha mẹ bệnh nhân ký tên";
+            this.xrLabel110.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel82
+            // xrLabel109
             // 
-            this.xrLabel82.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, ((DevExpress.Drawing.DXFontStyle)((DevExpress.Drawing.DXFontStyle.Bold | DevExpress.Drawing.DXFontStyle.Underline))));
-            this.xrLabel82.LocationFloat = new DevExpress.Utils.PointFloat(165.8824F, 1426.083F);
-            this.xrLabel82.Multiline = true;
-            this.xrLabel82.Name = "xrLabel82";
-            this.xrLabel82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel82.SizeF = new System.Drawing.SizeF(85.46747F, 23F);
-            this.xrLabel82.StylePriority.UseFont = false;
-            this.xrLabel82.StylePriority.UseTextAlignment = false;
-            this.xrLabel82.Text = "Tên thuốc";
-            this.xrLabel82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrLabel109.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel109.ForeColor = System.Drawing.Color.Blue;
+            this.xrLabel109.LocationFloat = new DevExpress.Utils.PointFloat(757.1205F, 199.4676F);
+            this.xrLabel109.Multiline = true;
+            this.xrLabel109.Name = "xrLabel109";
+            this.xrLabel109.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel109.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel109.StylePriority.UseFont = false;
+            this.xrLabel109.StylePriority.UseForeColor = false;
+            this.xrLabel109.StylePriority.UseTextAlignment = false;
+            this.xrLabel109.Text = "2023";
+            this.xrLabel109.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel83
+            // xrLabel108
             // 
-            this.xrLabel83.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, ((DevExpress.Drawing.DXFontStyle)((DevExpress.Drawing.DXFontStyle.Bold | DevExpress.Drawing.DXFontStyle.Underline))));
-            this.xrLabel83.LocationFloat = new DevExpress.Utils.PointFloat(558.4294F, 1426.083F);
-            this.xrLabel83.Multiline = true;
-            this.xrLabel83.Name = "xrLabel83";
-            this.xrLabel83.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel83.SizeF = new System.Drawing.SizeF(167.8205F, 23F);
-            this.xrLabel83.StylePriority.UseFont = false;
-            this.xrLabel83.StylePriority.UseTextAlignment = false;
-            this.xrLabel83.Text = "Liều dùng mỗi ngày";
-            this.xrLabel83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrLabel108.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel108.ForeColor = System.Drawing.Color.Blue;
+            this.xrLabel108.LocationFloat = new DevExpress.Utils.PointFloat(652.5839F, 199.4676F);
+            this.xrLabel108.Multiline = true;
+            this.xrLabel108.Name = "xrLabel108";
+            this.xrLabel108.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel108.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel108.StylePriority.UseFont = false;
+            this.xrLabel108.StylePriority.UseForeColor = false;
+            this.xrLabel108.StylePriority.UseTextAlignment = false;
+            this.xrLabel108.Text = "09";
+            this.xrLabel108.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel84
+            // xrLabel107
             // 
-            this.xrLabel84.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1478.674F);
-            this.xrLabel84.Multiline = true;
-            this.xrLabel84.Name = "xrLabel84";
-            this.xrLabel84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel84.SizeF = new System.Drawing.SizeF(151.8872F, 22.99988F);
-            this.xrLabel84.Text = "- Kháng sinh :";
+            this.xrLabel107.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel107.ForeColor = System.Drawing.Color.Blue;
+            this.xrLabel107.LocationFloat = new DevExpress.Utils.PointFloat(548.0473F, 199.4676F);
+            this.xrLabel107.Multiline = true;
+            this.xrLabel107.Name = "xrLabel107";
+            this.xrLabel107.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel107.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel107.StylePriority.UseFont = false;
+            this.xrLabel107.StylePriority.UseForeColor = false;
+            this.xrLabel107.StylePriority.UseTextAlignment = false;
+            this.xrLabel107.Text = "20";
+            this.xrLabel107.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel85
+            // xrLabel106
             // 
-            this.xrLabel85.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1513.514F);
-            this.xrLabel85.Multiline = true;
-            this.xrLabel85.Name = "xrLabel85";
-            this.xrLabel85.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel85.SizeF = new System.Drawing.SizeF(151.8872F, 22.99988F);
-            this.xrLabel85.Text = "- Chống viêm :";
+            this.xrLabel106.LocationFloat = new DevExpress.Utils.PointFloat(704.8522F, 199.4676F);
+            this.xrLabel106.Multiline = true;
+            this.xrLabel106.Name = "xrLabel106";
+            this.xrLabel106.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel106.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel106.Text = "năm";
             // 
-            // xrLabel86
+            // xrLabel105
             // 
-            this.xrLabel86.LocationFloat = new DevExpress.Utils.PointFloat(10.00096F, 1547.552F);
-            this.xrLabel86.Multiline = true;
-            this.xrLabel86.Name = "xrLabel86";
-            this.xrLabel86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel86.SizeF = new System.Drawing.SizeF(153.0173F, 22.99988F);
-            this.xrLabel86.Text = "- Hạ sốt, giảm đau :";
+            this.xrLabel105.LocationFloat = new DevExpress.Utils.PointFloat(600.3156F, 199.4676F);
+            this.xrLabel105.Multiline = true;
+            this.xrLabel105.Name = "xrLabel105";
+            this.xrLabel105.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel105.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel105.Text = "tháng";
             // 
-            // xrLabel87
+            // xrLabel104
             // 
-            this.xrLabel87.LocationFloat = new DevExpress.Utils.PointFloat(9.999715F, 1580.789F);
-            this.xrLabel87.Multiline = true;
-            this.xrLabel87.Name = "xrLabel87";
-            this.xrLabel87.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel87.SizeF = new System.Drawing.SizeF(153.0173F, 22.99988F);
-            this.xrLabel87.Text = "- Thuốc khác :";
-            // 
-            // xrLabel88
-            // 
-            this.xrLabel88.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1478.674F);
-            this.xrLabel88.Multiline = true;
-            this.xrLabel88.Name = "xrLabel88";
-            this.xrLabel88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel88.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel88.Text = "...................................................................";
-            // 
-            // xrLabel89
-            // 
-            this.xrLabel89.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1513.514F);
-            this.xrLabel89.Multiline = true;
-            this.xrLabel89.Name = "xrLabel89";
-            this.xrLabel89.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel89.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel89.Text = ".................................................................";
-            // 
-            // xrLabel90
-            // 
-            this.xrLabel90.LocationFloat = new DevExpress.Utils.PointFloat(163.0183F, 1547.552F);
-            this.xrLabel90.Multiline = true;
-            this.xrLabel90.Name = "xrLabel90";
-            this.xrLabel90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel90.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel90.Text = "..................................................................";
-            // 
-            // xrLabel91
-            // 
-            this.xrLabel91.LocationFloat = new DevExpress.Utils.PointFloat(163.017F, 1580.789F);
-            this.xrLabel91.Multiline = true;
-            this.xrLabel91.Name = "xrLabel91";
-            this.xrLabel91.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel91.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel91.Text = "..............................................................";
-            // 
-            // xrLabel92
-            // 
-            this.xrLabel92.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1478.674F);
-            this.xrLabel92.Multiline = true;
-            this.xrLabel92.Name = "xrLabel92";
-            this.xrLabel92.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel92.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel92.Text = ".................................................................";
-            // 
-            // xrLabel93
-            // 
-            this.xrLabel93.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1513.514F);
-            this.xrLabel93.Multiline = true;
-            this.xrLabel93.Name = "xrLabel93";
-            this.xrLabel93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel93.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel93.Text = "..............................................................";
-            // 
-            // xrLabel94
-            // 
-            this.xrLabel94.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1547.552F);
-            this.xrLabel94.Multiline = true;
-            this.xrLabel94.Name = "xrLabel94";
-            this.xrLabel94.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel94.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel94.Text = "...........................................................";
-            // 
-            // xrLabel95
-            // 
-            this.xrLabel95.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1580.789F);
-            this.xrLabel95.Multiline = true;
-            this.xrLabel95.Name = "xrLabel95";
-            this.xrLabel95.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel95.SizeF = new System.Drawing.SizeF(337.8713F, 22.99988F);
-            this.xrLabel95.Text = "...........................................................";
-            // 
-            // xrLabel96
-            // 
-            this.xrLabel96.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 1615.693F);
-            this.xrLabel96.Multiline = true;
-            this.xrLabel96.Name = "xrLabel96";
-            this.xrLabel96.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel96.SizeF = new System.Drawing.SizeF(27.08334F, 23F);
-            this.xrLabel96.Text = "➢";
-            // 
-            // xrLabel97
-            // 
-            this.xrLabel97.LocationFloat = new DevExpress.Utils.PointFloat(37.08446F, 1615.693F);
-            this.xrLabel97.Multiline = true;
-            this.xrLabel97.Name = "xrLabel97";
-            this.xrLabel97.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel97.SizeF = new System.Drawing.SizeF(596.8124F, 23F);
-            this.xrLabel97.Text = "Có vấn đề gì khác mà Ông, Bà cần lưu ý cho bác sĩ gây mê hồi sức biết không ?";
-            // 
-            // xrLabel98
-            // 
-            this.xrLabel98.LocationFloat = new DevExpress.Utils.PointFloat(37.08446F, 1650.885F);
-            this.xrLabel98.Multiline = true;
-            this.xrLabel98.Name = "xrLabel98";
-            this.xrLabel98.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel98.SizeF = new System.Drawing.SizeF(831.9156F, 66.26917F);
-            this.xrLabel98.Text = resources.GetString("xrLabel98.Text");
-            // 
-            // xrLabel99
-            // 
-            this.xrLabel99.Font = new DevExpress.Drawing.DXFont("Times New Roman", 14F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel99.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 9.999984F);
-            this.xrLabel99.Multiline = true;
-            this.xrLabel99.Name = "xrLabel99";
-            this.xrLabel99.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel99.SizeF = new System.Drawing.SizeF(119.2483F, 23F);
-            this.xrLabel99.StylePriority.UseFont = false;
-            this.xrLabel99.Text = "XIN LƯU Ý :";
-            // 
-            // xrLabel100
-            // 
-            this.xrLabel100.LocationFloat = new DevExpress.Utils.PointFloat(49.90499F, 50.81372F);
-            this.xrLabel100.Multiline = true;
-            this.xrLabel100.Name = "xrLabel100";
-            this.xrLabel100.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel100.SizeF = new System.Drawing.SizeF(819.0952F, 51.04487F);
-            this.xrLabel100.Text = "Nếu có thể xin chuẩn bị các giấy tờ liên quan (Toa thuốc, giấy ra viện, phim X-qu" +
-    "ang, Giấy đo điện tim ECC, Giấy siêu âm v.v...) trước khi Bác sĩ gây mê đến thăm" +
-    " khám tiền mê.";
-            // 
-            // xrLabel101
-            // 
-            this.xrLabel101.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 50.81375F);
-            this.xrLabel101.Multiline = true;
-            this.xrLabel101.Name = "xrLabel101";
-            this.xrLabel101.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel101.SizeF = new System.Drawing.SizeF(27.08334F, 23F);
-            this.xrLabel101.StylePriority.UseTextAlignment = false;
-            this.xrLabel101.Text = "⚫";
-            this.xrLabel101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrLabel104.LocationFloat = new DevExpress.Utils.PointFloat(495.779F, 199.4676F);
+            this.xrLabel104.Multiline = true;
+            this.xrLabel104.Name = "xrLabel104";
+            this.xrLabel104.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel104.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
+            this.xrLabel104.Text = "Ngày";
             // 
             // xrLabel102
             // 
@@ -2094,90 +2142,42 @@
     "h, cắt móng tay, móng chân, tháo hết nữ trang, răng giả và nhịn ăn đủ giờ, trước" +
     " khi đến phòng mổ.";
             // 
-            // xrLabel104
+            // xrLabel101
             // 
-            this.xrLabel104.LocationFloat = new DevExpress.Utils.PointFloat(495.779F, 199.4676F);
-            this.xrLabel104.Multiline = true;
-            this.xrLabel104.Name = "xrLabel104";
-            this.xrLabel104.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel104.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel104.Text = "Ngày";
+            this.xrLabel101.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 50.81375F);
+            this.xrLabel101.Multiline = true;
+            this.xrLabel101.Name = "xrLabel101";
+            this.xrLabel101.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel101.SizeF = new System.Drawing.SizeF(27.08334F, 23F);
+            this.xrLabel101.StylePriority.UseTextAlignment = false;
+            this.xrLabel101.Text = "⚫";
+            this.xrLabel101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel105
+            // xrLabel100
             // 
-            this.xrLabel105.LocationFloat = new DevExpress.Utils.PointFloat(600.3156F, 199.4676F);
-            this.xrLabel105.Multiline = true;
-            this.xrLabel105.Name = "xrLabel105";
-            this.xrLabel105.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel105.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel105.Text = "tháng";
+            this.xrLabel100.LocationFloat = new DevExpress.Utils.PointFloat(49.90499F, 50.81372F);
+            this.xrLabel100.Multiline = true;
+            this.xrLabel100.Name = "xrLabel100";
+            this.xrLabel100.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel100.SizeF = new System.Drawing.SizeF(819.0952F, 51.04487F);
+            this.xrLabel100.Text = "Nếu có thể xin chuẩn bị các giấy tờ liên quan (Toa thuốc, giấy ra viện, phim X-qu" +
+    "ang, Giấy đo điện tim ECC, Giấy siêu âm v.v...) trước khi Bác sĩ gây mê đến thăm" +
+    " khám tiền mê.";
             // 
-            // xrLabel106
+            // xrLabel99
             // 
-            this.xrLabel106.LocationFloat = new DevExpress.Utils.PointFloat(704.8522F, 199.4676F);
-            this.xrLabel106.Multiline = true;
-            this.xrLabel106.Name = "xrLabel106";
-            this.xrLabel106.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel106.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel106.Text = "năm";
+            this.xrLabel99.Font = new DevExpress.Drawing.DXFont("Times New Roman", 14F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel99.LocationFloat = new DevExpress.Utils.PointFloat(10.00113F, 9.999984F);
+            this.xrLabel99.Multiline = true;
+            this.xrLabel99.Name = "xrLabel99";
+            this.xrLabel99.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel99.SizeF = new System.Drawing.SizeF(119.2483F, 23F);
+            this.xrLabel99.StylePriority.UseFont = false;
+            this.xrLabel99.Text = "XIN LƯU Ý :";
             // 
-            // xrLabel107
+            // xtraTabbedMdiManager1
             // 
-            this.xrLabel107.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel107.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel107.LocationFloat = new DevExpress.Utils.PointFloat(548.0473F, 199.4676F);
-            this.xrLabel107.Multiline = true;
-            this.xrLabel107.Name = "xrLabel107";
-            this.xrLabel107.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel107.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel107.StylePriority.UseFont = false;
-            this.xrLabel107.StylePriority.UseForeColor = false;
-            this.xrLabel107.StylePriority.UseTextAlignment = false;
-            this.xrLabel107.Text = "20";
-            this.xrLabel107.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrLabel108
-            // 
-            this.xrLabel108.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel108.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel108.LocationFloat = new DevExpress.Utils.PointFloat(652.5839F, 199.4676F);
-            this.xrLabel108.Multiline = true;
-            this.xrLabel108.Name = "xrLabel108";
-            this.xrLabel108.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel108.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel108.StylePriority.UseFont = false;
-            this.xrLabel108.StylePriority.UseForeColor = false;
-            this.xrLabel108.StylePriority.UseTextAlignment = false;
-            this.xrLabel108.Text = "09";
-            this.xrLabel108.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrLabel109
-            // 
-            this.xrLabel109.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel109.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel109.LocationFloat = new DevExpress.Utils.PointFloat(757.1205F, 199.4676F);
-            this.xrLabel109.Multiline = true;
-            this.xrLabel109.Name = "xrLabel109";
-            this.xrLabel109.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel109.SizeF = new System.Drawing.SizeF(52.2683F, 25.40384F);
-            this.xrLabel109.StylePriority.UseFont = false;
-            this.xrLabel109.StylePriority.UseForeColor = false;
-            this.xrLabel109.StylePriority.UseTextAlignment = false;
-            this.xrLabel109.Text = "2023";
-            this.xrLabel109.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrLabel110
-            // 
-            this.xrLabel110.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel110.LocationFloat = new DevExpress.Utils.PointFloat(497.3669F, 224.8713F);
-            this.xrLabel110.Multiline = true;
-            this.xrLabel110.Name = "xrLabel110";
-            this.xrLabel110.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel110.SizeF = new System.Drawing.SizeF(311.6603F, 25.40385F);
-            this.xrLabel110.StylePriority.UseFont = false;
-            this.xrLabel110.StylePriority.UseTextAlignment = false;
-            this.xrLabel110.Text = "Cha mẹ bệnh nhân ký tên";
-            this.xrLabel110.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xtraTabbedMdiManager1.MdiParent = null;
             // 
             // Report_PhieuThamKhaoBenhNhanTruocPhauThuat
             // 

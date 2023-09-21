@@ -18,24 +18,25 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            PhieuCamDoanChapNhanPTTT model = new PhieuCamDoanChapNhanPTTT
-            {
-                TenBS = "Trần Bá Thiện",
-                TenKhoaBS = "Gây mê hồi sức",
-                Chuandoan = "Tê liệt nửa phần bụng dưới",
-                PPPTTT = "Kích điện",
-                Bienchung = "Tê luôn não",
-                Tennguoithan = "Nguyễn Văn A",
-                Tuoi = 24,
-                Gioitinh = 1,
-                Dantoc = "Kinh",
-                Quoctich = "Việt Nam",
-                Danhxung = "Cha",
-                Tenbenhnhan = "Nguyễn văn B",
-                Khoadieutri = "Khoa thần kinh",
-                Tinhtrangbenh = "Tê liệt phần thân dưới, mất đi khả năng đi đứng"
-            };
-            Application.Run(new In_PhieuCamDoanChapNhanPhauThuatThuThuat(model));
+            //PhieuCamDoanChapNhanPTTT model = new PhieuCamDoanChapNhanPTTT
+            //{
+            //    TenBS = "Trần Bá Thiện",
+            //    TenKhoaBS = "Gây mê hồi sức",
+            //    Chuandoan = "Tê liệt nửa phần bụng dưới",
+            //    PPPTTT = "Kích điện",
+            //    Bienchung = "Tê luôn não",
+            //    Tennguoithan = "Nguyễn Văn A",
+            //    Tuoi = 24,
+            //    Gioitinh = 1,
+            //    Dantoc = "Kinh",
+            //    Quoctich = "Việt Nam",
+            //    Danhxung = "Cha",
+            //    Tenbenhnhan = "Nguyễn văn B",
+            //    Khoadieutri = "Khoa thần kinh",
+            //    Tinhtrangbenh = "Tê liệt phần thân dưới, mất đi khả năng đi đứng"
+            //};
+            //Application.Run(new In_PhieuCamDoanChapNhanPhauThuatThuThuat(model));
+            Application.Run(new GiayCamDoanChapNhanGayMeHoiSuc());
         }
     }
 }

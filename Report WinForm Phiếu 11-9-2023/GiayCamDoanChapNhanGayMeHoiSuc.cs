@@ -13,7 +13,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 {
     public partial class GiayCamDoanChapNhanGayMeHoiSuc : Form
     {
-        private string mconnectstring = "server=.;database = GiayCamDoanChapNhanGayMeHoiSuc; uid=sa;pwd=123";
+        private string mconnectstring = Properties.Resources.connectStr;
         private clsCommonMethod comm = new clsCommonMethod();
         private clsEventArgs ev = new clsEventArgs("");
         private string msql;
@@ -140,8 +140,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
         }
         private void btnIn_Click(object sender, EventArgs e)
         {
-            IDPhieuChapNhanGayMe = dgrPhieuCamDoanGayMe.CurrentRow.Cells["cIDPhieuChapNhanGayMe"].Value.ToString();
-            RpGiayCamDoanChapNhanGayMe rp = new RpGiayCamDoanChapNhanGayMe();
+             //IDPhieuChapNhanGayMe = dgrPhieuCamDoanGayMe.CurrentRow.Cells["cIDPhieuChapNhanGayMe"].Value.ToString();
+            In_PhieuCamDoanChapNhanGayMeHoiSuc rp = new In_PhieuCamDoanChapNhanGayMeHoiSuc();
             rp.ShowDialog();
         }
 

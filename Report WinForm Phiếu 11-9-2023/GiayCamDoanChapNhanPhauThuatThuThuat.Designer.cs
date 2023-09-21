@@ -67,22 +67,22 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label12 = new System.Windows.Forms.Label();
             this.cboKhoa = new ControlProject1510.ComboBoxSearch();
             this.cboQuocTich = new ControlProject1510.ComboBoxSearch();
-            this.cboTrangThai = new ControlProject1510.ComboBoxSearch();
             this.cbo_Khoa = new ControlProject1510.ComboBoxSearch();
             this.cboDanhXungGD = new ControlProject1510.ComboBoxSearch();
             this.cboHoTenBS = new ControlProject1510.ComboBoxSearch();
             this.cboChuanDoan = new ControlProject1510.ComboBoxSearch();
             this.linktxtChuanDoan = new System.Windows.Forms.TextBox();
-            this.cboNgheNghiep = new ControlProject1510.ComboBoxSearch();
             this.label10 = new System.Windows.Forms.Label();
             this.txtHoTenDanhXung = new System.Windows.Forms.TextBox();
-            this.h = new System.Windows.Forms.Panel();
+            this.pnlphieu = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnLuu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtNgheNghiep = new System.Windows.Forms.TextBox();
+            this.txtTinhTrangBenh = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.h.SuspendLayout();
+            this.pnlphieu.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -186,104 +186,60 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboChuanDoan.AutoComplete = true;
-            this.cboChuanDoan.AutoDropdown = true;
-            this.cboChuanDoan.BackColorEven = System.Drawing.Color.White;
-            this.cboChuanDoan.BackColorOdd = System.Drawing.Color.White;
-            this.cboChuanDoan.ColumnNames = "MaChuanDoan;TenChuanDoan";
-            this.cboChuanDoan.ColumnWidthDefault = 300;
-            this.cboChuanDoan.ColumnWidths = "";
-            this.cboChuanDoan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboChuanDoan.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboChuanDoan.FormattingEnabled = true;
-            this.cboChuanDoan.LinkedColumnIndex = 0;
-            this.cboChuanDoan.LinkedTextBox = this.linktxtChuanDoan;
-            this.cboChuanDoan.Location = new System.Drawing.Point(261, 90);
-            this.cboChuanDoan.Name = "cboChuanDoan";
-            this.cboChuanDoan.Size = new System.Drawing.Size(843, 30);
-            this.cboChuanDoan.TabIndex = 67;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(23, 196);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(691, 21);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Chúng tôi đã thông báo mức độ thành công của cuộc phẫu thuật/thủ thuật; những ngu" +
+    "y cơ, \r\n";
             // 
             // txtBienChung
             // 
             this.txtBienChung.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboDanhXungGD.AutoComplete = false;
-            this.cboDanhXungGD.AutoDropdown = false;
-            this.cboDanhXungGD.BackColorEven = System.Drawing.Color.White;
-            this.cboDanhXungGD.BackColorOdd = System.Drawing.Color.White;
-            this.cboDanhXungGD.ColumnNames = "TenDanhXung";
-            this.cboDanhXungGD.ColumnWidthDefault = 200;
-            this.cboDanhXungGD.ColumnWidths = "";
-            this.cboDanhXungGD.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboDanhXungGD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboDanhXungGD.FormattingEnabled = true;
-            this.cboDanhXungGD.LinkedColumnIndex = 0;
-            this.cboDanhXungGD.LinkedTextBox = null;
-            this.cboDanhXungGD.Location = new System.Drawing.Point(322, 416);
-            this.cboDanhXungGD.Name = "cboDanhXungGD";
-            this.cboDanhXungGD.Size = new System.Drawing.Size(783, 30);
-            this.cboDanhXungGD.TabIndex = 65;
+            this.txtBienChung.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBienChung.Location = new System.Drawing.Point(245, 162);
+            this.txtBienChung.Name = "txtBienChung";
+            this.txtBienChung.Size = new System.Drawing.Size(860, 29);
+            this.txtBienChung.TabIndex = 12;
+            this.txtBienChung.Enter += new System.EventHandler(this.txtBienChung_Enter);
+            this.txtBienChung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBienChung_KeyPress);
+            this.txtBienChung.Leave += new System.EventHandler(this.txtBienChung_Leave);
             // 
             // txtPhuongPhap
             // 
             this.txtPhuongPhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbo_Khoa.AutoComplete = false;
-            this.cbo_Khoa.AutoDropdown = false;
-            this.cbo_Khoa.BackColorEven = System.Drawing.Color.White;
-            this.cbo_Khoa.BackColorOdd = System.Drawing.Color.White;
-            this.cbo_Khoa.ColumnNames = "TenKhoa";
-            this.cbo_Khoa.ColumnWidthDefault = 200;
-            this.cbo_Khoa.ColumnWidths = "";
-            this.cbo_Khoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbo_Khoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_Khoa.FormattingEnabled = true;
-            this.cbo_Khoa.LinkedColumnIndex = 0;
-            this.cbo_Khoa.LinkedTextBox = null;
-            this.cbo_Khoa.Location = new System.Drawing.Point(322, 479);
-            this.cbo_Khoa.Name = "cbo_Khoa";
-            this.cbo_Khoa.Size = new System.Drawing.Size(782, 30);
-            this.cbo_Khoa.TabIndex = 64;
+            this.txtPhuongPhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhuongPhap.Location = new System.Drawing.Point(334, 127);
+            this.txtPhuongPhap.Name = "txtPhuongPhap";
+            this.txtPhuongPhap.Size = new System.Drawing.Size(771, 29);
+            this.txtPhuongPhap.TabIndex = 13;
+            this.txtPhuongPhap.Enter += new System.EventHandler(this.txtPhuongPhap_Enter);
+            this.txtPhuongPhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhuongPhap_KeyPress);
+            this.txtPhuongPhap.Leave += new System.EventHandler(this.txtPhuongPhap_Leave);
             // 
             // label35
             // 
-            this.cboTrangThai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboTrangThai.AutoComplete = false;
-            this.cboTrangThai.AutoDropdown = false;
-            this.cboTrangThai.BackColorEven = System.Drawing.Color.White;
-            this.cboTrangThai.BackColorOdd = System.Drawing.Color.White;
-            this.cboTrangThai.ColumnNames = "TenTrangThai";
-            this.cboTrangThai.ColumnWidthDefault = 150;
-            this.cboTrangThai.ColumnWidths = "";
-            this.cboTrangThai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboTrangThai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboTrangThai.FormattingEnabled = true;
-            this.cboTrangThai.LinkedColumnIndex = 0;
-            this.cboTrangThai.LinkedTextBox = null;
-            this.cboTrangThai.Location = new System.Drawing.Point(566, 512);
-            this.cboTrangThai.Name = "cboTrangThai";
-            this.cboTrangThai.Size = new System.Drawing.Size(538, 30);
-            this.cboTrangThai.TabIndex = 63;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(20, 284);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(67, 21);
+            this.label35.TabIndex = 28;
+            this.label35.Text = "Tôi tên:";
             // 
             // label34
             // 
-            this.cboQuocTich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboQuocTich.AutoComplete = false;
-            this.cboQuocTich.AutoDropdown = false;
-            this.cboQuocTich.BackColorEven = System.Drawing.Color.White;
-            this.cboQuocTich.BackColorOdd = System.Drawing.Color.White;
-            this.cboQuocTich.ColumnNames = "TenQuocTich";
-            this.cboQuocTich.ColumnWidthDefault = 150;
-            this.cboQuocTich.ColumnWidths = "";
-            this.cboQuocTich.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboQuocTich.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboQuocTich.FormattingEnabled = true;
-            this.cboQuocTich.LinkedColumnIndex = 0;
-            this.cboQuocTich.LinkedTextBox = null;
-            this.cboQuocTich.Location = new System.Drawing.Point(819, 316);
-            this.cboQuocTich.Name = "cboQuocTich";
-            this.cboQuocTich.Size = new System.Drawing.Size(286, 30);
-            this.cboQuocTich.TabIndex = 62;
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(20, 318);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(73, 21);
+            this.label34.TabIndex = 29;
+            this.label34.Text = "Dân tộc:";
             // 
             // label33
             // 
@@ -297,19 +253,13 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label32
             // 
-            this.dgrBacSi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrBacSi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cHoTenBS,
-            this.cTenKhoa,
-            this.cChuanDoan,
-            this.cPhuongPhap,
-            this.cBienChung});
-            this.dgrBacSi.Location = new System.Drawing.Point(541, 43);
-            this.dgrBacSi.Name = "dgrBacSi";
-            this.dgrBacSi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrBacSi.Size = new System.Drawing.Size(315, 150);
-            this.dgrBacSi.TabIndex = 60;
-            this.dgrBacSi.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgrBacSi_RowPostPaint);
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(20, 386);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(69, 21);
+            this.label32.TabIndex = 31;
+            this.label32.Text = "Địa chỉ:";
             // 
             // label31
             // 
@@ -429,15 +379,41 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtDanToc
             // 
-            this.chkNu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkNu.AutoSize = true;
-            this.chkNu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNu.Location = new System.Drawing.Point(1052, 282);
-            this.chkNu.Name = "chkNu";
-            this.chkNu.Size = new System.Drawing.Size(52, 25);
-            this.chkNu.TabIndex = 48;
-            this.chkNu.Text = "Nữ";
-            this.chkNu.UseVisualStyleBackColor = true;
+            this.txtDanToc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDanToc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDanToc.Location = new System.Drawing.Point(129, 316);
+            this.txtDanToc.Name = "txtDanToc";
+            this.txtDanToc.Size = new System.Drawing.Size(557, 29);
+            this.txtDanToc.TabIndex = 42;
+            this.txtDanToc.Enter += new System.EventHandler(this.txtDanToc_Enter);
+            this.txtDanToc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDanToc_KeyPress);
+            this.txtDanToc.Leave += new System.EventHandler(this.txtDanToc_Leave);
+            // 
+            // txtNoiLamViec
+            // 
+            this.txtNoiLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoiLamViec.Location = new System.Drawing.Point(819, 350);
+            this.txtNoiLamViec.Name = "txtNoiLamViec";
+            this.txtNoiLamViec.Size = new System.Drawing.Size(285, 29);
+            this.txtNoiLamViec.TabIndex = 43;
+            this.txtNoiLamViec.Enter += new System.EventHandler(this.txtNoiLamViec_Enter);
+            this.txtNoiLamViec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoiLamViec_KeyPress);
+            this.txtNoiLamViec.Leave += new System.EventHandler(this.txtNoiLamViec_Leave);
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(129, 384);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(975, 29);
+            this.txtDiaChi.TabIndex = 44;
+            this.txtDiaChi.Enter += new System.EventHandler(this.txtDiaChi_Enter);
+            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
+            this.txtDiaChi.Leave += new System.EventHandler(this.txtDiaChi_Leave);
             // 
             // chkNam
             // 
@@ -451,83 +427,17 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.chkNam.Text = "Nam";
             this.chkNam.UseVisualStyleBackColor = true;
             // 
-            // txtHoTenDanhXung
-            // 
-            this.txtHoTenDanhXung.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHoTenDanhXung.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTenDanhXung.Location = new System.Drawing.Point(322, 448);
-            this.txtHoTenDanhXung.Name = "txtHoTenDanhXung";
-            this.txtHoTenDanhXung.ReadOnly = true;
-            this.txtHoTenDanhXung.Size = new System.Drawing.Size(782, 29);
-            this.txtHoTenDanhXung.TabIndex = 45;
-            this.txtHoTenDanhXung.TabStop = false;
-            this.txtHoTenDanhXung.Enter += new System.EventHandler(this.HoTenThanNhan_Enter);
-            this.txtHoTenDanhXung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HoTenThanNhan_KeyPress);
-            this.txtHoTenDanhXung.Leave += new System.EventHandler(this.HoTenThanNhan_Leave);
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(112, 384);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(992, 29);
-            this.txtDiaChi.TabIndex = 44;
-            this.txtDiaChi.Enter += new System.EventHandler(this.txtDiaChi_Enter);
-            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
-            this.txtDiaChi.Leave += new System.EventHandler(this.txtDiaChi_Leave);
-            // 
-            // txtNoiLamViec
-            // 
-            this.txtNoiLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoiLamViec.Location = new System.Drawing.Point(824, 350);
-            this.txtNoiLamViec.Name = "txtNoiLamViec";
-            this.txtNoiLamViec.Size = new System.Drawing.Size(285, 29);
-            this.txtNoiLamViec.TabIndex = 43;
-            this.txtNoiLamViec.Enter += new System.EventHandler(this.txtNoiLamViec_Enter);
-            this.txtNoiLamViec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoiLamViec_KeyPress);
-            this.txtNoiLamViec.Leave += new System.EventHandler(this.txtNoiLamViec_Leave);
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDanToc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDanToc.Location = new System.Drawing.Point(102, 316);
-            this.txtDanToc.Name = "txtDanToc";
-            this.txtDanToc.Size = new System.Drawing.Size(584, 29);
-            this.txtDanToc.TabIndex = 42;
-            this.txtDanToc.Enter += new System.EventHandler(this.txtDanToc_Enter);
-            this.txtDanToc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDanToc_KeyPress);
-            this.txtDanToc.Leave += new System.EventHandler(this.txtDanToc_Leave);
-            // 
-            // chkNam
-            // 
-            this.txtTuoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuoi.Location = new System.Drawing.Point(819, 282);
-            this.txtTuoi.Name = "txtTuoi";
-            this.txtTuoi.Size = new System.Drawing.Size(150, 29);
-            this.txtTuoi.TabIndex = 41;
-            this.txtTuoi.Enter += new System.EventHandler(this.txtTuoi_Enter);
-            this.txtTuoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTuoi_KeyPress);
-            this.txtTuoi.Leave += new System.EventHandler(this.txtTuoi_Leave);
-            // 
             // chkNu
             // 
-            this.txtHoTenBN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHoTenBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTenBN.Location = new System.Drawing.Point(102, 282);
-            this.txtHoTenBN.Name = "txtHoTenBN";
-            this.txtHoTenBN.Size = new System.Drawing.Size(584, 29);
-            this.txtHoTenBN.TabIndex = 40;
-            this.txtHoTenBN.Enter += new System.EventHandler(this.txtHoTenBN_Enter);
-            this.txtHoTenBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTenBN_KeyPress);
-            this.txtHoTenBN.Leave += new System.EventHandler(this.txtHoTenBN_Leave);
+            this.chkNu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkNu.AutoSize = true;
+            this.chkNu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNu.Location = new System.Drawing.Point(1052, 282);
+            this.chkNu.Name = "chkNu";
+            this.chkNu.Size = new System.Drawing.Size(52, 25);
+            this.chkNu.TabIndex = 48;
+            this.chkNu.Text = "Nữ";
+            this.chkNu.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -557,56 +467,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.chkDongY.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(20, 450);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(194, 21);
-            this.label26.TabIndex = 37;
-            this.label26.Text = "của bệnh nhân, họ tên là:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(12, 256);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(305, 22);
-            this.label27.TabIndex = 36;
-            this.label27.Text = "2. Bệnh nhân hoặc đại diện gia đình:";
-            // 
-            // label28
-            // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(699, 352);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(107, 21);
-            this.label28.TabIndex = 35;
-            this.label28.Text = "Nơi làm việc:";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(718, 318);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(88, 21);
-            this.label29.TabIndex = 34;
-            this.label29.Text = "Quốc tịch:";
-            // 
-            // label30
-            // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(758, 284);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(48, 21);
-            this.label30.TabIndex = 33;
-            this.label30.Text = "Tuổi:";
+            this.chkDongY.AutoSize = true;
+            this.chkDongY.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDongY.Location = new System.Drawing.Point(129, 594);
+            this.chkDongY.Name = "chkDongY";
+            this.chkDongY.Size = new System.Drawing.Size(429, 25);
+            this.chkDongY.TabIndex = 55;
+            this.chkDongY.Text = "Đồng ý phẫu thuật, thủ thuật và để giấy này làm bằng.";
+            this.chkDongY.UseVisualStyleBackColor = true;
             // 
             // chkKhongDongY
             // 
@@ -672,31 +540,26 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboQuocTich.Size = new System.Drawing.Size(286, 30);
             this.cboQuocTich.TabIndex = 62;
             // 
-            // cboTrangThai
-            // 
-            this.cboTrangThai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhuongPhap.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhuongPhap.Location = new System.Drawing.Point(334, 127);
-            this.txtPhuongPhap.Name = "txtPhuongPhap";
-            this.txtPhuongPhap.Size = new System.Drawing.Size(771, 29);
-            this.txtPhuongPhap.TabIndex = 13;
-            this.txtPhuongPhap.Enter += new System.EventHandler(this.txtPhuongPhap_Enter);
-            this.txtPhuongPhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhuongPhap_KeyPress);
-            this.txtPhuongPhap.Leave += new System.EventHandler(this.txtPhuongPhap_Leave);
-            // 
             // cbo_Khoa
             // 
             this.cbo_Khoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBienChung.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBienChung.Location = new System.Drawing.Point(245, 162);
-            this.txtBienChung.Name = "txtBienChung";
-            this.txtBienChung.Size = new System.Drawing.Size(860, 29);
-            this.txtBienChung.TabIndex = 12;
-            this.txtBienChung.Enter += new System.EventHandler(this.txtBienChung_Enter);
-            this.txtBienChung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBienChung_KeyPress);
-            this.txtBienChung.Leave += new System.EventHandler(this.txtBienChung_Leave);
+            this.cbo_Khoa.AutoComplete = false;
+            this.cbo_Khoa.AutoDropdown = false;
+            this.cbo_Khoa.BackColorEven = System.Drawing.Color.White;
+            this.cbo_Khoa.BackColorOdd = System.Drawing.Color.White;
+            this.cbo_Khoa.ColumnNames = "TenKhoa";
+            this.cbo_Khoa.ColumnWidthDefault = 200;
+            this.cbo_Khoa.ColumnWidths = "";
+            this.cbo_Khoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbo_Khoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_Khoa.FormattingEnabled = true;
+            this.cbo_Khoa.LinkedColumnIndex = 0;
+            this.cbo_Khoa.LinkedTextBox = null;
+            this.cbo_Khoa.Location = new System.Drawing.Point(378, 479);
+            this.cbo_Khoa.Name = "cbo_Khoa";
+            this.cbo_Khoa.Size = new System.Drawing.Size(727, 30);
+            this.cbo_Khoa.TabIndex = 64;
             // 
             // cboDanhXungGD
             // 
@@ -712,6 +575,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboDanhXungGD.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.cboDanhXungGD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDanhXungGD.FormattingEnabled = true;
+            this.cboDanhXungGD.Items.AddRange(new object[] {
+            "Cha",
+            "Mẹ",
+            "Người đại diện"});
             this.cboDanhXungGD.LinkedColumnIndex = 0;
             this.cboDanhXungGD.LinkedTextBox = null;
             this.cboDanhXungGD.Location = new System.Drawing.Point(378, 416);
@@ -771,35 +638,16 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.linktxtChuanDoan.TabIndex = 68;
             this.linktxtChuanDoan.TabStop = false;
             // 
-            // cboNgheNghiep
-            // 
-            this.cboNgheNghiep.AutoComplete = false;
-            this.cboNgheNghiep.AutoDropdown = false;
-            this.cboNgheNghiep.BackColorEven = System.Drawing.Color.White;
-            this.cboNgheNghiep.BackColorOdd = System.Drawing.Color.White;
-            this.cboNgheNghiep.ColumnNames = "TenNgheNghiep";
-            this.cboNgheNghiep.ColumnWidthDefault = 500;
-            this.cboNgheNghiep.ColumnWidths = "";
-            this.cboNgheNghiep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboNgheNghiep.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboNgheNghiep.FormattingEnabled = true;
-            this.cboNgheNghiep.LinkedColumnIndex = 0;
-            this.cboNgheNghiep.LinkedTextBox = null;
-            this.cboNgheNghiep.Location = new System.Drawing.Point(129, 349);
-            this.cboNgheNghiep.Name = "cboNgheNghiep";
-            this.cboNgheNghiep.Size = new System.Drawing.Size(557, 30);
-            this.cboNgheNghiep.TabIndex = 69;
-            // 
             // label10
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(705, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 21);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Khoa:";
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(537, 41);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 21);
+            this.label10.TabIndex = 71;
+            this.label10.Text = "Khoa :";
             // 
             // txtHoTenDanhXung
             // 
@@ -811,61 +659,61 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtHoTenDanhXung.Size = new System.Drawing.Size(727, 29);
             this.txtHoTenDanhXung.TabIndex = 72;
             // 
-            // h
+            // pnlphieu
             // 
-            this.h.AutoScroll = true;
-            this.h.AutoSize = true;
-            this.h.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.h.Controls.Add(this.txtHoTenDanhXung);
-            this.h.Controls.Add(this.label10);
-            this.h.Controls.Add(this.cboNgheNghiep);
-            this.h.Controls.Add(this.linktxtChuanDoan);
-            this.h.Controls.Add(this.cboChuanDoan);
-            this.h.Controls.Add(this.cboHoTenBS);
-            this.h.Controls.Add(this.cboDanhXungGD);
-            this.h.Controls.Add(this.cbo_Khoa);
-            this.h.Controls.Add(this.cboTrangThai);
-            this.h.Controls.Add(this.cboQuocTich);
-            this.h.Controls.Add(this.cboKhoa);
-            this.h.Controls.Add(this.label12);
-            this.h.Controls.Add(this.chkKhongDongY);
-            this.h.Controls.Add(this.chkDongY);
-            this.h.Controls.Add(this.label13);
-            this.h.Controls.Add(this.label11);
-            this.h.Controls.Add(this.chkNu);
-            this.h.Controls.Add(this.chkNam);
-            this.h.Controls.Add(this.txtDiaChi);
-            this.h.Controls.Add(this.txtNoiLamViec);
-            this.h.Controls.Add(this.txtDanToc);
-            this.h.Controls.Add(this.txtTuoi);
-            this.h.Controls.Add(this.txtHoTenBN);
-            this.h.Controls.Add(this.label20);
-            this.h.Controls.Add(this.label25);
-            this.h.Controls.Add(this.label26);
-            this.h.Controls.Add(this.label27);
-            this.h.Controls.Add(this.label28);
-            this.h.Controls.Add(this.label29);
-            this.h.Controls.Add(this.label30);
-            this.h.Controls.Add(this.label31);
-            this.h.Controls.Add(this.label32);
-            this.h.Controls.Add(this.label33);
-            this.h.Controls.Add(this.label34);
-            this.h.Controls.Add(this.label35);
-            this.h.Controls.Add(this.txtPhuongPhap);
-            this.h.Controls.Add(this.txtBienChung);
-            this.h.Controls.Add(this.label9);
-            this.h.Controls.Add(this.label8);
-            this.h.Controls.Add(this.label7);
-            this.h.Controls.Add(this.label6);
-            this.h.Controls.Add(this.label5);
-            this.h.Controls.Add(this.label4);
-            this.h.Controls.Add(this.label3);
-            this.h.Controls.Add(this.label2);
-            this.h.Dock = System.Windows.Forms.DockStyle.Top;
-            this.h.Location = new System.Drawing.Point(0, 50);
-            this.h.Name = "h";
-            this.h.Size = new System.Drawing.Size(1133, 663);
-            this.h.TabIndex = 1;
+            this.pnlphieu.AutoScroll = true;
+            this.pnlphieu.AutoSize = true;
+            this.pnlphieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlphieu.Controls.Add(this.txtTinhTrangBenh);
+            this.pnlphieu.Controls.Add(this.txtNgheNghiep);
+            this.pnlphieu.Controls.Add(this.txtHoTenDanhXung);
+            this.pnlphieu.Controls.Add(this.label10);
+            this.pnlphieu.Controls.Add(this.linktxtChuanDoan);
+            this.pnlphieu.Controls.Add(this.cboChuanDoan);
+            this.pnlphieu.Controls.Add(this.cboHoTenBS);
+            this.pnlphieu.Controls.Add(this.cboDanhXungGD);
+            this.pnlphieu.Controls.Add(this.cbo_Khoa);
+            this.pnlphieu.Controls.Add(this.cboQuocTich);
+            this.pnlphieu.Controls.Add(this.cboKhoa);
+            this.pnlphieu.Controls.Add(this.label12);
+            this.pnlphieu.Controls.Add(this.chkKhongDongY);
+            this.pnlphieu.Controls.Add(this.chkDongY);
+            this.pnlphieu.Controls.Add(this.label13);
+            this.pnlphieu.Controls.Add(this.label11);
+            this.pnlphieu.Controls.Add(this.chkNu);
+            this.pnlphieu.Controls.Add(this.chkNam);
+            this.pnlphieu.Controls.Add(this.txtDiaChi);
+            this.pnlphieu.Controls.Add(this.txtNoiLamViec);
+            this.pnlphieu.Controls.Add(this.txtDanToc);
+            this.pnlphieu.Controls.Add(this.txtTuoi);
+            this.pnlphieu.Controls.Add(this.txtHoTenBN);
+            this.pnlphieu.Controls.Add(this.label20);
+            this.pnlphieu.Controls.Add(this.label25);
+            this.pnlphieu.Controls.Add(this.label26);
+            this.pnlphieu.Controls.Add(this.label27);
+            this.pnlphieu.Controls.Add(this.label28);
+            this.pnlphieu.Controls.Add(this.label29);
+            this.pnlphieu.Controls.Add(this.label30);
+            this.pnlphieu.Controls.Add(this.label31);
+            this.pnlphieu.Controls.Add(this.label32);
+            this.pnlphieu.Controls.Add(this.label33);
+            this.pnlphieu.Controls.Add(this.label34);
+            this.pnlphieu.Controls.Add(this.label35);
+            this.pnlphieu.Controls.Add(this.txtPhuongPhap);
+            this.pnlphieu.Controls.Add(this.txtBienChung);
+            this.pnlphieu.Controls.Add(this.label9);
+            this.pnlphieu.Controls.Add(this.label8);
+            this.pnlphieu.Controls.Add(this.label7);
+            this.pnlphieu.Controls.Add(this.label6);
+            this.pnlphieu.Controls.Add(this.label5);
+            this.pnlphieu.Controls.Add(this.label4);
+            this.pnlphieu.Controls.Add(this.label3);
+            this.pnlphieu.Controls.Add(this.label2);
+            this.pnlphieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlphieu.Location = new System.Drawing.Point(0, 50);
+            this.pnlphieu.Name = "pnlphieu";
+            this.pnlphieu.Size = new System.Drawing.Size(1133, 663);
+            this.pnlphieu.TabIndex = 1;
             // 
             // panel4
             // 
@@ -908,6 +756,26 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel3.Size = new System.Drawing.Size(1133, 49);
             this.panel3.TabIndex = 4;
             // 
+            // txtNgheNghiep
+            // 
+            this.txtNgheNghiep.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNgheNghiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgheNghiep.Location = new System.Drawing.Point(129, 351);
+            this.txtNgheNghiep.Name = "txtNgheNghiep";
+            this.txtNgheNghiep.Size = new System.Drawing.Size(557, 29);
+            this.txtNgheNghiep.TabIndex = 73;
+            // 
+            // txtTinhTrangBenh
+            // 
+            this.txtTinhTrangBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTinhTrangBenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinhTrangBenh.Location = new System.Drawing.Point(378, 509);
+            this.txtTinhTrangBenh.Name = "txtTinhTrangBenh";
+            this.txtTinhTrangBenh.Size = new System.Drawing.Size(727, 29);
+            this.txtTinhTrangBenh.TabIndex = 74;
+            // 
             // GiayCamDoanChapNhanPhauThuatThuThuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -915,14 +783,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.ClientSize = new System.Drawing.Size(1133, 657);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.h);
+            this.Controls.Add(this.pnlphieu);
             this.Controls.Add(this.panel1);
             this.Name = "GiayCamDoanChapNhanPhauThuatThuThuat";
             this.Text = "GiayCamDoanChapNhanPhauThuatThuThuat";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.h.ResumeLayout(false);
-            this.h.PerformLayout();
+            this.pnlphieu.ResumeLayout(false);
+            this.pnlphieu.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -970,19 +838,19 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Label label12;
         private ControlProject1510.ComboBoxSearch cboKhoa;
         private ControlProject1510.ComboBoxSearch cboQuocTich;
-        private ControlProject1510.ComboBoxSearch cboTrangThai;
         private ControlProject1510.ComboBoxSearch cbo_Khoa;
         private ControlProject1510.ComboBoxSearch cboDanhXungGD;
         private ControlProject1510.ComboBoxSearch cboHoTenBS;
         private ControlProject1510.ComboBoxSearch cboChuanDoan;
         private System.Windows.Forms.TextBox linktxtChuanDoan;
-        private ControlProject1510.ComboBoxSearch cboNgheNghiep;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtHoTenDanhXung;
-        private System.Windows.Forms.Panel h;
+        private System.Windows.Forms.Panel pnlphieu;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txtNgheNghiep;
+        private System.Windows.Forms.TextBox txtTinhTrangBenh;
     }
 }

@@ -14,7 +14,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
 {
     public partial class GiayCamDoanChapNhanPhauThuatThuThuat : Form
     {
-        public static string mconnectstring = "server=.; database=PhauThuat;uid=sa;pwd=123";
+        public static string mconnectstring = Properties.Resources.connectStr;
         private clsCommonMethod comm = new clsCommonMethod();
         private clsEventArgs ev = new clsEventArgs("");
         private string msql;
@@ -190,38 +190,38 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private void LoadData()
         {
             // cbo Khoa
-            msql = "SELECT * FROM [dbo].[Khoa]";
+            msql = "SELECT * FROM [dbo].[tabMACHUYENKHOA]";
             DataTable k = comm.GetDataTable(mconnectstring, msql, "khoa");
             cboKhoa.DataSource = k.Copy();
-            cboKhoa.DisplayMember = "TenKhoa";
-            cboKhoa.ValueMember = "MaKhoa";
+            cboKhoa.DisplayMember = "TENCHUYENKHOA";
+            cboKhoa.ValueMember = "TENTAT";
             cboKhoa.CustomAlignment = new string[] { "l", "l" };
             cboKhoa.CustomColumnStyle = new string[] { "t", "t" };
             cbo_Khoa.DataSource = k.Copy();
-            cbo_Khoa.DisplayMember = "TenKhoa";
-            cbo_Khoa.ValueMember = "MaKhoa";
+            cbo_Khoa.DisplayMember = "TENCHUYENKHOA";
+            cbo_Khoa.ValueMember = "TENTAT";
             cbo_Khoa.CustomAlignment = new string[] { "l", "l" };
             cbo_Khoa.CustomColumnStyle = new string[] { "t", "t" };
 
             // cbo Tên BS
-            msql = "SELECT * FROM [dbo].[BacSi]";
+            msql = "SELECT * FROM [dbo].[tabMaBS]";
             DataTable bs = comm.GetDataTable(mconnectstring, msql, "BacSi");
             cboHoTenBS.DataSource = bs.Copy();
-            cboHoTenBS.DisplayMember = "TenBS";
-            cboHoTenBS.ValueMember = "MaBS";
+            cboHoTenBS.DisplayMember = "TENBACSI";
+            cboHoTenBS.ValueMember = "MABACSI";
             cboHoTenBS.CustomAlignment = new string[] { "l", "l" };
             cboHoTenBS.CustomColumnStyle = new string[] { "t", "t" };
             // cbo Chuẩn Đoán
-            msql = "SELECT * FROM [dbo].[ChuanDoan]";
+            msql = "SELECT * FROM [dbo].[tabCDSPK]";
             DataTable cd = comm.GetDataTable(mconnectstring, msql, "ChuanDoan");
             cboChuanDoan.DataSource = cd.Copy();
-            cboChuanDoan.DisplayMember = "TenChuanDoan";
-            cboChuanDoan.ValueMember = "MaChuanDoan";
+            cboChuanDoan.DisplayMember = "TenChanDoan";
+            cboChuanDoan.ValueMember = "MaChanDoan";
             cboChuanDoan.CustomAlignment = new string[] { "l", "l" };
             cboChuanDoan.CustomColumnStyle = new string[] { "t", "t" };
             cboChuanDoan.sf = setfocusTensearch;
             // cbo Quốc tịch
-            msql = "SELECT * FROM [dbo].[QuocTich]";
+            msql = "SELECT * FROM [dbo].[tabQuocGia]";
             DataTable qt = comm.GetDataTable(mconnectstring, msql, "ChuanDoan");
             cboQuocTich.DataSource = qt.Copy();
             cboQuocTich.DisplayMember = "TenQuocTich";
@@ -229,29 +229,29 @@ namespace Report_WinForm_Phiếu_11_9_2023
             cboQuocTich.CustomAlignment = new string[] { "l", "l" };
             cboQuocTich.CustomColumnStyle = new string[] { "t", "t" };
             //cbo Danh Xưng GD
-            msql = "SELECT * FROM [dbo].[DanhXungGD]";
-            DataTable dx = comm.GetDataTable(mconnectstring, msql, "DanhXungGD");
-            cboDanhXungGD.DataSource = dx.Copy();
-            cboDanhXungGD.DisplayMember = "TenDanhXung";
-            cboDanhXungGD.ValueMember = "MaDanhXung";
-            cboDanhXungGD.CustomAlignment = new string[] { "l", "l" };
-            cboDanhXungGD.CustomColumnStyle = new string[] { "t", "t" };
+            //msql = "SELECT * FROM [dbo].[DanhXungGD]";
+            //DataTable dx = comm.GetDataTable(mconnectstring, msql, "DanhXungGD");
+            //cboDanhXungGD.DataSource = dx.Copy();
+            //cboDanhXungGD.DisplayMember = "TenDanhXung";
+            //cboDanhXungGD.ValueMember = "MaDanhXung";
+            //cboDanhXungGD.CustomAlignment = new string[] { "l", "l" };
+            //cboDanhXungGD.CustomColumnStyle = new string[] { "t", "t" };
             // cbo Trạng Thái
-            msql = "SELECT * FROM [dbo].[TrangThaiBN]";
-            DataTable tt = comm.GetDataTable(mconnectstring, msql, "TrangThaiBN");
-            cboTrangThai.DataSource = tt.Copy();
-            cboTrangThai.DisplayMember = "TenTrangThai";
-            cboTrangThai.ValueMember = "MaTrangThai";
-            cboTrangThai.CustomAlignment = new string[] { "l", "l" };
-            cboTrangThai.CustomColumnStyle = new string[] { "t", "t" };
+            //msql = "SELECT * FROM [dbo].[TrangThaiBN]";
+            //DataTable tt = comm.GetDataTable(mconnectstring, msql, "TrangThaiBN");
+            //cboTrangThai.DataSource = tt.Copy();
+            //cboTrangThai.DisplayMember = "TenTrangThai";
+            //cboTrangThai.ValueMember = "MaTrangThai";
+            //cboTrangThai.CustomAlignment = new string[] { "l", "l" };
+            //cboTrangThai.CustomColumnStyle = new string[] { "t", "t" };
             // cbo Nghề Nghiệp
-            msql = "SELECT * FROM [dbo].[NgheNghiep]";
-            DataTable nn = comm.GetDataTable(mconnectstring, msql, "NgheNghiep");
-            cboNgheNghiep.DataSource = nn.Copy();
-            cboNgheNghiep.DisplayMember = "TenNgheNghiep";
-            cboNgheNghiep.ValueMember = "MaNgheNghiep";
-            cboNgheNghiep.CustomAlignment = new string[] { "l", "l" };
-            cboNgheNghiep.CustomColumnStyle = new string[] { "t", "t" };
+            //msql = "SELECT * FROM [dbo].[NgheNghiep]";
+            //DataTable nn = comm.GetDataTable(mconnectstring, msql, "NgheNghiep");
+            //cboNgheNghiep.DataSource = nn.Copy();
+            //cboNgheNghiep.DisplayMember = "TenNgheNghiep";
+            //cboNgheNghiep.ValueMember = "MaNgheNghiep";
+            //cboNgheNghiep.CustomAlignment = new string[] { "l", "l" };
+            //cboNgheNghiep.CustomColumnStyle = new string[] { "t", "t" };
         }
         private int setfocusTensearch()
         {
@@ -275,7 +275,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private void LoadLuuBenhNhan()
         {
             msql = "INSERT INTO [dbo].[BenhNhanKhamBenh]([TenBN],[Tuoi],[DanToc],[QuocTich],[TenNgheNghiep],[NoiLamViec],[DiaChi],[TenDanhXung],[HoTenDanhXung],[KhoaDieuTri],[TrangThai],[GioiTinh_Nam],[GioiTinh_Nu],[DongYPhauThuat],[KhongDongYPhauThuat])" +
-                "VALUES(N'" + txtHoTenBN.Text + "',N'" + txtTuoi.Text + "',N'" + txtDanToc.Text + "',N'" + cboQuocTich.SelectedValue + "',N'" + cboNgheNghiep.SelectedValue + "',N'" + txtNoiLamViec.Text + "',N'" + txtDiaChi.Text + "',N'" + cboDanhXungGD.SelectedValue + "',N'" + txtHoTenDanhXung.Text + "',N'" + cbo_Khoa.SelectedValue + "',N'" + cboTrangThai.SelectedValue + "',N'" + chkNam.Checked + "',N'" + chkNu.Checked + "',N'" + chkDongY.Checked + "',N'" + chkKhongDongY.Checked + "')";
+                "VALUES(N'" + txtHoTenBN.Text + "',N'" + txtTuoi.Text + "',N'" + txtDanToc.Text + "',N'" + cboQuocTich.SelectedValue + "',N'" + txtNgheNghiep.Text + "',N'" + txtNoiLamViec.Text + "',N'" + txtDiaChi.Text + "',N'" + cboDanhXungGD.SelectedValue + "',N'" + txtHoTenDanhXung.Text + "',N'" + cbo_Khoa.SelectedValue + "',N'" + txtTinhTrangBenh.Text + "',N'" + chkNam.Checked + "',N'" + chkNu.Checked + "',N'" + chkDongY.Checked + "',N'" + chkKhongDongY.Checked + "')";
             comm.RunSQL(mconnectstring, msql);
         }
 
@@ -286,9 +286,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 LoadLuuBacSiThucHien();
                 LoadLuuBenhNhan();
                 ev.QFrmThongBao("Đã nhập thành công !!");
-                //msql = "INSERT INTO [dbo].[BacSiThucHien]([HoTenBS],[TenKhoa],[ChuanDoan],[PhuongPhap],[BienChung])" +
-                //    "VALUES(N'" + cboHoTenBS.SelectedValue + "',N'" + cboKhoa.SelectedValue + "',N'" + cboChuanDoan.SelectedValue + "',N'" + txtPhuongPhap.Text + "',N'" + txtBienChung.Text + "')";
-                //comm.RunSQL(mconnectstring, msql);
             }
             else
             {
