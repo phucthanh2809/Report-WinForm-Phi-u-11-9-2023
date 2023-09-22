@@ -787,11 +787,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             ev.Qcbo_Leave(sender, e);
         }
-
-        private void cboKhoa_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
         private void txtIn_Click(object sender, EventArgs e)
         {
             Print();

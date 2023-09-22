@@ -2187,7 +2187,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboKhoa.TabIndex = 5;
             this.cboKhoa.SelectedIndexChanged += new System.EventHandler(this.cboKhoa_SelectedIndexChanged);
             this.cboKhoa.Enter += new System.EventHandler(this.cboKhoa_Enter);
-            this.cboKhoa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboKhoa_KeyPress);
             this.cboKhoa.Leave += new System.EventHandler(this.cboKhoa_Leave);
             // 
             // cboPPPT
