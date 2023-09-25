@@ -68,5 +68,15 @@ namespace Report_WinForm_Phiếu_11_9_2023.Properties {
                 return ResourceManager.GetString("connectStr", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_icon4 {
+            get {
+                object obj = ResourceManager.GetObject("delete_icon4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

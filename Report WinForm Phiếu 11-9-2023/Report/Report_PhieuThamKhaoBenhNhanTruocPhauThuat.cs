@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraReports.UI;
+using Report_WinForm_Phiếu_11_9_2023.Model;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -12,6 +13,9 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
         {
             InitializeComponent();
         }
-
+        public void InitData(PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau model)
+        {
+            objectDataSource1.DataSource = model;
+        }
     }
 }

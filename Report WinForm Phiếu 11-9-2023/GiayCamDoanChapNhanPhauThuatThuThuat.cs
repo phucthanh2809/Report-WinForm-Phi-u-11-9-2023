@@ -88,7 +88,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             ev.Qtxt_Enter(sender, e);
         }
-
+        private void txtNgheNghiep_Enter(object sender, EventArgs e)
+        {
+            ev.Qtxt_Enter(sender, e);
+        }
         private void txtTuoi_Enter(object sender, EventArgs e)
         {
             ev.Qtxt_Enter(sender, e);
@@ -113,7 +116,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             ev.Qtxt_Enter(sender, e);
         }
-
+        private void txtTinhTrangBenh_Enter(object sender, EventArgs e)
+        {
+            ev.Qtxt_Enter(sender, e);
+        }
         private void txtHoTen_Leave(object sender, EventArgs e)
         {
             ev.Qtxt_Leave(sender, e);
@@ -134,6 +140,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             ev.Qtxt_Leave(sender, e);
         }
 
+        private void txtTinhTrangBenh_Leave(object sender, EventArgs e)
+        {
+            ev.Qtxt_Leave(sender, e);
+        }
         private void txtHoTenBN_Leave(object sender, EventArgs e)
         {
             ev.Qtxt_Leave(sender, e);
@@ -155,6 +165,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
         }
 
         private void txtDiaChi_Leave(object sender, EventArgs e)
+        {
+            ev.Qtxt_Leave(sender, e);
+        }
+        private void txtNgheNghiep_Leave(object sender, EventArgs e)
         {
             ev.Qtxt_Leave(sender, e);
         }
@@ -201,6 +215,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void txtDanToc_KeyPress(object sender, KeyPressEventArgs e)
         {
+            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtNgheNghiep);
+        }
+        private void txtNgheNghiep_KeyPress(object sender, KeyPressEventArgs e)
+        {
             ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtNoiLamViec);
         }
 
@@ -216,7 +234,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
 
         private void HoTenThanNhan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ev.Qtxt_KeyPress_To_Button_Focus(sender, e, btnLuu);
+            ev.Qtxt_KeyPress_To_TextBox_Focus(sender, e, txtTinhTrangBenh);
+        }
+        private void txtTinhTrangBenh_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ev.Qtxt_KeyPress_To_Button_Focus(sender, e, btnLuuvaIn);
         }
         #endregion
 
@@ -414,5 +436,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             In_PhieuCamDoanChapNhanPhauThuatThuThuat phieu = new In_PhieuCamDoanChapNhanPhauThuatThuThuat(model);
             phieu.ShowDialog();
         }
+
+
+
+
+
     }
 }

@@ -208,8 +208,10 @@
             this.xrLabel100 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -2179,6 +2181,11 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = null;
             // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(Report_WinForm_Phiếu_11_9_2023.Model.PhieuThamKhaoBNtruocPT);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // Report_PhieuThamKhaoBenhNhanTruocPhauThuat
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2187,6 +2194,9 @@
             this.Detail,
             this.ReportHeader,
             this.ReportFooter});
+            this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            this.objectDataSource1});
+            this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F);
             this.Margins = new DevExpress.Drawing.DXMargins(30F, 20F, 50F, 50F);
             this.PageHeight = 1268;
@@ -2195,6 +2205,7 @@
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -2379,5 +2390,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel104;
         private DevExpress.XtraReports.UI.XRLabel xrLabel102;
         private DevExpress.XtraReports.UI.XRLabel xrLabel103;
+        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource1;
     }
 }

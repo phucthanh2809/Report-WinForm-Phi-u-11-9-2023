@@ -120,6 +120,7 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -128,7 +129,6 @@
     </Reference>
     <Reference Include="DevExpress.Charts.Designer.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>CoppyDev\DevExpress.Charts.Designer.v22.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -214,12 +214,19 @@
     <Compile Include="In_PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.Designer.cs">
+      <DependentUpon>In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\BacSi.cs" />
     <Compile Include="Model\ChuanDoan.cs" />
     <Compile Include="Model\Khoa.cs" />
     <Compile Include="Model\NhomMau.cs" />
     <Compile Include="Model\PhieuCamDoanChapNhanPTTT.cs" />
     <Compile Include="Model\PhieuGayMeHoiSuc_Model.cs" />
+    <Compile Include="Model\PhieuThamKhaoBNtruocPT.cs" />
     <Compile Include="Model\PhuongPhapPhauThuat.cs" />
     <Compile Include="Model\PhuongPhapVoCam.cs" />
     <Compile Include="PhieuGayMeHoiSuc.cs">
@@ -227,6 +234,12 @@
     </Compile>
     <Compile Include="PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.designer.cs">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
     </Compile>
     <Compile Include="PhieuKhamTienMe.cs">
       <SubType>Form</SubType>
@@ -299,8 +312,14 @@
     <EmbeddedResource Include="In_PhieuGayMeHoiSuc.resx">
       <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.resx">
+      <DependentUpon>In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhieuGayMeHoiSuc.resx">
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.resx">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="GiayCamDoanChapNhanGayMeHoiSuc.resx">
@@ -351,6 +370,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
