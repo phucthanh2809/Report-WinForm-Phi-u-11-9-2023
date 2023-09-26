@@ -97,6 +97,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtGiaDinhTuViet = new ControlProject1510.XFilteg();
             this.dgrPhieuCamDoanGayMe = new System.Windows.Forms.DataGridView();
             this.label39 = new System.Windows.Forms.Label();
+            this.chkKhongDongY = new System.Windows.Forms.CheckBox();
+            this.chkDongYGayMe = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
             this.txtTinhTrangBenh = new ControlProject1510.XFilteg();
             this.label36 = new System.Windows.Forms.Label();
@@ -185,7 +187,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.tabPage3.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlChinh
@@ -848,6 +849,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel14.Controls.Add(this.label40);
             this.panel14.Controls.Add(this.txtGiaDinhTuViet);
             this.panel14.Controls.Add(this.label39);
+            this.panel14.Controls.Add(this.chkKhongDongY);
+            this.panel14.Controls.Add(this.chkDongYGayMe);
             this.panel14.Controls.Add(this.label38);
             this.panel14.Controls.Add(this.txtTinhTrangBenh);
             this.panel14.Controls.Add(this.label36);
@@ -1030,6 +1033,26 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label39.Size = new System.Drawing.Size(497, 23);
             this.label39.TabIndex = 41;
             this.label39.Text = "(Câu 1 hoặc câu 2 do người bệnh, đại diện gia đình tự viết)";
+            // 
+            // chkKhongDongY
+            // 
+            this.chkKhongDongY.AutoSize = true;
+            this.chkKhongDongY.Location = new System.Drawing.Point(68, 470);
+            this.chkKhongDongY.Name = "chkKhongDongY";
+            this.chkKhongDongY.Size = new System.Drawing.Size(480, 27);
+            this.chkKhongDongY.TabIndex = 40;
+            this.chkKhongDongY.Text = "Không đồng ý gây mê hồi sức và để giấy này làm bằng.";
+            this.chkKhongDongY.UseVisualStyleBackColor = true;
+            // 
+            // chkDongYGayMe
+            // 
+            this.chkDongYGayMe.AutoSize = true;
+            this.chkDongYGayMe.Location = new System.Drawing.Point(68, 437);
+            this.chkDongYGayMe.Name = "chkDongYGayMe";
+            this.chkDongYGayMe.Size = new System.Drawing.Size(423, 27);
+            this.chkDongYGayMe.TabIndex = 39;
+            this.chkDongYGayMe.Text = "Đồng ý gây mê hồi sức và để giấy này làm bằng.";
+            this.chkDongYGayMe.UseVisualStyleBackColor = true;
             // 
             // label38
             // 
@@ -1712,8 +1735,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.tabPage3.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1794,9 +1815,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private ControlProject1510.XFilteg txtDanToc;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.CheckBox chkDongYGayMe;
         private System.Windows.Forms.Label label40;
         private ControlProject1510.XFilteg txtGiaDinhTuViet;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.CheckBox chkKhongDongY;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;

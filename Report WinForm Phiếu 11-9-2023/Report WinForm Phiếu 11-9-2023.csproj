@@ -120,121 +120,44 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Charts.Designer.v23.1">
-      <HintPath>coppyDev\DevExpress.Charts.Designer.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Charts.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.Charts.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.CodeParser.v23.1">
-      <HintPath>coppyDev\DevExpress.CodeParser.v23.1.dll</HintPath>
-    </Reference>
+    <Reference Include="DevExpress.CodeParser.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v23.1">
-      <HintPath>coppyDev\DevExpress.Data.Desktop.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.v23.1">
-      <HintPath>coppyDev\DevExpress.Data.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.DataAccess.v23.1">
-      <HintPath>coppyDev\DevExpress.DataAccess.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.DataAccess.v23.1.UI">
-      <HintPath>coppyDev\DevExpress.DataAccess.v23.1.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Drawing.v23.1">
-      <HintPath>coppyDev\DevExpress.Drawing.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Drawing.v23.1.Skia">
-      <HintPath>coppyDev\DevExpress.Drawing.v23.1.Skia.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Office.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.Office.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.Pdf.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v23.1.Drawing">
-      <HintPath>coppyDev\DevExpress.Pdf.v23.1.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v23.1.SkiaRenderer">
-      <HintPath>coppyDev\DevExpress.Pdf.v23.1.SkiaRenderer.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.PivotGrid.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.Printing.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.RichEdit.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v23.1.Export">
-      <HintPath>coppyDev\DevExpress.RichEdit.v23.1.Export.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.Sparkline.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v23.1">
-      <HintPath>coppyDev\DevExpress.Utils.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v23.1.UI">
-      <HintPath>coppyDev\DevExpress.Utils.v23.1.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpo.v23.1">
-      <HintPath>coppyDev\DevExpress.Xpo.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpo.v23.1.Extensions">
-      <HintPath>coppyDev\DevExpress.Xpo.v23.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraBars.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraBars.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraCharts.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v23.1.Extensions">
-      <HintPath>coppyDev\DevExpress.XtraCharts.v23.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v23.1.UI">
-      <HintPath>coppyDev\DevExpress.XtraCharts.v23.1.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraEditors.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v23.1.Core">
-      <HintPath>coppyDev\DevExpress.XtraGauges.v23.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v23.1.Presets">
-      <HintPath>coppyDev\DevExpress.XtraGauges.v23.1.Presets.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v23.1.Win">
-      <HintPath>coppyDev\DevExpress.XtraGauges.v23.1.Win.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraLayout.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraLayout.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraPrinting.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraReports.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v23.1.Design.Tool">
-      <HintPath>coppyDev\DevExpress.XtraReports.v23.1.Design.Tool.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v23.1.Extensions">
-      <HintPath>coppyDev\DevExpress.XtraReports.v23.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraTreeList.v23.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraWizard.v23.1">
-      <HintPath>coppyDev\DevExpress.XtraWizard.v23.1.dll</HintPath>
-    </Reference>
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v23.1.UI, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.1.Extensions, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v23.1.Drawing, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.1.Export, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v23.1.Core, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
