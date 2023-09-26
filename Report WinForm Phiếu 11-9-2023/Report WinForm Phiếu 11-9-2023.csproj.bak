@@ -34,37 +34,133 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="barcode">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\barcode.dll</HintPath>
+      <HintPath>D:\test_pm\test_pm\barcode.dll</HintPath>
+      <HintPath>CoppyDev\barcode.dll</HintPath>
     </Reference>
     <Reference Include="BusinessCommon">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\BusinessCommon.dll</HintPath>
+      <HintPath>D:\Phòng IT\File download\test_pm\BusinessCommon.dll</HintPath>
+      <HintPath>CoppyDev\BusinessCommon.dll</HintPath>
     </Reference>
     <Reference Include="ControlProject1510">
-      <HintPath>D:\Thanh Phuc\Chính\KhoDuocphuc\KhoDuoc\bin\Debug\ControlProject1510.dll</HintPath>
+      <HintPath>D:\test_pm\test_pm\ControlProject1510.dll</HintPath>
+      <HintPath>CoppyDev\ControlProject1510.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Pdf.v21.2.Drawing, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.TemplateEngine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.TemplateEngine.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommLayer.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonControls.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CommonObjectModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.2.Drawing, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +178,12 @@
     <Compile Include="BangKiemAnToanTrongPhauThuatThuThuat.Designer.cs">
       <DependentUpon>BangKiemAnToanTrongPhauThuatThuThuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\TextboxCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\TextboxCustom.Designer.cs">
+      <DependentUpon>TextboxCustom.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiayCamDoanChapNhanGayMeHoiSuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +196,50 @@
     <Compile Include="GiayCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
       <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayCamDoanChapNhanPhauThuat_Chinh.Designer.cs">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.Designer.cs">
+      <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In_PhieuGayMeHoiSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuGayMeHoiSuc.Designer.cs">
+      <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.Designer.cs">
+      <DependentUpon>In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BacSi.cs" />
+    <Compile Include="Model\ChuanDoan.cs" />
+    <Compile Include="Model\Khoa.cs" />
+    <Compile Include="Model\NhomMau.cs" />
+    <Compile Include="Model\PhieuCamDoanChapNhanPTTT.cs" />
+    <Compile Include="Model\PhieuGayMeHoiSuc_Model.cs" />
+    <Compile Include="Model\PhieuThamKhaoBNtruocPT.cs" />
+    <Compile Include="Model\PhuongPhapPhauThuat.cs" />
+    <Compile Include="Model\PhuongPhapVoCam.cs" />
     <Compile Include="PhieuGayMeHoiSuc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhieuGayMeHoiSuc.Designer.cs">
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.designer.cs">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
     </Compile>
     <Compile Include="PhieuKhamTienMe.cs">
       <SubType>Form</SubType>
@@ -114,10 +255,76 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Report_GiayCamDoanChapNhanGayMe.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_GiayCamDoanChapNhanGayMe.Designer.cs">
+      <DependentUpon>Report_GiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.Designer.cs">
+      <DependentUpon>Report_GiayCamDoanChapNhanPhauThuatTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_PhieuGayMeHoiSuc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_PhieuGayMeHoiSuc.Designer.cs">
+      <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.Designer.cs">
+      <DependentUpon>Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\View_PhieuGayMeHoiSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\View_PhieuGayMeHoiSuc.Designer.cs">
+      <DependentUpon>View_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP_GiayCamDoanChapNhanGayMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP_GiayCamDoanChapNhanGayMe.Designer.cs">
+      <DependentUpon>RP_GiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanGayMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_PhieuCamDoanChapNhanGayMe.Designer.cs">
+      <DependentUpon>In_PhieuCamDoanChapNhanGayMe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomControl\TextboxCustom.resx">
+      <DependentUpon>TextboxCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuatThuThuat.resx">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayCamDoanChapNhanPhauThuat_Chinh.resx">
+      <DependentUpon>GiayCamDoanChapNhanPhauThuat_Chinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuCamDoanChapNhanPhauThuatThuThuat.resx">
+      <DependentUpon>In_PhieuCamDoanChapNhanPhauThuatThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuGayMeHoiSuc.resx">
+      <DependentUpon>In_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.resx">
+      <DependentUpon>In_PhieuThamKhaoBNTruocGayMe_GiaiPhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhieuGayMeHoiSuc.resx">
       <DependentUpon>PhieuGayMeHoiSuc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.resx">
+      <DependentUpon>PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="GiayCamDoanChapNhanGayMeHoiSuc.resx">
+      <DependentUpon>GiayCamDoanChapNhanGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -126,7 +333,30 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report\Report_GiayCamDoanChapNhanGayMe.resx">
+      <DependentUpon>Report_GiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_GiayCamDoanChapNhanPhauThuatTT.resx">
+      <DependentUpon>Report_GiayCamDoanChapNhanPhauThuatTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_PhieuThamKhaoBenhNhanTruocPhauThuat.resx">
+      <DependentUpon>Report_PhieuThamKhaoBenhNhanTruocPhauThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_PhieuGayMeHoiSuc.resx">
+      <DependentUpon>Report_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\View_PhieuGayMeHoiSuc.resx">
+      <DependentUpon>View_PhieuGayMeHoiSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_GiayCamDoanChapNhanGayMe.resx">
+      <DependentUpon>RP_GiayCamDoanChapNhanGayMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In_PhieuCamDoanChapNhanGayMe.resx">
+      <DependentUpon>In_PhieuCamDoanChapNhanGayMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,7 +371,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Report\" />
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -158,7 +158,7 @@
             // xrLine3
             // 
             this.xrLine3.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
-            this.xrLine3.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.xrLine3.LineStyle = DevExpress.Drawing.DXDashStyle.Dash;
             this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(0.0001589457F, 594.0212F);
             this.xrLine3.Name = "xrLine3";
             this.xrLine3.SizeF = new System.Drawing.SizeF(828.9996F, 10.84723F);
@@ -464,7 +464,7 @@
             // xrCheckBox2
             // 
             this.xrCheckBox2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinh]=2,true , false)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinhso]=2,true , false)\n")});
             this.xrCheckBox2.LocationFloat = new DevExpress.Utils.PointFloat(811.0311F, 294.5768F);
             this.xrCheckBox2.Name = "xrCheckBox2";
             this.xrCheckBox2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -473,7 +473,7 @@
             // xrCheckBox1
             // 
             this.xrCheckBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinh]=1,true , false)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Gioitinhso]=1,true , false)")});
             this.xrCheckBox1.LocationFloat = new DevExpress.Utils.PointFloat(752.4615F, 294.5768F);
             this.xrCheckBox1.Name = "xrCheckBox1";
             this.xrCheckBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -991,7 +991,7 @@
             this.Margins = new DevExpress.Drawing.DXMargins(50F, 50F, 80F, 80F);
             this.PageHeight = 1268;
             this.PageWidth = 929;
-            this.PaperKind = System.Drawing.Printing.PaperKind.A4Extra;
+            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4Extra;
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

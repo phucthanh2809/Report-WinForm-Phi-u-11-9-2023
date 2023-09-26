@@ -174,8 +174,6 @@
             this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel3 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
@@ -208,8 +206,10 @@
             this.xrLabel100 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -360,6 +360,8 @@
             // 
             // xrLabel98
             // 
+            this.xrLabel98.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Luuybacsi]")});
             this.xrLabel98.LocationFloat = new DevExpress.Utils.PointFloat(37.08446F, 1650.885F);
             this.xrLabel98.Multiline = true;
             this.xrLabel98.Name = "xrLabel98";
@@ -387,6 +389,8 @@
             // 
             // xrLabel95
             // 
+            this.xrLabel95.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Lieudungthuockhac]")});
             this.xrLabel95.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1580.789F);
             this.xrLabel95.Multiline = true;
             this.xrLabel95.Name = "xrLabel95";
@@ -396,6 +400,8 @@
             // 
             // xrLabel94
             // 
+            this.xrLabel94.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Lieudungthuochasotgiamdau]")});
             this.xrLabel94.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1547.552F);
             this.xrLabel94.Multiline = true;
             this.xrLabel94.Name = "xrLabel94";
@@ -405,6 +411,8 @@
             // 
             // xrLabel93
             // 
+            this.xrLabel93.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Lieudungthuocchongviem]")});
             this.xrLabel93.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1513.514F);
             this.xrLabel93.Multiline = true;
             this.xrLabel93.Name = "xrLabel93";
@@ -414,6 +422,8 @@
             // 
             // xrLabel92
             // 
+            this.xrLabel92.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Lieudungthuockhangsinh]")});
             this.xrLabel92.LocationFloat = new DevExpress.Utils.PointFloat(531.1287F, 1478.674F);
             this.xrLabel92.Multiline = true;
             this.xrLabel92.Name = "xrLabel92";
@@ -423,6 +433,8 @@
             // 
             // xrLabel91
             // 
+            this.xrLabel91.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenthuockhac]")});
             this.xrLabel91.LocationFloat = new DevExpress.Utils.PointFloat(163.017F, 1580.789F);
             this.xrLabel91.Multiline = true;
             this.xrLabel91.Name = "xrLabel91";
@@ -432,6 +444,8 @@
             // 
             // xrLabel90
             // 
+            this.xrLabel90.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenthuochasotgiamdau]")});
             this.xrLabel90.LocationFloat = new DevExpress.Utils.PointFloat(163.0183F, 1547.552F);
             this.xrLabel90.Multiline = true;
             this.xrLabel90.Name = "xrLabel90";
@@ -441,6 +455,8 @@
             // 
             // xrLabel89
             // 
+            this.xrLabel89.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenthuocchongviem]")});
             this.xrLabel89.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1513.514F);
             this.xrLabel89.Multiline = true;
             this.xrLabel89.Name = "xrLabel89";
@@ -450,6 +466,8 @@
             // 
             // xrLabel88
             // 
+            this.xrLabel88.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenthuockhangsinh]")});
             this.xrLabel88.LocationFloat = new DevExpress.Utils.PointFloat(161.8882F, 1478.674F);
             this.xrLabel88.Multiline = true;
             this.xrLabel88.Name = "xrLabel88";
@@ -550,6 +568,8 @@
             // 
             // xrCheckBox43
             // 
+            this.xrCheckBox43.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuoc15ngay]=1,true ,false)\n")});
             this.xrCheckBox43.LocationFloat = new DevExpress.Utils.PointFloat(586.9524F, 1365.309F);
             this.xrCheckBox43.Name = "xrCheckBox43";
             this.xrCheckBox43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -570,6 +590,8 @@
             // 
             // xrCheckBox44
             // 
+            this.xrCheckBox44.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuoc15ngay]=0,true ,false)\n")});
             this.xrCheckBox44.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1365.309F);
             this.xrCheckBox44.Name = "xrCheckBox44";
             this.xrCheckBox44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -590,6 +612,8 @@
             // 
             // xrCheckBox45
             // 
+            this.xrCheckBox45.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuoc15ngay]=2,true ,false)\n")});
             this.xrCheckBox45.LocationFloat = new DevExpress.Utils.PointFloat(790.5552F, 1365.309F);
             this.xrCheckBox45.Name = "xrCheckBox45";
             this.xrCheckBox45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -612,6 +636,8 @@
             // xrLabel76
             // 
             this.xrLabel76.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel76.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Neurothuocdungthuongxuyen]")});
             this.xrLabel76.LocationFloat = new DevExpress.Utils.PointFloat(10F, 9.999969F);
             this.xrLabel76.Multiline = true;
             this.xrLabel76.Name = "xrLabel76";
@@ -639,6 +665,8 @@
             // 
             // xrCheckBox40
             // 
+            this.xrCheckBox40.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuocthuongxuyen]=1,true ,false)\n")});
             this.xrCheckBox40.LocationFloat = new DevExpress.Utils.PointFloat(586.9528F, 1255.914F);
             this.xrCheckBox40.Name = "xrCheckBox40";
             this.xrCheckBox40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -648,6 +676,8 @@
             // 
             // xrCheckBox41
             // 
+            this.xrCheckBox41.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuocthuongxuyen]=0,true ,false)\n")});
             this.xrCheckBox41.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1255.914F);
             this.xrCheckBox41.Name = "xrCheckBox41";
             this.xrCheckBox41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -657,6 +687,8 @@
             // 
             // xrCheckBox42
             // 
+            this.xrCheckBox42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dungthuocthuongxuyen]=2,true ,false)\n")});
             this.xrCheckBox42.LocationFloat = new DevExpress.Utils.PointFloat(790.5552F, 1255.914F);
             this.xrCheckBox42.Name = "xrCheckBox42";
             this.xrCheckBox42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -695,6 +727,8 @@
             // 
             // xrCheckBox37
             // 
+            this.xrCheckBox37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Datungtruyenmau]=1,true ,false)\n")});
             this.xrCheckBox37.LocationFloat = new DevExpress.Utils.PointFloat(586.9524F, 1232.914F);
             this.xrCheckBox37.Name = "xrCheckBox37";
             this.xrCheckBox37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -704,6 +738,8 @@
             // 
             // xrCheckBox38
             // 
+            this.xrCheckBox38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Datungtruyenmau]=0,true ,false)\n")});
             this.xrCheckBox38.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1232.914F);
             this.xrCheckBox38.Name = "xrCheckBox38";
             this.xrCheckBox38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -735,6 +771,8 @@
             // 
             // xrCheckBox39
             // 
+            this.xrCheckBox39.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Datungtruyenmau]=2,true ,false)\n")});
             this.xrCheckBox39.LocationFloat = new DevExpress.Utils.PointFloat(790.5552F, 1232.914F);
             this.xrCheckBox39.Name = "xrCheckBox39";
             this.xrCheckBox39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -757,6 +795,8 @@
             // xrLabel68
             // 
             this.xrLabel68.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel68.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Neurotimbamsinh]")});
             this.xrLabel68.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10.00037F);
             this.xrLabel68.Multiline = true;
             this.xrLabel68.Name = "xrLabel68";
@@ -785,6 +825,8 @@
             // 
             // xrCheckBox34
             // 
+            this.xrCheckBox34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Timbamsinh]=1,true ,false)\n")});
             this.xrCheckBox34.LocationFloat = new DevExpress.Utils.PointFloat(586.9528F, 1102.371F);
             this.xrCheckBox34.Name = "xrCheckBox34";
             this.xrCheckBox34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -794,6 +836,8 @@
             // 
             // xrCheckBox35
             // 
+            this.xrCheckBox35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Timbamsinh]=0,true ,false)\n")});
             this.xrCheckBox35.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1102.371F);
             this.xrCheckBox35.Name = "xrCheckBox35";
             this.xrCheckBox35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -803,6 +847,8 @@
             // 
             // xrCheckBox36
             // 
+            this.xrCheckBox36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Timbamsinh]=2,true ,false)\n")});
             this.xrCheckBox36.LocationFloat = new DevExpress.Utils.PointFloat(790.5551F, 1102.371F);
             this.xrCheckBox36.Name = "xrCheckBox36";
             this.xrCheckBox36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -812,6 +858,8 @@
             // 
             // xrCheckBox31
             // 
+            this.xrCheckBox31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Anhemho]=1,true ,false)\n")});
             this.xrCheckBox31.LocationFloat = new DevExpress.Utils.PointFloat(586.9528F, 1079.371F);
             this.xrCheckBox31.Name = "xrCheckBox31";
             this.xrCheckBox31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -821,6 +869,8 @@
             // 
             // xrCheckBox32
             // 
+            this.xrCheckBox32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Anhemho]=0,true ,false)\n")});
             this.xrCheckBox32.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1079.371F);
             this.xrCheckBox32.Name = "xrCheckBox32";
             this.xrCheckBox32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -830,6 +880,8 @@
             // 
             // xrCheckBox33
             // 
+            this.xrCheckBox33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Anhemho]=2,true ,false)\n")});
             this.xrCheckBox33.LocationFloat = new DevExpress.Utils.PointFloat(790.5551F, 1079.371F);
             this.xrCheckBox33.Name = "xrCheckBox33";
             this.xrCheckBox33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -876,7 +928,7 @@
             // 
             // xrLabel61
             // 
-            this.xrLabel61.LocationFloat = new DevExpress.Utils.PointFloat(576.5359F, 1007.709F);
+            this.xrLabel61.LocationFloat = new DevExpress.Utils.PointFloat(576.5359F, 1033.371F);
             this.xrLabel61.Multiline = true;
             this.xrLabel61.Name = "xrLabel61";
             this.xrLabel61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -887,7 +939,9 @@
             // 
             // xrCheckBox28
             // 
-            this.xrCheckBox28.LocationFloat = new DevExpress.Utils.PointFloat(586.9526F, 1034.67F);
+            this.xrCheckBox28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chaymaucamkeodai]=1,true ,false)\n")});
+            this.xrCheckBox28.LocationFloat = new DevExpress.Utils.PointFloat(586.9536F, 1056.371F);
             this.xrCheckBox28.Name = "xrCheckBox28";
             this.xrCheckBox28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrCheckBox28.SizeF = new System.Drawing.SizeF(18.47217F, 23F);
@@ -896,7 +950,7 @@
             // 
             // xrLabel62
             // 
-            this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(663.0556F, 1007.709F);
+            this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(663.0556F, 1033.371F);
             this.xrLabel62.Multiline = true;
             this.xrLabel62.Name = "xrLabel62";
             this.xrLabel62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -907,7 +961,9 @@
             // 
             // xrCheckBox29
             // 
-            this.xrCheckBox29.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1034.67F);
+            this.xrCheckBox29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chaymaucamkeodai]=0,true ,false)\n")});
+            this.xrCheckBox29.LocationFloat = new DevExpress.Utils.PointFloat(678.7496F, 1056.371F);
             this.xrCheckBox29.Name = "xrCheckBox29";
             this.xrCheckBox29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrCheckBox29.SizeF = new System.Drawing.SizeF(18.47217F, 23F);
@@ -916,7 +972,7 @@
             // 
             // xrLabel63
             // 
-            this.xrLabel63.LocationFloat = new DevExpress.Utils.PointFloat(755.2779F, 1007.709F);
+            this.xrLabel63.LocationFloat = new DevExpress.Utils.PointFloat(755.2779F, 1033.371F);
             this.xrLabel63.Multiline = true;
             this.xrLabel63.Name = "xrLabel63";
             this.xrLabel63.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -927,7 +983,9 @@
             // 
             // xrCheckBox30
             // 
-            this.xrCheckBox30.LocationFloat = new DevExpress.Utils.PointFloat(790.5551F, 1034.67F);
+            this.xrCheckBox30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chaymaucamkeodai]=2,true ,false)\n")});
+            this.xrCheckBox30.LocationFloat = new DevExpress.Utils.PointFloat(790.5562F, 1056.371F);
             this.xrCheckBox30.Name = "xrCheckBox30";
             this.xrCheckBox30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrCheckBox30.SizeF = new System.Drawing.SizeF(18.47217F, 23F);
@@ -936,6 +994,8 @@
             // 
             // xrCheckBox25
             // 
+            this.xrCheckBox25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dongkinh]=2,true ,false)\n")});
             this.xrCheckBox25.LocationFloat = new DevExpress.Utils.PointFloat(790.5562F, 925.8936F);
             this.xrCheckBox25.Name = "xrCheckBox25";
             this.xrCheckBox25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -945,6 +1005,8 @@
             // 
             // xrCheckBox26
             // 
+            this.xrCheckBox26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dongkinh]=0,true ,false)\n")});
             this.xrCheckBox26.LocationFloat = new DevExpress.Utils.PointFloat(678.7506F, 925.8936F);
             this.xrCheckBox26.Name = "xrCheckBox26";
             this.xrCheckBox26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -954,6 +1016,8 @@
             // 
             // xrCheckBox27
             // 
+            this.xrCheckBox27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dongkinh]=1,true ,false)\n")});
             this.xrCheckBox27.LocationFloat = new DevExpress.Utils.PointFloat(586.9536F, 925.8936F);
             this.xrCheckBox27.Name = "xrCheckBox27";
             this.xrCheckBox27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1010,6 +1074,8 @@
             // 
             // xrCheckBox22
             // 
+            this.xrCheckBox22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Sotcaocogiat]=1,true ,false)\n")});
             this.xrCheckBox22.LocationFloat = new DevExpress.Utils.PointFloat(586.9536F, 902.8936F);
             this.xrCheckBox22.Name = "xrCheckBox22";
             this.xrCheckBox22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1030,6 +1096,8 @@
             // 
             // xrCheckBox23
             // 
+            this.xrCheckBox23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Sotcaocogiat]=0,true ,false)\n")});
             this.xrCheckBox23.LocationFloat = new DevExpress.Utils.PointFloat(678.7506F, 902.8936F);
             this.xrCheckBox23.Name = "xrCheckBox23";
             this.xrCheckBox23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1050,6 +1118,8 @@
             // 
             // xrCheckBox24
             // 
+            this.xrCheckBox24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Sotcaocogiat]=2,true ,false)\n")});
             this.xrCheckBox24.LocationFloat = new DevExpress.Utils.PointFloat(790.5562F, 902.8936F);
             this.xrCheckBox24.Name = "xrCheckBox24";
             this.xrCheckBox24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1072,6 +1142,8 @@
             // xrLabel51
             // 
             this.xrLabel51.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel51.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Dadieutri]")});
             this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(10.00059F, 9.999939F);
             this.xrLabel51.Multiline = true;
             this.xrLabel51.Name = "xrLabel51";
@@ -1094,6 +1166,8 @@
             // xrLabel50
             // 
             this.xrLabel50.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel50.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Lydonamvien]")});
             this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(10F, 9.999969F);
             this.xrLabel50.Multiline = true;
             this.xrLabel50.Name = "xrLabel50";
@@ -1121,6 +1195,8 @@
             // 
             // xrCheckBox19
             // 
+            this.xrCheckBox19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Danamvien]=1,true ,false)\n")});
             this.xrCheckBox19.LocationFloat = new DevExpress.Utils.PointFloat(586.9534F, 793.8201F);
             this.xrCheckBox19.Name = "xrCheckBox19";
             this.xrCheckBox19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1130,6 +1206,8 @@
             // 
             // xrCheckBox20
             // 
+            this.xrCheckBox20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Danamvien]=0,true ,false)\n")});
             this.xrCheckBox20.LocationFloat = new DevExpress.Utils.PointFloat(678.7504F, 793.8201F);
             this.xrCheckBox20.Name = "xrCheckBox20";
             this.xrCheckBox20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1139,6 +1217,8 @@
             // 
             // xrCheckBox21
             // 
+            this.xrCheckBox21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Danamvien]=2,true ,false)\n")});
             this.xrCheckBox21.LocationFloat = new DevExpress.Utils.PointFloat(790.556F, 793.8201F);
             this.xrCheckBox21.Name = "xrCheckBox21";
             this.xrCheckBox21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1178,6 +1258,8 @@
             // 
             // xrCheckBox16
             // 
+            this.xrCheckBox16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Bienchungsaugayme]=1,true ,false)\n")});
             this.xrCheckBox16.LocationFloat = new DevExpress.Utils.PointFloat(586.9534F, 749.2923F);
             this.xrCheckBox16.Name = "xrCheckBox16";
             this.xrCheckBox16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1198,6 +1280,8 @@
             // 
             // xrCheckBox17
             // 
+            this.xrCheckBox17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Bienchungsaugayme]=0,true ,false)\n")});
             this.xrCheckBox17.LocationFloat = new DevExpress.Utils.PointFloat(678.7504F, 749.2923F);
             this.xrCheckBox17.Name = "xrCheckBox17";
             this.xrCheckBox17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1218,6 +1302,8 @@
             // 
             // xrCheckBox18
             // 
+            this.xrCheckBox18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Bienchungsaugayme]=2,true ,false)\n")});
             this.xrCheckBox18.LocationFloat = new DevExpress.Utils.PointFloat(790.556F, 749.2923F);
             this.xrCheckBox18.Name = "xrCheckBox18";
             this.xrCheckBox18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1240,6 +1326,8 @@
             // xrLabel42
             // 
             this.xrLabel42.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenthuocdiung]")});
             this.xrLabel42.LocationFloat = new DevExpress.Utils.PointFloat(10F, 9.999969F);
             this.xrLabel42.Multiline = true;
             this.xrLabel42.Name = "xrLabel42";
@@ -1268,6 +1356,8 @@
             // 
             // xrCheckBox13
             // 
+            this.xrCheckBox13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Diungthuocthucpham]=1,true ,false)\n")});
             this.xrCheckBox13.LocationFloat = new DevExpress.Utils.PointFloat(586.953F, 620.4114F);
             this.xrCheckBox13.Name = "xrCheckBox13";
             this.xrCheckBox13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1277,6 +1367,8 @@
             // 
             // xrCheckBox14
             // 
+            this.xrCheckBox14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Diungthuocthucpham]=0,true ,false)\n")});
             this.xrCheckBox14.LocationFloat = new DevExpress.Utils.PointFloat(678.7501F, 620.4114F);
             this.xrCheckBox14.Name = "xrCheckBox14";
             this.xrCheckBox14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1286,6 +1378,8 @@
             // 
             // xrCheckBox15
             // 
+            this.xrCheckBox15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Diungthuocthucpham]=2,true ,false)\n")});
             this.xrCheckBox15.LocationFloat = new DevExpress.Utils.PointFloat(790.5556F, 620.4114F);
             this.xrCheckBox15.Name = "xrCheckBox15";
             this.xrCheckBox15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1295,6 +1389,8 @@
             // 
             // xrCheckBox10
             // 
+            this.xrCheckBox10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chamnoimeday]=2,true ,false)\n")});
             this.xrCheckBox10.LocationFloat = new DevExpress.Utils.PointFloat(790.5556F, 597.4115F);
             this.xrCheckBox10.Name = "xrCheckBox10";
             this.xrCheckBox10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1304,6 +1400,8 @@
             // 
             // xrCheckBox11
             // 
+            this.xrCheckBox11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chamnoimeday]=0,true ,false)\n")});
             this.xrCheckBox11.LocationFloat = new DevExpress.Utils.PointFloat(678.7501F, 597.4115F);
             this.xrCheckBox11.Name = "xrCheckBox11";
             this.xrCheckBox11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1313,6 +1411,8 @@
             // 
             // xrCheckBox12
             // 
+            this.xrCheckBox12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Chamnoimeday]=1,true ,false)\n")});
             this.xrCheckBox12.LocationFloat = new DevExpress.Utils.PointFloat(586.953F, 597.4115F);
             this.xrCheckBox12.Name = "xrCheckBox12";
             this.xrCheckBox12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1369,6 +1469,8 @@
             // 
             // xrCheckBox7
             // 
+            this.xrCheckBox7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Suyen]=1,true ,false)\n")});
             this.xrCheckBox7.LocationFloat = new DevExpress.Utils.PointFloat(586.953F, 574.4115F);
             this.xrCheckBox7.Name = "xrCheckBox7";
             this.xrCheckBox7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1389,6 +1491,8 @@
             // 
             // xrCheckBox8
             // 
+            this.xrCheckBox8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Suyen]=0,true ,false)\n")});
             this.xrCheckBox8.LocationFloat = new DevExpress.Utils.PointFloat(678.7502F, 574.4115F);
             this.xrCheckBox8.Name = "xrCheckBox8";
             this.xrCheckBox8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1409,6 +1513,8 @@
             // 
             // xrCheckBox9
             // 
+            this.xrCheckBox9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Suyen]=2,true ,false)")});
             this.xrCheckBox9.LocationFloat = new DevExpress.Utils.PointFloat(790.5558F, 574.4115F);
             this.xrCheckBox9.Name = "xrCheckBox9";
             this.xrCheckBox9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1431,6 +1537,8 @@
             // xrLabel32
             // 
             this.xrLabel32.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenbenhviengayme]")});
             this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 10.00012F);
             this.xrLabel32.Multiline = true;
             this.xrLabel32.Name = "xrLabel32";
@@ -1452,6 +1560,8 @@
             // xrLabel31
             // 
             this.xrLabel31.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenphuongphapgayme]")});
             this.xrLabel31.LocationFloat = new DevExpress.Utils.PointFloat(9.999969F, 10.00012F);
             this.xrLabel31.Multiline = true;
             this.xrLabel31.Name = "xrLabel31";
@@ -1473,6 +1583,8 @@
             // xrLabel30
             // 
             this.xrLabel30.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Ngaygaymegiaiphau]")});
             this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10.00012F);
             this.xrLabel30.Multiline = true;
             this.xrLabel30.Name = "xrLabel30";
@@ -1564,6 +1676,8 @@
             // 
             // xrCheckBox4
             // 
+            this.xrCheckBox4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dagaymegiaiphau]=1,true ,false)")});
             this.xrCheckBox4.LocationFloat = new DevExpress.Utils.PointFloat(586.9529F, 426.9017F);
             this.xrCheckBox4.Name = "xrCheckBox4";
             this.xrCheckBox4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1584,6 +1698,8 @@
             // 
             // xrCheckBox5
             // 
+            this.xrCheckBox5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dagaymegiaiphau]=0,true ,false)\n")});
             this.xrCheckBox5.LocationFloat = new DevExpress.Utils.PointFloat(678.7502F, 426.9017F);
             this.xrCheckBox5.Name = "xrCheckBox5";
             this.xrCheckBox5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1604,6 +1720,8 @@
             // 
             // xrCheckBox6
             // 
+            this.xrCheckBox6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Dagaymegiaiphau]=2,true ,false)\n")});
             this.xrCheckBox6.LocationFloat = new DevExpress.Utils.PointFloat(790.5556F, 426.9017F);
             this.xrCheckBox6.Name = "xrCheckBox6";
             this.xrCheckBox6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1622,6 +1740,8 @@
             // 
             // xrCheckBox3
             // 
+            this.xrCheckBox3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Vandesausanh]=2,true ,false)\n")});
             this.xrCheckBox3.LocationFloat = new DevExpress.Utils.PointFloat(790.5556F, 289.5207F);
             this.xrCheckBox3.Name = "xrCheckBox3";
             this.xrCheckBox3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1631,6 +1751,8 @@
             // 
             // xrCheckBox2
             // 
+            this.xrCheckBox2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Vandesausanh]=0,true ,false)\n")});
             this.xrCheckBox2.LocationFloat = new DevExpress.Utils.PointFloat(678.7501F, 289.5207F);
             this.xrCheckBox2.Name = "xrCheckBox2";
             this.xrCheckBox2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1640,6 +1762,8 @@
             // 
             // xrCheckBox1
             // 
+            this.xrCheckBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "CheckBoxState", "Iif([Vandesausanh]=1,true ,false)")});
             this.xrCheckBox1.LocationFloat = new DevExpress.Utils.PointFloat(586.9528F, 289.5207F);
             this.xrCheckBox1.Name = "xrCheckBox1";
             this.xrCheckBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1695,6 +1819,8 @@
             // xrLabel24
             // 
             this.xrLabel24.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tenvandesausanh]")});
             this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(10F, 9.999969F);
             this.xrLabel24.Multiline = true;
             this.xrLabel24.Name = "xrLabel24";
@@ -1719,8 +1845,6 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrPanel3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel18,
-            this.xrLabel17,
-            this.xrLabel16,
             this.xrLabel15});
             this.xrPanel3.LocationFloat = new DevExpress.Utils.PointFloat(149.3155F, 152.0441F);
             this.xrPanel3.Name = "xrPanel3";
@@ -1730,6 +1854,8 @@
             // xrLabel18
             // 
             this.xrLabel18.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Diachi]")});
             this.xrLabel18.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel18.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(10.00006F, 41.04167F);
@@ -1744,46 +1870,14 @@
             this.xrLabel18.Text = "21/22 ấp Thới Tứ xã Thới Tam Thôn huyện Hóc Môn";
             this.xrLabel18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // xrLabel17
-            // 
-            this.xrLabel17.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel17.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(371.1521F, 11.91422F);
-            this.xrLabel17.Multiline = true;
-            this.xrLabel17.Name = "xrLabel17";
-            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel17.SizeF = new System.Drawing.SizeF(195.7823F, 29.12746F);
-            this.xrLabel17.StylePriority.UseBorders = false;
-            this.xrLabel17.StylePriority.UseFont = false;
-            this.xrLabel17.StylePriority.UseForeColor = false;
-            this.xrLabel17.StylePriority.UseTextAlignment = false;
-            this.xrLabel17.Text = "0961185101";
-            this.xrLabel17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel16
-            // 
-            this.xrLabel16.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel16.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(250.3187F, 11.91422F);
-            this.xrLabel16.Multiline = true;
-            this.xrLabel16.Name = "xrLabel16";
-            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel16.SizeF = new System.Drawing.SizeF(120.8334F, 29.12746F);
-            this.xrLabel16.StylePriority.UseBorders = false;
-            this.xrLabel16.StylePriority.UseFont = false;
-            this.xrLabel16.StylePriority.UseTextAlignment = false;
-            this.xrLabel16.Text = "Số điện thoại:";
-            this.xrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // xrLabel15
             // 
             this.xrLabel15.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(10.00006F, 11.91422F);
+            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(10.00006F, 11.91423F);
             this.xrLabel15.Multiline = true;
             this.xrLabel15.Name = "xrLabel15";
             this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel15.SizeF = new System.Drawing.SizeF(240.3186F, 29.12746F);
+            this.xrLabel15.SizeF = new System.Drawing.SizeF(556.9342F, 29.12746F);
             this.xrLabel15.StylePriority.UseBorders = false;
             this.xrLabel15.StylePriority.UseTextAlignment = false;
             this.xrLabel15.Text = "Địa chỉ (Số điện thoại, nếu có) :";
@@ -1823,6 +1917,8 @@
             // xrLabel13
             // 
             this.xrLabel13.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Chieucao]")});
             this.xrLabel13.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel13.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(484.5814F, 11.91421F);
@@ -1866,6 +1962,8 @@
             // xrLabel10
             // 
             this.xrLabel10.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Cannang]")});
             this.xrLabel10.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel10.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(235.1229F, 11.91421F);
@@ -1896,6 +1994,8 @@
             // xrLabel8
             // 
             this.xrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tuoi]")});
             this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel8.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(60.36772F, 11.91421F);
@@ -1938,6 +2038,8 @@
             // xrLabel6
             // 
             this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Hotenbn]")});
             this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel6.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(132.6716F, 11.91422F);
@@ -2179,6 +2281,11 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = null;
             // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(Report_WinForm_Phiếu_11_9_2023.Model.PhieuThamKhaoBNtruocPT);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // Report_PhieuThamKhaoBenhNhanTruocPhauThuat
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2187,14 +2294,18 @@
             this.Detail,
             this.ReportHeader,
             this.ReportFooter});
+            this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            this.objectDataSource1});
+            this.DataSource = this.objectDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Times New Roman", 13F);
             this.Margins = new DevExpress.Drawing.DXMargins(30F, 20F, 50F, 50F);
             this.PageHeight = 1268;
             this.PageWidth = 929;
-            this.PaperKind = System.Drawing.Printing.PaperKind.A4Extra;
-            this.Version = "22.2";
+            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4Extra;
+            this.Version = "23.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -2225,8 +2336,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel15;
         private DevExpress.XtraReports.UI.XRLabel xrLabel18;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
         private DevExpress.XtraReports.UI.XRLabel xrLabel19;
         private DevExpress.XtraReports.UI.XRPanel xrPanel4;
         private DevExpress.XtraReports.UI.XRCheckBox xrCheckBox2;
@@ -2379,5 +2488,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel104;
         private DevExpress.XtraReports.UI.XRLabel xrLabel102;
         private DevExpress.XtraReports.UI.XRLabel xrLabel103;
+        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource1;
     }
 }

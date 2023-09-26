@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessCommon;
+using Report_WinForm_Phiếu_11_9_2023.Model;
 
 namespace Report_WinForm_Phiếu_11_9_2023
 {
@@ -102,6 +103,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             GiayCamDoanChapNhanGayMeHoiSuc a = new GiayCamDoanChapNhanGayMeHoiSuc();
             a.btnThem.Visible = false;
             a.ShowDialog();
+            this.Show();
         }
         private void XoaThongtin()
         {
@@ -145,7 +147,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
                     " '" + chkTeVung.Checked + "', '" + chkDatDongMachXamLan.Checked + "', '" + chkDatCatheter.Checked + "', N'" + txtTenBN.Text + "', N'" + txtTuoiBN.Text + "'," +
                     " '" + LaygioiTinh() + "', N'" + txtDanToc.Text + "', N'" + cboQuocTich.SelectedValue + "', N'" + txtNgheNghiep.Text + "'," +
                     " N'" + txtNoiLamViec.Text + "',N'" + txtDiaChi.Text + "', N'" + txtNguoiDaiDien.Text + "', N'" + txtTenNguoiDaiDien.Text + "', N'" + cboDieuTriTaiKhoa.SelectedValue + "'," +
-                    " N'" + txtTinhTrangBenh.Text + "', '" + LayDongYGayMe() + "')";
+                    " N'" + txtTinhTrangBenh.Text + "', '" + LayDongY() + "')";
                     comm.RunSQL(mconnectstring, msql);
                     ev.QFrmThongBao("Đã Lưu thông tin thành công");
                     LoadData();
@@ -179,14 +181,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             SuaPhieu();
         }
 
-        int LayDongYGayMe()
-        {
-            if(chkDongYGayMe.Checked==true)
-            {
-                return 3;
-            }
-            return 4;
-        }
         int LaygioiTinh()
         {
             if(chkNam.Checked == true)
@@ -194,6 +188,17 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 return 1;
             }
             return 2;
+        }
+        bool LayDongY()
+        {
+            if(chkDongYGayMe.Checked == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         private void SuaPhieu()
         {
@@ -205,8 +210,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 "[NoiPheQuan]=N'" + chkNoiPheQuan.Checked + "',[TeTaiCho]=N'" + chkTeTaiCho.Checked + "',[TeKhoangXuongCung]= N'" + chkTeKhoangXuongCung.Checked + "',[TeNgoaiMangCung]= N'" + chkTeNgoaiMangCung.Checked + "',[TeVung]= N'" + chkTeVung.Checked + "',[DatDongMachXamLan]= N'" + chkDatDongMachXamLan.Checked + "'," +
                 "[DatCatheterTinhMach]= N'" + chkDatCatheter.Checked + "',[TenBenhNhan]= N'" + txtTenBN.Text + "',[TuoiBenhNhan]= N'" + txtTuoiBN.Text + "',[GioiTinh]= '" + LaygioiTinh() + "',[DanToc]= N'" + txtDanToc.Text + "',[QuocTich]= N'" + cboQuocTich.SelectedValue + "'," +
                 "[NgheNghiep]= N'" + txtNgheNghiep.Text + "',[NoiLamViec]= N'" + txtNoiLamViec.Text + "',[DiaChi]= N'" + txtDiaChi.Text + "',[NguoiDaiDien]= N'" + txtNguoiDaiDien.Text + "',[TenNguoiDaiDien]= N'" + txtTenNguoiDaiDien.Text + "',[DieuTriTaiKhoa]= N'" + cboDieuTriTaiKhoa.SelectedValue + "',[TinhTrangBenh]= N'" + txtTinhTrangBenh.Text + "'," +
-                "[DongYGayMe]= N'" + LayDongYGayMe() + "' " +
-                "WHERE IDPhieuChapNhanGayMe = '" + dgrPhieuCamDoanGayMe.CurrentRow.Cells["cIDPhieuChapNhanGayMe"].Value.ToString() + "'";
+                "[DongYGayMe]= N'" + LayDongY()  +
+                "' WHERE IDPhieuChapNhanGayMe = '" + dgrPhieuCamDoanGayMe.CurrentRow.Cells["cIDPhieuChapNhanGayMe"].Value.ToString() + "'";
                     comm.RunSQL(mconnectstring, msql);
                     ev.QFrmThongBao("Đã Sửa thông tin thành công");
                     LoadData();
@@ -220,8 +225,33 @@ namespace Report_WinForm_Phiếu_11_9_2023
         }
         private void btnIn_Click(object sender, EventArgs e)
         {
-             //IDPhieuChapNhanGayMe = dgrPhieuCamDoanGayMe.CurrentRow.Cells["cIDPhieuChapNhanGayMe"].Value.ToString();
-            In_PhieuCamDoanChapNhanGayMeHoiSuc rp = new In_PhieuCamDoanChapNhanGayMeHoiSuc();
+            PhieuCamDoanChapNhanGMHS model = new PhieuCamDoanChapNhanGMHS();
+            model.MaBacSi = cboTenBacSi.SelectedValue.ToString();
+            model.MaKhoa = cboKhoa.SelectedValue.ToString();
+            model.Mask = chkMask.Checked;
+            model.NoiKhiQuan = chkNoiKhiQuan.Checked;
+            model.MaskThanhQuan = chkMaskThanhQuan.Checked;
+            model.NoiPheQuan = chkNoiPheQuan.Checked;
+            model.TeTaiCho = chkTeTaiCho.Checked;
+            model.TeKhoangXuongCung = chkTeTaiCho.Checked;
+            model.TeNgoaiMangCung = chkTeNgoaiMangCung.Checked;
+            model.TeVung = chkTeVung.Checked;
+            model.DatDongMachXamLan = chkDatDongMachXamLan.Checked;
+            model.DatCatheter = chkDatCatheter.Checked;
+            model.TenBenhNhan = txtTenBN.Text;
+            model.Tuoi = txtTuoiBN.Text;
+            model.DanToc = txtDanToc.Text;
+            model.MaQuoctich = cboQuocTich.SelectedValue.ToString();
+            model.NgheNghiep = txtNgheNghiep.Text;
+            model.NoiLamViec = txtNoiLamViec.Text;
+            model.DiaChi = txtDiaChi.Text;
+            model.NguoiDaiDien = txtNguoiDaiDien.Text;
+            model.TenNguoiDaiDien = txtTenNguoiDaiDien.Text;
+            model.MaDieuTritaiKhoa = cboDieuTriTaiKhoa.SelectedValue.ToString();
+            model.TinhTrangBenh = txtTinhTrangBenh.Text;
+            model.DongYGayMe = LayDongY();
+            model.GioiTinh = LaygioiTinh();
+            In_PhieuCamDoanChapNhanGayMeHoiSuc rp = new In_PhieuCamDoanChapNhanGayMeHoiSuc(model);
             rp.ShowDialog();
         }
 
@@ -252,19 +282,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
                 chkNu.Checked = true;
 
             }
-
-            // ÉP KIỂU LOAD ĐỒNG Ý GÂY MÊ, NẾU cột cDongYGayMe == 1 thì chk DongY đúng, ngược lại thì KhongDongY đúng 
-            if (Convert.ToInt32(dgrPhieuCamDoanGayMe.CurrentRow.Cells["cDongYGayMe"].Value.ToString()) == 1)
-            {
-                chkDongYGayMe.Checked = true;
-            }
-            else
-            {
-                chkKhongDongY.Checked = true;
-
-            }
-
-
+            chkDongYGayMe.Checked = bool.Parse(dgrPhieuCamDoanGayMe.CurrentRow.Cells["cDongYGayMe"].Value.ToString());
         }
         //Load combobox (lấy dữ liệu hiển thị lên combobox)
         private void LoadCombobox()

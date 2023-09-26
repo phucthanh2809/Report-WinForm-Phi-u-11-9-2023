@@ -30,7 +30,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiayCamDoanChapNhanGayMeHoiSuc));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControlChinh = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PanelTab1 = new System.Windows.Forms.Panel();
@@ -130,8 +130,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.chkDongYGayMe = new System.Windows.Forms.RadioButton();
-            this.chkKhongDongY = new System.Windows.Forms.RadioButton();
             this.cIDPhieuChapNhanGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTenBacSi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -163,7 +161,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cMaKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cMaDieuTriTaiKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cMaQuocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TabControlChinh.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PanelTab1.SuspendLayout();
@@ -755,10 +752,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.PanelTab2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1342, 693);
+            this.tabPage2.Size = new System.Drawing.Size(1342, 700);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trang 2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -772,7 +769,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.PanelTab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelTab2.Location = new System.Drawing.Point(3, 3);
             this.PanelTab2.Name = "PanelTab2";
-            this.PanelTab2.Size = new System.Drawing.Size(1336, 687);
+            this.PanelTab2.Size = new System.Drawing.Size(1336, 694);
             this.PanelTab2.TabIndex = 0;
             // 
             // panel15
@@ -844,9 +841,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.groupBox1);
-            this.panel14.Controls.Add(this.chkKhongDongY);
-            this.panel14.Controls.Add(this.chkDongYGayMe);
+            this.panel14.Controls.Add(this.chkNu);
+            this.panel14.Controls.Add(this.chkNam);
             this.panel14.Controls.Add(this.cboDieuTriTaiKhoa);
             this.panel14.Controls.Add(this.cboQuocTich);
             this.panel14.Controls.Add(this.label40);
@@ -884,7 +880,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.chkNu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkNu.AutoSize = true;
-            this.chkNu.Location = new System.Drawing.Point(78, 11);
+            this.chkNu.Location = new System.Drawing.Point(1163, 45);
             this.chkNu.Name = "chkNu";
             this.chkNu.Size = new System.Drawing.Size(54, 27);
             this.chkNu.TabIndex = 47;
@@ -896,7 +892,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.chkNam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkNam.AutoSize = true;
-            this.chkNam.Location = new System.Drawing.Point(4, 11);
+            this.chkNam.Location = new System.Drawing.Point(1088, 45);
             this.chkNam.Name = "chkNam";
             this.chkNam.Size = new System.Drawing.Size(68, 27);
             this.chkNam.TabIndex = 46;
@@ -981,9 +977,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // dgrPhieuCamDoanGayMe
             // 
             this.dgrPhieuCamDoanGayMe.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgrPhieuCamDoanGayMe.ColumnHeadersHeight = 95;
             this.dgrPhieuCamDoanGayMe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cIDPhieuChapNhanGayMe,
@@ -1452,30 +1448,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // chkDongYGayMe
-            // 
-            this.chkDongYGayMe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkDongYGayMe.AutoSize = true;
-            this.chkDongYGayMe.Location = new System.Drawing.Point(68, 437);
-            this.chkDongYGayMe.Name = "chkDongYGayMe";
-            this.chkDongYGayMe.Size = new System.Drawing.Size(422, 27);
-            this.chkDongYGayMe.TabIndex = 48;
-            this.chkDongYGayMe.TabStop = true;
-            this.chkDongYGayMe.Text = "Đồng ý gây mê hồi sức và để giấy này làm bằng.";
-            this.chkDongYGayMe.UseVisualStyleBackColor = true;
-            // 
-            // chkKhongDongY
-            // 
-            this.chkKhongDongY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkKhongDongY.AutoSize = true;
-            this.chkKhongDongY.Location = new System.Drawing.Point(68, 470);
-            this.chkKhongDongY.Name = "chkKhongDongY";
-            this.chkKhongDongY.Size = new System.Drawing.Size(479, 27);
-            this.chkKhongDongY.TabIndex = 49;
-            this.chkKhongDongY.TabStop = true;
-            this.chkKhongDongY.Text = "Không đồng ý gây mê hồi sức và để giấy này làm bằng.";
-            this.chkKhongDongY.UseVisualStyleBackColor = true;
-            // 
             // cIDPhieuChapNhanGayMe
             // 
             this.cIDPhieuChapNhanGayMe.DataPropertyName = "IDPhieuChapNhanGayMe";
@@ -1696,16 +1668,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cMaQuocTich.ReadOnly = true;
             this.cMaQuocTich.Visible = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.chkNam);
-            this.groupBox1.Controls.Add(this.chkNu);
-            this.groupBox1.Location = new System.Drawing.Point(1062, 35);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(132, 39);
-            this.groupBox1.TabIndex = 50;
-            this.groupBox1.TabStop = false;
-            // 
             // GiayCamDoanChapNhanGayMeHoiSuc
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1857,8 +1819,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private ControlProject1510.ComboBoxSearch cboTenBacSi;
         private System.Windows.Forms.RadioButton chkNu;
         private System.Windows.Forms.RadioButton chkNam;
-        private System.Windows.Forms.RadioButton chkKhongDongY;
-        private System.Windows.Forms.RadioButton chkDongYGayMe;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIDPhieuChapNhanGayMe;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTenBacSi;
         private System.Windows.Forms.DataGridViewTextBoxColumn cKhoa;
@@ -1890,6 +1850,5 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.DataGridViewTextBoxColumn cMaKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cMaDieuTriTaiKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cMaQuocTich;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
