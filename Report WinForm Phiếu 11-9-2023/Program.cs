@@ -36,6 +36,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             //    Tinhtrangbenh = "Tê liệt phần thân dưới, mất đi khả năng đi đứng"
             //};
             //Application.Run(new In_PhieuCamDoanChapNhanPhauThuatThuThuat(model));
+            
             Application.Run(new GiayCamDoanChapNhanGayMeHoiSuc());
         }
     }
