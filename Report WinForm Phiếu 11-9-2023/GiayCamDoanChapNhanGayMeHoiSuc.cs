@@ -140,7 +140,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
                     msql = "INSERT INTO [dbo].[tbl_GiayCamDoanChapNhanGayMeHoiSuc]([MaBacSi],[Khoa],[Mask],[NoiKhiQuan],[MaskThanhQuan],[NoiPheQuan],[TeTaiCho]," +
                     "[TeKhoangXuongCung],[TeNgoaiMangCung],[TeVung],[DatDongMachXamLan],[DatCatheterTinhMach],[TenBenhNhan],[TuoiBenhNhan],[GioiTinh]," +
                     "[DanToc],[QuocTich],[NgheNghiep],[NoiLamViec],[DiaChi],[NguoiDaiDien],[TenNguoiDaiDien],[DieuTriTaiKhoa],[TinhTrangBenh]," +
-                    "[DongYGayMe],[KhongDongYGayMe])" +
+                    "[DongYGayMe])" +
                     "VALUES" +
                     "(N'" + cboTenBacSi.SelectedValue + "', N'" + cboKhoa.SelectedValue + "', '" + chkMask.Checked + "', '" + chkNoiKhiQuan.Checked + "', '" + chkMaskThanhQuan.Checked + "'," +
                     " '" + chkNoiPheQuan.Checked + "', '" + chkTeTaiCho.Checked + "','" + chkTeKhoangXuongCung.Checked + "', '" + chkTeNgoaiMangCung.Checked + "'," +

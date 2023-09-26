@@ -106,7 +106,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label1.Location = new System.Drawing.Point(295, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(851, 35);
+            this.label1.Size = new System.Drawing.Size(673, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "GIẤY CAM ĐOAN CHẤP NHẬN PHẪU THUẬT, THỦ THUẬT";
             // 
@@ -117,7 +117,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label2.Location = new System.Drawing.Point(16, 3);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(417, 26);
+            this.label2.Size = new System.Drawing.Size(330, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "1. Bác sĩ thực hiện phẫu thuật/thủ thuật";
             // 
@@ -130,7 +130,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label3.Location = new System.Drawing.Point(31, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 27);
+            this.label3.Size = new System.Drawing.Size(67, 21);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tôi tên:";
             // 
@@ -139,10 +139,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(799, 50);
+            this.label4.Location = new System.Drawing.Point(765, 50);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 27);
+            this.label4.Size = new System.Drawing.Size(54, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "Khoa:";
             // 
@@ -153,7 +153,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label5.Location = new System.Drawing.Point(31, 85);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(900, 27);
+            this.label5.Size = new System.Drawing.Size(692, 21);
             this.label5.TabIndex = 3;
             this.label5.Text = "Tôi đã giải thích thông tin liên quan đến cuộc phẫu thuật/thủ thuật cho thân nhân" +
     " bệnh nhân:";
@@ -165,7 +165,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label6.Location = new System.Drawing.Point(31, 117);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 27);
+            this.label6.Size = new System.Drawing.Size(115, 21);
             this.label6.TabIndex = 4;
             this.label6.Text = "- Chuẩn đoán:";
             // 
@@ -176,7 +176,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label7.Location = new System.Drawing.Point(31, 156);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(361, 27);
+            this.label7.Size = new System.Drawing.Size(276, 21);
             this.label7.TabIndex = 5;
             this.label7.Text = "- Phương pháp phẫu thuật/thủ thuật:";
             // 
@@ -187,7 +187,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label8.Location = new System.Drawing.Point(31, 202);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(256, 27);
+            this.label8.Size = new System.Drawing.Size(198, 21);
             this.label8.TabIndex = 6;
             this.label8.Text = "- Biến chứng thường gặp:";
             // 
@@ -200,7 +200,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label9.Location = new System.Drawing.Point(31, 241);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(887, 27);
+            this.label9.Size = new System.Drawing.Size(691, 21);
             this.label9.TabIndex = 7;
             this.label9.Text = "Chúng tôi đã thông báo mức độ thành công của cuộc phẫu thuật/thủ thuật; những ngu" +
     "y cơ, \r\n";
@@ -213,7 +213,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtBienChung.Location = new System.Drawing.Point(400, 195);
             this.txtBienChung.Margin = new System.Windows.Forms.Padding(4);
             this.txtBienChung.Name = "txtBienChung";
-            this.txtBienChung.Size = new System.Drawing.Size(985, 34);
+            this.txtBienChung.Size = new System.Drawing.Size(951, 29);
             this.txtBienChung.TabIndex = 12;
             this.txtBienChung.Enter += new System.EventHandler(this.txtBienChung_Enter);
             this.txtBienChung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBienChung_KeyPress);
@@ -226,7 +226,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label35.Location = new System.Drawing.Point(27, 350);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(86, 27);
+            this.label35.Size = new System.Drawing.Size(67, 21);
             this.label35.TabIndex = 28;
             this.label35.Text = "Tôi tên:";
             // 
@@ -237,7 +237,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label34.Location = new System.Drawing.Point(27, 391);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(94, 27);
+            this.label34.Size = new System.Drawing.Size(73, 21);
             this.label34.TabIndex = 29;
             this.label34.Text = "Dân tộc:";
             // 
@@ -248,7 +248,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label33.Location = new System.Drawing.Point(27, 436);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(139, 27);
+            this.label33.Size = new System.Drawing.Size(107, 21);
             this.label33.TabIndex = 30;
             this.label33.Text = "Nghề nghiệp:";
             // 
@@ -259,7 +259,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label32.Location = new System.Drawing.Point(27, 475);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(87, 27);
+            this.label32.Size = new System.Drawing.Size(69, 21);
             this.label32.TabIndex = 31;
             this.label32.Text = "Địa chỉ:";
             // 
@@ -272,19 +272,18 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label31.Location = new System.Drawing.Point(27, 513);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(370, 27);
+            this.label31.Size = new System.Drawing.Size(284, 21);
             this.label31.TabIndex = 32;
             this.label31.Text = "Là(cha/mẹ/người đại diện hợp pháp):";
             // 
             // label30
             // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(871, 350);
+            this.label30.Location = new System.Drawing.Point(854, 350);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 27);
+            this.label30.Size = new System.Drawing.Size(48, 21);
             this.label30.TabIndex = 33;
             this.label30.Text = "Tuổi:";
             // 
@@ -293,10 +292,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(831, 391);
+            this.label29.Location = new System.Drawing.Point(797, 391);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(112, 27);
+            this.label29.Size = new System.Drawing.Size(88, 21);
             this.label29.TabIndex = 34;
             this.label29.Text = "Quốc tịch:";
             // 
@@ -305,10 +304,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(812, 437);
+            this.label28.Location = new System.Drawing.Point(778, 437);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(141, 27);
+            this.label28.Size = new System.Drawing.Size(107, 21);
             this.label28.TabIndex = 35;
             this.label28.Text = "Nơi làm việc:";
             // 
@@ -319,7 +318,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label27.Location = new System.Drawing.Point(16, 315);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(385, 26);
+            this.label27.Size = new System.Drawing.Size(305, 22);
             this.label27.TabIndex = 36;
             this.label27.Text = "2. Bệnh nhân hoặc đại diện gia đình:";
             // 
@@ -332,7 +331,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label26.Location = new System.Drawing.Point(27, 553);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(253, 27);
+            this.label26.Size = new System.Drawing.Size(194, 21);
             this.label26.TabIndex = 37;
             this.label26.Text = "của bệnh nhân, họ tên là:";
             // 
@@ -342,10 +341,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(16, 1344);
+            this.label25.Location = new System.Drawing.Point(16, 1472);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(456, 27);
+            this.label25.Size = new System.Drawing.Size(351, 21);
             this.label25.TabIndex = 38;
             this.label25.Text = "của Bệnh viện Nhi đồng 2 với tình trạng bệnh:";
             // 
@@ -358,19 +357,17 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label20.Location = new System.Drawing.Point(27, 592);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(268, 27);
+            this.label20.Size = new System.Drawing.Size(204, 21);
             this.label20.TabIndex = 39;
             this.label20.Text = "hiện đang điều trị tại khoa:";
             // 
             // txtHoTenBN
             // 
-            this.txtHoTenBN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoTenBN.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTenBN.Location = new System.Drawing.Point(172, 347);
             this.txtHoTenBN.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTenBN.Name = "txtHoTenBN";
-            this.txtHoTenBN.Size = new System.Drawing.Size(632, 34);
+            this.txtHoTenBN.Size = new System.Drawing.Size(615, 29);
             this.txtHoTenBN.TabIndex = 40;
             this.txtHoTenBN.Enter += new System.EventHandler(this.txtHoTenBN_Enter);
             this.txtHoTenBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTenBN_KeyPress);
@@ -378,12 +375,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtTuoi
             // 
-            this.txtTuoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuoi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTuoi.Location = new System.Drawing.Point(952, 347);
+            this.txtTuoi.Location = new System.Drawing.Point(935, 347);
             this.txtTuoi.Margin = new System.Windows.Forms.Padding(4);
             this.txtTuoi.Name = "txtTuoi";
-            this.txtTuoi.Size = new System.Drawing.Size(199, 34);
+            this.txtTuoi.Size = new System.Drawing.Size(199, 29);
             this.txtTuoi.TabIndex = 41;
             this.txtTuoi.Enter += new System.EventHandler(this.txtTuoi_Enter);
             this.txtTuoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTuoi_KeyPress);
@@ -397,7 +393,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtDanToc.Location = new System.Drawing.Point(172, 388);
             this.txtDanToc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDanToc.Name = "txtDanToc";
-            this.txtDanToc.Size = new System.Drawing.Size(632, 34);
+            this.txtDanToc.Size = new System.Drawing.Size(598, 29);
             this.txtDanToc.TabIndex = 42;
             this.txtDanToc.Enter += new System.EventHandler(this.txtDanToc_Enter);
             this.txtDanToc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDanToc_KeyPress);
@@ -407,10 +403,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtNoiLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoiLamViec.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoiLamViec.Location = new System.Drawing.Point(952, 431);
+            this.txtNoiLamViec.Location = new System.Drawing.Point(918, 431);
             this.txtNoiLamViec.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiLamViec.Name = "txtNoiLamViec";
-            this.txtNoiLamViec.Size = new System.Drawing.Size(379, 34);
+            this.txtNoiLamViec.Size = new System.Drawing.Size(379, 29);
             this.txtNoiLamViec.TabIndex = 43;
             this.txtNoiLamViec.Enter += new System.EventHandler(this.txtNoiLamViec_Enter);
             this.txtNoiLamViec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoiLamViec_KeyPress);
@@ -424,7 +420,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtDiaChi.Location = new System.Drawing.Point(172, 472);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(1160, 34);
+            this.txtDiaChi.Size = new System.Drawing.Size(1126, 29);
             this.txtDiaChi.TabIndex = 44;
             this.txtDiaChi.Enter += new System.EventHandler(this.txtDiaChi_Enter);
             this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
@@ -439,7 +435,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label11.Location = new System.Drawing.Point(31, 272);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(833, 27);
+            this.label11.Size = new System.Drawing.Size(640, 21);
             this.label11.TabIndex = 53;
             this.label11.Text = "biến chứng trong và sau phẫu thuật/ thủ thuật có thể xảy ra cho thân nhân bệnh nh" +
     "ân.";
@@ -463,7 +459,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label12.Location = new System.Drawing.Point(27, 790);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 27);
+            this.label12.Size = new System.Drawing.Size(0, 21);
             this.label12.TabIndex = 57;
             // 
             // cboKhoa
@@ -481,10 +477,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboKhoa.FormattingEnabled = true;
             this.cboKhoa.LinkedColumnIndex = 0;
             this.cboKhoa.LinkedTextBox = null;
-            this.cboKhoa.Location = new System.Drawing.Point(677, 43);
+            this.cboKhoa.Location = new System.Drawing.Point(643, 43);
             this.cboKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cboKhoa.Name = "cboKhoa";
-            this.cboKhoa.Size = new System.Drawing.Size(653, 35);
+            this.cboKhoa.Size = new System.Drawing.Size(653, 30);
             this.cboKhoa.TabIndex = 61;
             // 
             // cboQuocTich
@@ -502,10 +498,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboQuocTich.FormattingEnabled = true;
             this.cboQuocTich.LinkedColumnIndex = 0;
             this.cboQuocTich.LinkedTextBox = null;
-            this.cboQuocTich.Location = new System.Drawing.Point(952, 388);
+            this.cboQuocTich.Location = new System.Drawing.Point(918, 388);
             this.cboQuocTich.Margin = new System.Windows.Forms.Padding(4);
             this.cboQuocTich.Name = "cboQuocTich";
-            this.cboQuocTich.Size = new System.Drawing.Size(380, 35);
+            this.cboQuocTich.Size = new System.Drawing.Size(380, 30);
             this.cboQuocTich.TabIndex = 62;
             // 
             // cbo_Khoa
@@ -527,7 +523,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cbo_Khoa.Location = new System.Drawing.Point(503, 590);
             this.cbo_Khoa.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_Khoa.Name = "cbo_Khoa";
-            this.cbo_Khoa.Size = new System.Drawing.Size(829, 35);
+            this.cbo_Khoa.Size = new System.Drawing.Size(795, 30);
             this.cbo_Khoa.TabIndex = 64;
             // 
             // cboDanhXungGD
@@ -553,7 +549,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboDanhXungGD.Location = new System.Drawing.Point(503, 512);
             this.cboDanhXungGD.Margin = new System.Windows.Forms.Padding(4);
             this.cboDanhXungGD.Name = "cboDanhXungGD";
-            this.cboDanhXungGD.Size = new System.Drawing.Size(829, 35);
+            this.cboDanhXungGD.Size = new System.Drawing.Size(795, 30);
             this.cboDanhXungGD.TabIndex = 65;
             // 
             // cboHoTenBS
@@ -575,7 +571,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboHoTenBS.Location = new System.Drawing.Point(127, 43);
             this.cboHoTenBS.Margin = new System.Windows.Forms.Padding(4);
             this.cboHoTenBS.Name = "cboHoTenBS";
-            this.cboHoTenBS.Size = new System.Drawing.Size(440, 35);
+            this.cboHoTenBS.Size = new System.Drawing.Size(406, 30);
             this.cboHoTenBS.TabIndex = 66;
             // 
             // cboChuanDoan
@@ -597,7 +593,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboChuanDoan.Location = new System.Drawing.Point(400, 111);
             this.cboChuanDoan.Margin = new System.Windows.Forms.Padding(4);
             this.cboChuanDoan.Name = "cboChuanDoan";
-            this.cboChuanDoan.Size = new System.Drawing.Size(984, 35);
+            this.cboChuanDoan.Size = new System.Drawing.Size(950, 30);
             this.cboChuanDoan.TabIndex = 67;
             // 
             // linktxtChuanDoan
@@ -607,7 +603,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.linktxtChuanDoan.Margin = new System.Windows.Forms.Padding(4);
             this.linktxtChuanDoan.Name = "linktxtChuanDoan";
             this.linktxtChuanDoan.ReadOnly = true;
-            this.linktxtChuanDoan.Size = new System.Drawing.Size(147, 34);
+            this.linktxtChuanDoan.Size = new System.Drawing.Size(147, 29);
             this.linktxtChuanDoan.TabIndex = 68;
             this.linktxtChuanDoan.TabStop = false;
             // 
@@ -616,10 +612,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(576, 50);
+            this.label10.Location = new System.Drawing.Point(542, 50);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 27);
+            this.label10.Size = new System.Drawing.Size(59, 21);
             this.label10.TabIndex = 71;
             this.label10.Text = "Khoa :";
             // 
@@ -631,7 +627,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtHoTenDanhXung.Location = new System.Drawing.Point(503, 551);
             this.txtHoTenDanhXung.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTenDanhXung.Name = "txtHoTenDanhXung";
-            this.txtHoTenDanhXung.Size = new System.Drawing.Size(829, 34);
+            this.txtHoTenDanhXung.Size = new System.Drawing.Size(795, 29);
             this.txtHoTenDanhXung.TabIndex = 72;
             this.txtHoTenDanhXung.Enter += new System.EventHandler(this.HoTenThanNhan_Enter);
             this.txtHoTenDanhXung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HoTenThanNhan_KeyPress);
@@ -696,9 +692,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.btnNu.AutoSize = true;
             this.btnNu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNu.Location = new System.Drawing.Point(1339, 351);
+            this.btnNu.Location = new System.Drawing.Point(1262, 351);
             this.btnNu.Name = "btnNu";
-            this.btnNu.Size = new System.Drawing.Size(63, 31);
+            this.btnNu.Size = new System.Drawing.Size(51, 25);
             this.btnNu.TabIndex = 77;
             this.btnNu.TabStop = true;
             this.btnNu.Text = "Nữ";
@@ -709,9 +705,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnNam.AutoSize = true;
             this.btnNam.Checked = true;
             this.btnNam.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNam.Location = new System.Drawing.Point(1258, 350);
+            this.btnNam.Location = new System.Drawing.Point(1193, 351);
             this.btnNam.Name = "btnNam";
-            this.btnNam.Size = new System.Drawing.Size(79, 31);
+            this.btnNam.Size = new System.Drawing.Size(63, 25);
             this.btnNam.TabIndex = 76;
             this.btnNam.TabStop = true;
             this.btnNam.Text = "Nam";
@@ -736,7 +732,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.cboPhuongPhap.Location = new System.Drawing.Point(400, 148);
             this.cboPhuongPhap.Margin = new System.Windows.Forms.Padding(4);
             this.cboPhuongPhap.Name = "cboPhuongPhap";
-            this.cboPhuongPhap.Size = new System.Drawing.Size(982, 35);
+            this.cboPhuongPhap.Size = new System.Drawing.Size(948, 30);
             this.cboPhuongPhap.TabIndex = 75;
             // 
             // txtTinhTrangBenh
@@ -747,7 +743,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtTinhTrangBenh.Location = new System.Drawing.Point(503, 628);
             this.txtTinhTrangBenh.Margin = new System.Windows.Forms.Padding(4);
             this.txtTinhTrangBenh.Name = "txtTinhTrangBenh";
-            this.txtTinhTrangBenh.Size = new System.Drawing.Size(829, 34);
+            this.txtTinhTrangBenh.Size = new System.Drawing.Size(795, 29);
             this.txtTinhTrangBenh.TabIndex = 74;
             this.txtTinhTrangBenh.Enter += new System.EventHandler(this.txtTinhTrangBenh_Enter);
             this.txtTinhTrangBenh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTinhTrangBenh_KeyPress);
@@ -761,7 +757,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.txtNgheNghiep.Location = new System.Drawing.Point(172, 432);
             this.txtNgheNghiep.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgheNghiep.Name = "txtNgheNghiep";
-            this.txtNgheNghiep.Size = new System.Drawing.Size(632, 34);
+            this.txtNgheNghiep.Size = new System.Drawing.Size(598, 29);
             this.txtNgheNghiep.TabIndex = 73;
             this.txtNgheNghiep.Enter += new System.EventHandler(this.txtNgheNghiep_Enter);
             this.txtNgheNghiep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNgheNghiep_KeyPress);
