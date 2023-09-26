@@ -11377,7 +11377,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
             this.Margins = new DevExpress.Drawing.DXMargins(60F, 39F, 75.00001F, 47.41512F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
-            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).EndInit();

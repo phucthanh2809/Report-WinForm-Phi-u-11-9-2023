@@ -1,4 +1,5 @@
-﻿using Report_WinForm_Phiếu_11_9_2023.Report;
+﻿using Report_WinForm_Phiếu_11_9_2023.Model;
+using Report_WinForm_Phiếu_11_9_2023.Report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +14,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
 {
     public partial class In_PhieuThamKhaoBNTruocGayMe_GiaiPhau : DevExpress.XtraEditors.XtraForm
     {
-        private PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau currentModel = new PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau();
-        public In_PhieuThamKhaoBNTruocGayMe_GiaiPhau(PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau Model)
+        private PhieuThamKhaoBNtruocPT currentModel = new PhieuThamKhaoBNtruocPT();
+        public In_PhieuThamKhaoBNTruocGayMe_GiaiPhau(PhieuThamKhaoBNtruocPT Model)
         {
             InitializeComponent();
             this.currentModel = Model;

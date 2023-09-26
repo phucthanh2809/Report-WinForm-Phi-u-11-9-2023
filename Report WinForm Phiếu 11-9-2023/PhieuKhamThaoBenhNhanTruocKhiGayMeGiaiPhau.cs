@@ -1,4 +1,5 @@
 ﻿using BusinessCommon;
+using Report_WinForm_Phiếu_11_9_2023.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -920,6 +921,80 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private void btnSua_Click_1(object sender, EventArgs e)
         {
             SuaThongTinPhieu();
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            PhieuThamKhaoBNtruocPT model = new PhieuThamKhaoBNtruocPT();
+            String VanDeSauSanh = RdVanDeSauSanh();
+            String GiaiPhau = RdGiaiPhau();
+            String Suyen = RdSuyen();
+            String ChamMeDayNguaNgoaiDa = rdChamMeDayNguaNgoaiDa();
+            String DiUngThuocThucPham = rdDiUngThuocThucPham();
+            String BienChungGayMe = rdBienChungGayMe();
+            String NamVien = rdNamVien();
+            String SotCaoCoGiat = rdSotCaoCoGiat();
+            String DongKinh = rdDongKinh();
+            String ChayMauCam = rdChayMauCam();
+            String AnhEmHo = rdAnhEmHo();
+            String MacBenhTim = rdMacBenhTim();
+            String TruyenMau = rdTruyenMau();
+            String DungThuoc = rdDungThuoc();
+            String DungThuoc15Ngay = rdDungThuoc15Ngay();
+            model.Hotenbn = txtTenBenNhan.Text;
+            model.Tuoi = txtTuoi.Text;
+            model.Cannang = txtCanNang.Text;
+            model.Chieucao = txtChieuCao.Text;
+            model.Diachi = txtDiaChi.Text;
+            model.Vandesausanh = convertInt(VanDeSauSanh);
+            model.Tenvandesausanh = Laygiatri(VanDeSauSanh, txtVanDeSauSanh);
+            model.Dagaymegiaiphau = convertInt(GiaiPhau);
+            model.Ngaygaymegiaiphau = LayDateTime(GiaiPhau, dtNgayMo);
+            model.Maphuongphapgayme = Laygiatricbb(GiaiPhau, cboPT);
+            model.Mabenhviengayme = Laygiatricbb(GiaiPhau, cboBV);
+            model.Suyen = convertInt(Suyen);
+            model.Chamnoimeday = convertInt(ChamMeDayNguaNgoaiDa);
+            model.Diungthuocthucpham = convertInt(DiUngThuocThucPham);
+            model.Tenthuocdiung = Laygiatri(DiUngThuocThucPham, txtDiUngThuoc);
+            model.Bienchungsaugayme = convertInt(BienChungGayMe);
+            model.Danamvien = convertInt(NamVien);
+            model.Lydonamvien = Laygiatri(NamVien, txtLyDoNamVien);
+            model.Sotcaocogiat = convertInt(SotCaoCoGiat);
+            model.Dongkinh = convertInt(DongKinh);
+            model.Dadieutri = Laygiatri(DongKinh, txtDaDuocDieuTri);
+            model.Chaymaucamkeodai = convertInt(ChayMauCam);
+            model.Anhemho = convertInt(AnhEmHo);
+            model.Timbamsinh = convertInt(MacBenhTim);
+            model.Neurotimbamsinh = Laygiatri(MacBenhTim, txtNeuRoBenhTim);
+            model.Datungtruyenmau = convertInt(TruyenMau);
+            model.Dungthuocthuongxuyen = convertInt(DungThuoc);
+            model.Neurothuocdungthuongxuyen = Laygiatri(DungThuoc, txtXinNeuRoDungThuoc);
+            model.Dungthuoc15ngay = convertInt(DungThuoc15Ngay);
+            model.Tenthuockhangsinh = Laygiatri(DungThuoc15Ngay, txtKhangSinhTT);
+            model.Lieudungthuockhangsinh = Laygiatri(DungThuoc15Ngay, txtKhangSinhLD);
+            model.Tenthuocchongviem = Laygiatri(DungThuoc15Ngay, txtChongViemTT);
+            model.Lieudungthuocchongviem = Laygiatri(DungThuoc15Ngay, txtChongViemLD);
+            model.Tenthuochasotgiamdau = Laygiatri(DungThuoc15Ngay, txtHaSotTT);
+            model.Lieudungthuochasotgiamdau = Laygiatri(DungThuoc15Ngay, txtHaSotLD);
+            model.Tenthuockhac = Laygiatri(DungThuoc15Ngay, txtThuocKhacTT);
+            model.Lieudungthuockhac = Laygiatri(DungThuoc15Ngay, txtThuocKhacLD);
+            model.Luuybacsi = txtVanDeKhac.Text;
+            In_PhieuThamKhaoBNTruocGayMe_GiaiPhau phieu = new In_PhieuThamKhaoBNTruocGayMe_GiaiPhau(model);
+            this.Hide();
+            phieu.ShowDialog();
+            this.Show();
+            LoaddgrDanhSachBN();
+        }
+        int convertInt(String s)
+        {
+            if (s == "")
+            {
+                return 0;
+            }
+            else
+            {
+                return Convert.ToInt32(s);
+            }
         }
     }
 }

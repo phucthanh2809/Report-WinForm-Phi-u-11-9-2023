@@ -29,7 +29,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau));
             this.Tbc1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -188,6 +188,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label36 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.btnIn = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.txtHaSotLD = new ControlProject1510.XFilteg();
             this.txtThuocKhacLD = new ControlProject1510.XFilteg();
@@ -213,7 +214,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnIn = new System.Windows.Forms.Button();
             this.Tbc1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -545,8 +545,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // dgrDanhSachBN
             // 
             this.dgrDanhSachBN.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            this.dgrDanhSachBN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            this.dgrDanhSachBN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgrDanhSachBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrDanhSachBN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cMaPhieu,
@@ -2253,6 +2253,18 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel16.Size = new System.Drawing.Size(1336, 691);
             this.panel16.TabIndex = 0;
             // 
+            // btnIn
+            // 
+            this.btnIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(924, 644);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(92, 42);
+            this.btnIn.TabIndex = 101;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // btnReset
             // 
             this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -2601,17 +2613,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 125;
-            // 
-            // btnIn
-            // 
-            this.btnIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.Location = new System.Drawing.Point(924, 644);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(92, 42);
-            this.btnIn.TabIndex = 101;
-            this.btnIn.Text = "In";
-            this.btnIn.UseVisualStyleBackColor = true;
             // 
             // PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau
             // 

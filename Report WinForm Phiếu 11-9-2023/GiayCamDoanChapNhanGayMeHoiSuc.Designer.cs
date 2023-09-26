@@ -29,8 +29,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiayCamDoanChapNhanGayMeHoiSuc));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControlChinh = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PanelTab1 = new System.Windows.Forms.Panel();
@@ -68,41 +68,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel12 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cboTenBacSi = new ControlProject1510.ComboBoxSearch();
+            this.cboKhoa = new ControlProject1510.ComboBoxSearch();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtKhoa = new ControlProject1510.XFilteg();
-            this.dgrPhieuCamDoanGayMe = new System.Windows.Forms.DataGridView();
-            this.cIDPhieuChapNhanGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTenBacSi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cMask = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNoiKhiQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cMaskThanhQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNoiPheQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTeTaiCho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTeKhoangXuongCung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTeNgoaiMangCung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTeVung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDatDongMachXamLan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDatCatheterTinhMach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTenBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTuoiBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGioiTinhNam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGioiTinhNu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cQuocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNgheNghiep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNoiLamViec = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNguoiDaiDien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDieuTriTaiKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTinhTrangBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDongYGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cKhongDongYGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGiaDinhTuViet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cXoa = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cSua = new System.Windows.Forms.DataGridViewImageColumn();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTenBacSi = new ControlProject1510.XFilteg();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -120,15 +89,19 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.chkNu = new System.Windows.Forms.RadioButton();
+            this.chkNam = new System.Windows.Forms.RadioButton();
+            this.cboDieuTriTaiKhoa = new ControlProject1510.ComboBoxSearch();
+            this.cboQuocTich = new ControlProject1510.ComboBoxSearch();
             this.label40 = new System.Windows.Forms.Label();
             this.txtGiaDinhTuViet = new ControlProject1510.XFilteg();
+            this.dgrPhieuCamDoanGayMe = new System.Windows.Forms.DataGridView();
             this.label39 = new System.Windows.Forms.Label();
             this.chkKhongDongY = new System.Windows.Forms.CheckBox();
             this.chkDongYGayMe = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
             this.txtTinhTrangBenh = new ControlProject1510.XFilteg();
             this.label36 = new System.Windows.Forms.Label();
-            this.txtDieuTriTaiKhoa = new ControlProject1510.XFilteg();
             this.label37 = new System.Windows.Forms.Label();
             this.txtTenNguoiDaiDien = new ControlProject1510.XFilteg();
             this.label35 = new System.Windows.Forms.Label();
@@ -140,14 +113,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label31 = new System.Windows.Forms.Label();
             this.txtNgheNghiep = new ControlProject1510.XFilteg();
             this.label32 = new System.Windows.Forms.Label();
-            this.txtQuocTich = new ControlProject1510.XFilteg();
             this.label29 = new System.Windows.Forms.Label();
             this.txtDanToc = new ControlProject1510.XFilteg();
             this.label30 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.chkNu = new System.Windows.Forms.CheckBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.chkNam = new System.Windows.Forms.CheckBox();
             this.txtTuoiBN = new ControlProject1510.XFilteg();
             this.label26 = new System.Windows.Forms.Label();
             this.txtTenBN = new ControlProject1510.XFilteg();
@@ -164,6 +132,37 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.cIDPhieuChapNhanGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTenBacSi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMask = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNoiKhiQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMaskThanhQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNoiPheQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTeTaiCho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTeKhoangXuongCung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTeNgoaiMangCung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTeVung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDatDongMachXamLan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDatCatheterTinhMach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTenBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTuoiBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cQuocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNgheNghiep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNoiLamViec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNguoiDaiDien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDieuTriTaiKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTinhTrangBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDongYGayMe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cXoa = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cSua = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cMaBacSi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMaKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMaDieuTriTaiKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMaQuocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControlChinh.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PanelTab1.SuspendLayout();
@@ -178,12 +177,12 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgrPhieuCamDoanGayMe)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.PanelTab2.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrPhieuCamDoanGayMe)).BeginInit();
             this.panel13.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -276,6 +275,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // label22
             // 
             this.label22.AllowDrop = true;
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoEllipsis = true;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(6, 0);
@@ -505,6 +506,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // label20
             // 
             this.label20.AllowDrop = true;
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(6, 34);
             this.label20.Name = "label20";
@@ -573,6 +576,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // label21
             // 
             this.label21.AllowDrop = true;
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoEllipsis = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(6, 10);
@@ -584,10 +589,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.cboTenBacSi);
+            this.panel3.Controls.Add(this.cboKhoa);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.txtKhoa);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.txtTenBacSi);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -595,6 +600,50 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1336, 114);
             this.panel3.TabIndex = 5;
+            // 
+            // cboTenBacSi
+            // 
+            this.cboTenBacSi.AllowDrop = true;
+            this.cboTenBacSi.AutoComplete = true;
+            this.cboTenBacSi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboTenBacSi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboTenBacSi.AutoDropdown = true;
+            this.cboTenBacSi.BackColorEven = System.Drawing.Color.White;
+            this.cboTenBacSi.BackColorOdd = System.Drawing.Color.White;
+            this.cboTenBacSi.ColumnNames = "TENBACSI";
+            this.cboTenBacSi.ColumnWidthDefault = 400;
+            this.cboTenBacSi.ColumnWidths = "";
+            this.cboTenBacSi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboTenBacSi.FormattingEnabled = true;
+            this.cboTenBacSi.LinkedColumnIndex = 0;
+            this.cboTenBacSi.LinkedTextBox = null;
+            this.cboTenBacSi.Location = new System.Drawing.Point(94, 36);
+            this.cboTenBacSi.Name = "cboTenBacSi";
+            this.cboTenBacSi.Size = new System.Drawing.Size(570, 33);
+            this.cboTenBacSi.TabIndex = 9;
+            this.cboTenBacSi.Enter += new System.EventHandler(this.cboTenBacSi_Enter);
+            // 
+            // cboKhoa
+            // 
+            this.cboKhoa.AllowDrop = true;
+            this.cboKhoa.AutoComplete = true;
+            this.cboKhoa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboKhoa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboKhoa.AutoDropdown = true;
+            this.cboKhoa.BackColorEven = System.Drawing.Color.White;
+            this.cboKhoa.BackColorOdd = System.Drawing.Color.White;
+            this.cboKhoa.ColumnNames = "TENCHUYENKHOA";
+            this.cboKhoa.ColumnWidthDefault = 300;
+            this.cboKhoa.ColumnWidths = "";
+            this.cboKhoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboKhoa.FormattingEnabled = true;
+            this.cboKhoa.LinkedColumnIndex = 0;
+            this.cboKhoa.LinkedTextBox = null;
+            this.cboKhoa.Location = new System.Drawing.Point(737, 37);
+            this.cboKhoa.Name = "cboKhoa";
+            this.cboKhoa.Size = new System.Drawing.Size(587, 33);
+            this.cboKhoa.TabIndex = 7;
+            this.cboKhoa.Enter += new System.EventHandler(this.cboKhoa_Enter);
             // 
             // label5
             // 
@@ -606,246 +655,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label5.Text = "Tôi đã giải thích thông tin liên quan đến phương pháp vô cảm trong cuộc phẫu thuậ" +
     "t/ thủ thuật cho thân nhân bệnh nhân:";
             // 
-            // txtKhoa
-            // 
-            this.txtKhoa.Location = new System.Drawing.Point(737, 38);
-            this.txtKhoa.Name = "txtKhoa";
-            this.txtKhoa.Size = new System.Drawing.Size(569, 32);
-            this.txtKhoa.TabIndex = 4;
-            this.txtKhoa.xCoTimMoRong = false;
-            this.txtKhoa.xDataGrid = this.dgrPhieuCamDoanGayMe;
-            this.txtKhoa.xField_Key = "Khoa";
-            this.txtKhoa.xKeep_Old_Value = false;
-            this.txtKhoa.xTimChinhXac = false;
-            this.txtKhoa.xTimMoRong = "";
-            this.txtKhoa.xTimTrenField = "Khoa";
-            this.txtKhoa.Enter += new System.EventHandler(this.txtKhoa_Enter);
-            this.txtKhoa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKhoa_KeyPress);
-            this.txtKhoa.Leave += new System.EventHandler(this.txtKhoa_Leave);
-            // 
-            // dgrPhieuCamDoanGayMe
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgrPhieuCamDoanGayMe.ColumnHeadersHeight = 95;
-            this.dgrPhieuCamDoanGayMe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cIDPhieuChapNhanGayMe,
-            this.cTenBacSi,
-            this.cKhoa,
-            this.cMask,
-            this.cNoiKhiQuan,
-            this.cMaskThanhQuan,
-            this.cNoiPheQuan,
-            this.cTeTaiCho,
-            this.cTeKhoangXuongCung,
-            this.cTeNgoaiMangCung,
-            this.cTeVung,
-            this.cDatDongMachXamLan,
-            this.cDatCatheterTinhMach,
-            this.cTenBenhNhan,
-            this.cTuoiBenhNhan,
-            this.cGioiTinhNam,
-            this.cGioiTinhNu,
-            this.cDanToc,
-            this.cQuocTich,
-            this.cNgheNghiep,
-            this.cNoiLamViec,
-            this.cDiaChi,
-            this.cNguoiDaiDien,
-            this.cDieuTriTaiKhoa,
-            this.cTinhTrangBenh,
-            this.cDongYGayMe,
-            this.cKhongDongYGayMe,
-            this.cGiaDinhTuViet,
-            this.cXoa,
-            this.cSua});
-            this.dgrPhieuCamDoanGayMe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgrPhieuCamDoanGayMe.Location = new System.Drawing.Point(0, 0);
-            this.dgrPhieuCamDoanGayMe.Name = "dgrPhieuCamDoanGayMe";
-            this.dgrPhieuCamDoanGayMe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrPhieuCamDoanGayMe.Size = new System.Drawing.Size(1336, 568);
-            this.dgrPhieuCamDoanGayMe.TabIndex = 0;
-            this.dgrPhieuCamDoanGayMe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrPhieuCamDoanGayMe_CellContentClick);
-            // 
-            // cIDPhieuChapNhanGayMe
-            // 
-            this.cIDPhieuChapNhanGayMe.DataPropertyName = "IDPhieuChapNhanGayMe";
-            this.cIDPhieuChapNhanGayMe.HeaderText = "ID Phiếu chấp nhận gây mê";
-            this.cIDPhieuChapNhanGayMe.Name = "cIDPhieuChapNhanGayMe";
-            // 
-            // cTenBacSi
-            // 
-            this.cTenBacSi.DataPropertyName = "TenBacSi";
-            this.cTenBacSi.HeaderText = "Tên bác sĩ";
-            this.cTenBacSi.Name = "cTenBacSi";
-            // 
-            // cKhoa
-            // 
-            this.cKhoa.DataPropertyName = "Khoa";
-            this.cKhoa.HeaderText = "Khoa";
-            this.cKhoa.Name = "cKhoa";
-            // 
-            // cMask
-            // 
-            this.cMask.DataPropertyName = "Mask";
-            this.cMask.HeaderText = "Mask";
-            this.cMask.Name = "cMask";
-            // 
-            // cNoiKhiQuan
-            // 
-            this.cNoiKhiQuan.DataPropertyName = "NoiKhiQuan";
-            this.cNoiKhiQuan.HeaderText = "Nội khí quản";
-            this.cNoiKhiQuan.Name = "cNoiKhiQuan";
-            // 
-            // cMaskThanhQuan
-            // 
-            this.cMaskThanhQuan.DataPropertyName = "MaskThanhQuan";
-            this.cMaskThanhQuan.HeaderText = "Mask thanh quản";
-            this.cMaskThanhQuan.Name = "cMaskThanhQuan";
-            // 
-            // cNoiPheQuan
-            // 
-            this.cNoiPheQuan.DataPropertyName = "NoiPheQuan";
-            this.cNoiPheQuan.HeaderText = "Nội phế quản";
-            this.cNoiPheQuan.Name = "cNoiPheQuan";
-            // 
-            // cTeTaiCho
-            // 
-            this.cTeTaiCho.DataPropertyName = "TeTaiCho";
-            this.cTeTaiCho.HeaderText = "Tê tại chỗ";
-            this.cTeTaiCho.Name = "cTeTaiCho";
-            // 
-            // cTeKhoangXuongCung
-            // 
-            this.cTeKhoangXuongCung.DataPropertyName = "TeKhoangXuongCung";
-            this.cTeKhoangXuongCung.HeaderText = "Tê khoang xương cùng";
-            this.cTeKhoangXuongCung.Name = "cTeKhoangXuongCung";
-            // 
-            // cTeNgoaiMangCung
-            // 
-            this.cTeNgoaiMangCung.DataPropertyName = "TeNgoaiMangCung";
-            this.cTeNgoaiMangCung.HeaderText = "Tê ngoài màng cứng";
-            this.cTeNgoaiMangCung.Name = "cTeNgoaiMangCung";
-            // 
-            // cTeVung
-            // 
-            this.cTeVung.DataPropertyName = "TeVung";
-            this.cTeVung.HeaderText = "Tê vùng";
-            this.cTeVung.Name = "cTeVung";
-            // 
-            // cDatDongMachXamLan
-            // 
-            this.cDatDongMachXamLan.DataPropertyName = "DatDongMachXamLan";
-            this.cDatDongMachXamLan.HeaderText = "Đặt động mạch xâm lấn";
-            this.cDatDongMachXamLan.Name = "cDatDongMachXamLan";
-            // 
-            // cDatCatheterTinhMach
-            // 
-            this.cDatCatheterTinhMach.DataPropertyName = "DatCatheterTinhMach";
-            this.cDatCatheterTinhMach.HeaderText = "Đặt Catheter tĩnh mạch";
-            this.cDatCatheterTinhMach.Name = "cDatCatheterTinhMach";
-            // 
-            // cTenBenhNhan
-            // 
-            this.cTenBenhNhan.DataPropertyName = "TenBenhNhan";
-            this.cTenBenhNhan.HeaderText = "Tên bệnh nhân";
-            this.cTenBenhNhan.Name = "cTenBenhNhan";
-            // 
-            // cTuoiBenhNhan
-            // 
-            this.cTuoiBenhNhan.DataPropertyName = "TuoiBenhNhan";
-            this.cTuoiBenhNhan.HeaderText = "Tuổi bệnh nhân";
-            this.cTuoiBenhNhan.Name = "cTuoiBenhNhan";
-            // 
-            // cGioiTinhNam
-            // 
-            this.cGioiTinhNam.DataPropertyName = "GioiTinhNam";
-            this.cGioiTinhNam.HeaderText = "Giới tính nam";
-            this.cGioiTinhNam.Name = "cGioiTinhNam";
-            // 
-            // cGioiTinhNu
-            // 
-            this.cGioiTinhNu.DataPropertyName = "GioiTinhNu";
-            this.cGioiTinhNu.HeaderText = "Giới tính nữ";
-            this.cGioiTinhNu.Name = "cGioiTinhNu";
-            // 
-            // cDanToc
-            // 
-            this.cDanToc.DataPropertyName = "DanToc";
-            this.cDanToc.HeaderText = "Dân tộc";
-            this.cDanToc.Name = "cDanToc";
-            // 
-            // cQuocTich
-            // 
-            this.cQuocTich.DataPropertyName = "QuocTich";
-            this.cQuocTich.HeaderText = "Quốc tịch";
-            this.cQuocTich.Name = "cQuocTich";
-            // 
-            // cNgheNghiep
-            // 
-            this.cNgheNghiep.DataPropertyName = "NgheNghiep";
-            this.cNgheNghiep.HeaderText = "Nghề nghiệp";
-            this.cNgheNghiep.Name = "cNgheNghiep";
-            // 
-            // cNoiLamViec
-            // 
-            this.cNoiLamViec.DataPropertyName = "NoiLamViec";
-            this.cNoiLamViec.HeaderText = "Nơi làm việc";
-            this.cNoiLamViec.Name = "cNoiLamViec";
-            // 
-            // cDiaChi
-            // 
-            this.cDiaChi.DataPropertyName = "DiaChi";
-            this.cDiaChi.HeaderText = "Địa chỉ";
-            this.cDiaChi.Name = "cDiaChi";
-            // 
-            // cNguoiDaiDien
-            // 
-            this.cNguoiDaiDien.DataPropertyName = "NguoiDaiDien";
-            this.cNguoiDaiDien.HeaderText = "Người đại diện";
-            this.cNguoiDaiDien.Name = "cNguoiDaiDien";
-            // 
-            // cDieuTriTaiKhoa
-            // 
-            this.cDieuTriTaiKhoa.DataPropertyName = "DieuTriTaiKhoa";
-            this.cDieuTriTaiKhoa.HeaderText = "Điều trị tại khoa";
-            this.cDieuTriTaiKhoa.Name = "cDieuTriTaiKhoa";
-            // 
-            // cTinhTrangBenh
-            // 
-            this.cTinhTrangBenh.DataPropertyName = "TinhTrangBenh";
-            this.cTinhTrangBenh.HeaderText = "Tình trạng bệnh";
-            this.cTinhTrangBenh.Name = "cTinhTrangBenh";
-            // 
-            // cDongYGayMe
-            // 
-            this.cDongYGayMe.DataPropertyName = "DongYGayMe";
-            this.cDongYGayMe.HeaderText = "Đồng ý gây mê";
-            this.cDongYGayMe.Name = "cDongYGayMe";
-            // 
-            // cKhongDongYGayMe
-            // 
-            this.cKhongDongYGayMe.DataPropertyName = "KhongDongYGayMe";
-            this.cKhongDongYGayMe.HeaderText = "Không đồng ý gây mê";
-            this.cKhongDongYGayMe.Name = "cKhongDongYGayMe";
-            // 
-            // cGiaDinhTuViet
-            // 
-            this.cGiaDinhTuViet.DataPropertyName = "GiaDinhTuViet";
-            this.cGiaDinhTuViet.HeaderText = "Gia đình tự viết";
-            this.cGiaDinhTuViet.Name = "cGiaDinhTuViet";
-            // 
-            // cXoa
-            // 
-            this.cXoa.HeaderText = "Xóa";
-            this.cXoa.Name = "cXoa";
-            // 
-            // cSua
-            // 
-            this.cSua.HeaderText = "Sửa";
-            this.cSua.Name = "cSua";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -854,23 +663,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label4.Size = new System.Drawing.Size(61, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Khoa:";
-            // 
-            // txtTenBacSi
-            // 
-            this.txtTenBacSi.Location = new System.Drawing.Point(93, 38);
-            this.txtTenBacSi.Name = "txtTenBacSi";
-            this.txtTenBacSi.Size = new System.Drawing.Size(545, 32);
-            this.txtTenBacSi.TabIndex = 2;
-            this.txtTenBacSi.xCoTimMoRong = false;
-            this.txtTenBacSi.xDataGrid = this.dgrPhieuCamDoanGayMe;
-            this.txtTenBacSi.xField_Key = "TenBacSi";
-            this.txtTenBacSi.xKeep_Old_Value = false;
-            this.txtTenBacSi.xTimChinhXac = false;
-            this.txtTenBacSi.xTimMoRong = "";
-            this.txtTenBacSi.xTimTrenField = "TenBacSi";
-            this.txtTenBacSi.Enter += new System.EventHandler(this.txtTenBacSi_Enter);
-            this.txtTenBacSi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenBacSi_KeyPress);
-            this.txtTenBacSi.Leave += new System.EventHandler(this.txtTenBacSi_Leave);
             // 
             // label3
             // 
@@ -961,10 +753,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.PanelTab2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1342, 693);
+            this.tabPage2.Size = new System.Drawing.Size(1342, 700);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Trang 2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -978,7 +770,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.PanelTab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelTab2.Location = new System.Drawing.Point(3, 3);
             this.PanelTab2.Name = "PanelTab2";
-            this.PanelTab2.Size = new System.Drawing.Size(1336, 687);
+            this.PanelTab2.Size = new System.Drawing.Size(1336, 694);
             this.PanelTab2.TabIndex = 0;
             // 
             // panel15
@@ -1050,6 +842,10 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // panel14
             // 
+            this.panel14.Controls.Add(this.chkNu);
+            this.panel14.Controls.Add(this.chkNam);
+            this.panel14.Controls.Add(this.cboDieuTriTaiKhoa);
+            this.panel14.Controls.Add(this.cboQuocTich);
             this.panel14.Controls.Add(this.label40);
             this.panel14.Controls.Add(this.txtGiaDinhTuViet);
             this.panel14.Controls.Add(this.label39);
@@ -1058,7 +854,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel14.Controls.Add(this.label38);
             this.panel14.Controls.Add(this.txtTinhTrangBenh);
             this.panel14.Controls.Add(this.label36);
-            this.panel14.Controls.Add(this.txtDieuTriTaiKhoa);
             this.panel14.Controls.Add(this.label37);
             this.panel14.Controls.Add(this.txtTenNguoiDaiDien);
             this.panel14.Controls.Add(this.label35);
@@ -1070,14 +865,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel14.Controls.Add(this.label31);
             this.panel14.Controls.Add(this.txtNgheNghiep);
             this.panel14.Controls.Add(this.label32);
-            this.panel14.Controls.Add(this.txtQuocTich);
             this.panel14.Controls.Add(this.label29);
             this.panel14.Controls.Add(this.txtDanToc);
             this.panel14.Controls.Add(this.label30);
-            this.panel14.Controls.Add(this.label28);
-            this.panel14.Controls.Add(this.chkNu);
-            this.panel14.Controls.Add(this.label27);
-            this.panel14.Controls.Add(this.chkNam);
             this.panel14.Controls.Add(this.txtTuoiBN);
             this.panel14.Controls.Add(this.label26);
             this.panel14.Controls.Add(this.txtTenBN);
@@ -1089,30 +879,151 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel14.Size = new System.Drawing.Size(1319, 637);
             this.panel14.TabIndex = 1;
             // 
+            // chkNu
+            // 
+            this.chkNu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkNu.AutoSize = true;
+            this.chkNu.Location = new System.Drawing.Point(1163, 45);
+            this.chkNu.Name = "chkNu";
+            this.chkNu.Size = new System.Drawing.Size(54, 27);
+            this.chkNu.TabIndex = 47;
+            this.chkNu.TabStop = true;
+            this.chkNu.Text = "Nữ";
+            this.chkNu.UseVisualStyleBackColor = true;
+            // 
+            // chkNam
+            // 
+            this.chkNam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkNam.AutoSize = true;
+            this.chkNam.Location = new System.Drawing.Point(1088, 45);
+            this.chkNam.Name = "chkNam";
+            this.chkNam.Size = new System.Drawing.Size(68, 27);
+            this.chkNam.TabIndex = 46;
+            this.chkNam.TabStop = true;
+            this.chkNam.Text = "Nam";
+            this.chkNam.UseVisualStyleBackColor = true;
+            // 
+            // cboDieuTriTaiKhoa
+            // 
+            this.cboDieuTriTaiKhoa.AllowDrop = true;
+            this.cboDieuTriTaiKhoa.AutoComplete = true;
+            this.cboDieuTriTaiKhoa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboDieuTriTaiKhoa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboDieuTriTaiKhoa.AutoDropdown = true;
+            this.cboDieuTriTaiKhoa.BackColorEven = System.Drawing.Color.White;
+            this.cboDieuTriTaiKhoa.BackColorOdd = System.Drawing.Color.White;
+            this.cboDieuTriTaiKhoa.ColumnNames = "TENCHUYENKHOA";
+            this.cboDieuTriTaiKhoa.ColumnWidthDefault = 300;
+            this.cboDieuTriTaiKhoa.ColumnWidths = "";
+            this.cboDieuTriTaiKhoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboDieuTriTaiKhoa.FormattingEnabled = true;
+            this.cboDieuTriTaiKhoa.LinkedColumnIndex = 0;
+            this.cboDieuTriTaiKhoa.LinkedTextBox = null;
+            this.cboDieuTriTaiKhoa.Location = new System.Drawing.Point(243, 288);
+            this.cboDieuTriTaiKhoa.Name = "cboDieuTriTaiKhoa";
+            this.cboDieuTriTaiKhoa.Size = new System.Drawing.Size(415, 33);
+            this.cboDieuTriTaiKhoa.TabIndex = 45;
+            this.cboDieuTriTaiKhoa.Enter += new System.EventHandler(this.cboDieuTriTaiKhoa_Enter);
+            // 
+            // cboQuocTich
+            // 
+            this.cboQuocTich.AllowDrop = true;
+            this.cboQuocTich.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboQuocTich.AutoComplete = true;
+            this.cboQuocTich.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboQuocTich.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboQuocTich.AutoDropdown = true;
+            this.cboQuocTich.BackColorEven = System.Drawing.Color.White;
+            this.cboQuocTich.BackColorOdd = System.Drawing.Color.White;
+            this.cboQuocTich.ColumnNames = "TenQuoctich";
+            this.cboQuocTich.ColumnWidthDefault = 300;
+            this.cboQuocTich.ColumnWidths = "";
+            this.cboQuocTich.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboQuocTich.FormattingEnabled = true;
+            this.cboQuocTich.LinkedColumnIndex = 0;
+            this.cboQuocTich.LinkedTextBox = null;
+            this.cboQuocTich.Location = new System.Drawing.Point(592, 92);
+            this.cboQuocTich.Name = "cboQuocTich";
+            this.cboQuocTich.Size = new System.Drawing.Size(464, 33);
+            this.cboQuocTich.TabIndex = 44;
+            this.cboQuocTich.Enter += new System.EventHandler(this.cboQuocTich_Enter);
+            // 
             // label40
             // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label40.Location = new System.Drawing.Point(10, 567);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(1246, 50);
+            this.label40.Size = new System.Drawing.Size(1279, 50);
             this.label40.TabIndex = 43;
             this.label40.Text = resources.GetString("label40.Text");
             // 
             // txtGiaDinhTuViet
             // 
+            this.txtGiaDinhTuViet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGiaDinhTuViet.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGiaDinhTuViet.Location = new System.Drawing.Point(14, 526);
             this.txtGiaDinhTuViet.Name = "txtGiaDinhTuViet";
-            this.txtGiaDinhTuViet.Size = new System.Drawing.Size(1304, 32);
+            this.txtGiaDinhTuViet.ReadOnly = true;
+            this.txtGiaDinhTuViet.Size = new System.Drawing.Size(1275, 25);
             this.txtGiaDinhTuViet.TabIndex = 42;
+            this.txtGiaDinhTuViet.Text = resources.GetString("txtGiaDinhTuViet.Text");
             this.txtGiaDinhTuViet.xCoTimMoRong = false;
             this.txtGiaDinhTuViet.xDataGrid = this.dgrPhieuCamDoanGayMe;
-            this.txtGiaDinhTuViet.xField_Key = "GiaDinhTuViet";
+            this.txtGiaDinhTuViet.xField_Key = "";
             this.txtGiaDinhTuViet.xKeep_Old_Value = false;
             this.txtGiaDinhTuViet.xTimChinhXac = false;
             this.txtGiaDinhTuViet.xTimMoRong = "";
-            this.txtGiaDinhTuViet.xTimTrenField = "GiaDinhTuViet";
-            this.txtGiaDinhTuViet.Enter += new System.EventHandler(this.txtGiaDinhTuViet_Enter);
-            this.txtGiaDinhTuViet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaDinhTuViet_KeyPress);
-            this.txtGiaDinhTuViet.Leave += new System.EventHandler(this.txtGiaDinhTuViet_Leave);
+            this.txtGiaDinhTuViet.xTimTrenField = "";
+            // 
+            // dgrPhieuCamDoanGayMe
+            // 
+            this.dgrPhieuCamDoanGayMe.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgrPhieuCamDoanGayMe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgrPhieuCamDoanGayMe.ColumnHeadersHeight = 95;
+            this.dgrPhieuCamDoanGayMe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cIDPhieuChapNhanGayMe,
+            this.cTenBacSi,
+            this.cKhoa,
+            this.cMask,
+            this.cNoiKhiQuan,
+            this.cMaskThanhQuan,
+            this.cNoiPheQuan,
+            this.cTeTaiCho,
+            this.cTeKhoangXuongCung,
+            this.cTeNgoaiMangCung,
+            this.cTeVung,
+            this.cDatDongMachXamLan,
+            this.cDatCatheterTinhMach,
+            this.cTenBenhNhan,
+            this.cTuoiBenhNhan,
+            this.cGioiTinh,
+            this.cDanToc,
+            this.cQuocTich,
+            this.cNgheNghiep,
+            this.cNoiLamViec,
+            this.cDiaChi,
+            this.cNguoiDaiDien,
+            this.cDieuTriTaiKhoa,
+            this.cTinhTrangBenh,
+            this.cDongYGayMe,
+            this.cXoa,
+            this.cSua,
+            this.cMaBacSi,
+            this.cMaKhoa,
+            this.cMaDieuTriTaiKhoa,
+            this.cMaQuocTich});
+            this.dgrPhieuCamDoanGayMe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgrPhieuCamDoanGayMe.Location = new System.Drawing.Point(0, 0);
+            this.dgrPhieuCamDoanGayMe.Name = "dgrPhieuCamDoanGayMe";
+            this.dgrPhieuCamDoanGayMe.ReadOnly = true;
+            this.dgrPhieuCamDoanGayMe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgrPhieuCamDoanGayMe.Size = new System.Drawing.Size(1336, 568);
+            this.dgrPhieuCamDoanGayMe.TabIndex = 0;
+            this.dgrPhieuCamDoanGayMe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrPhieuCamDoanGayMe_CellContentClick);
             // 
             // label39
             // 
@@ -1145,6 +1056,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label38
             // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label38.Location = new System.Drawing.Point(64, 382);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(1246, 52);
@@ -1153,9 +1066,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtTinhTrangBenh
             // 
+            this.txtTinhTrangBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTinhTrangBenh.Location = new System.Drawing.Point(14, 336);
             this.txtTinhTrangBenh.Name = "txtTinhTrangBenh";
-            this.txtTinhTrangBenh.Size = new System.Drawing.Size(1304, 32);
+            this.txtTinhTrangBenh.Size = new System.Drawing.Size(1275, 32);
             this.txtTinhTrangBenh.TabIndex = 37;
             this.txtTinhTrangBenh.xCoTimMoRong = false;
             this.txtTinhTrangBenh.xDataGrid = this.dgrPhieuCamDoanGayMe;
@@ -1170,30 +1085,14 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label36
             // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(926, 291);
+            this.label36.Location = new System.Drawing.Point(664, 291);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(392, 23);
             this.label36.TabIndex = 36;
             this.label36.Text = "của Bệnh viện Nhi đồng 2 với tình trạng bệnh:";
-            // 
-            // txtDieuTriTaiKhoa
-            // 
-            this.txtDieuTriTaiKhoa.HideSelection = false;
-            this.txtDieuTriTaiKhoa.Location = new System.Drawing.Point(243, 288);
-            this.txtDieuTriTaiKhoa.Name = "txtDieuTriTaiKhoa";
-            this.txtDieuTriTaiKhoa.Size = new System.Drawing.Size(677, 32);
-            this.txtDieuTriTaiKhoa.TabIndex = 35;
-            this.txtDieuTriTaiKhoa.xCoTimMoRong = false;
-            this.txtDieuTriTaiKhoa.xDataGrid = this.dgrPhieuCamDoanGayMe;
-            this.txtDieuTriTaiKhoa.xField_Key = "DieuTriTaiKhoa";
-            this.txtDieuTriTaiKhoa.xKeep_Old_Value = false;
-            this.txtDieuTriTaiKhoa.xTimChinhXac = false;
-            this.txtDieuTriTaiKhoa.xTimMoRong = "";
-            this.txtDieuTriTaiKhoa.xTimTrenField = "DieuTriTaiKhoa";
-            this.txtDieuTriTaiKhoa.Enter += new System.EventHandler(this.txtDieuTriTaiKhoa_Enter);
-            this.txtDieuTriTaiKhoa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDieuTriTaiKhoa_KeyPress);
-            this.txtDieuTriTaiKhoa.Leave += new System.EventHandler(this.txtDieuTriTaiKhoa_Leave);
             // 
             // label37
             // 
@@ -1206,9 +1105,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtTenNguoiDaiDien
             // 
-            this.txtTenNguoiDaiDien.Location = new System.Drawing.Point(905, 242);
+            this.txtTenNguoiDaiDien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenNguoiDaiDien.Location = new System.Drawing.Point(787, 242);
             this.txtTenNguoiDaiDien.Name = "txtTenNguoiDaiDien";
-            this.txtTenNguoiDaiDien.Size = new System.Drawing.Size(413, 32);
+            this.txtTenNguoiDaiDien.Size = new System.Drawing.Size(269, 32);
             this.txtTenNguoiDaiDien.TabIndex = 33;
             this.txtTenNguoiDaiDien.xCoTimMoRong = false;
             this.txtTenNguoiDaiDien.xDataGrid = this.dgrPhieuCamDoanGayMe;
@@ -1224,7 +1125,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(685, 245);
+            this.label35.Location = new System.Drawing.Point(567, 245);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(214, 23);
             this.label35.TabIndex = 32;
@@ -1234,7 +1135,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             this.txtNguoiDaiDien.Location = new System.Drawing.Point(346, 242);
             this.txtNguoiDaiDien.Name = "txtNguoiDaiDien";
-            this.txtNguoiDaiDien.Size = new System.Drawing.Size(333, 32);
+            this.txtNguoiDaiDien.Size = new System.Drawing.Size(215, 32);
             this.txtNguoiDaiDien.TabIndex = 31;
             this.txtNguoiDaiDien.xCoTimMoRong = false;
             this.txtNguoiDaiDien.xDataGrid = this.dgrPhieuCamDoanGayMe;
@@ -1258,6 +1159,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiaChi.Location = new System.Drawing.Point(124, 199);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(932, 32);
@@ -1284,6 +1187,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtNoiLamViec
             // 
+            this.txtNoiLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoiLamViec.Location = new System.Drawing.Point(592, 146);
             this.txtNoiLamViec.Name = "txtNoiLamViec";
             this.txtNoiLamViec.Size = new System.Drawing.Size(464, 32);
@@ -1301,6 +1205,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label31
             // 
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(463, 149);
             this.label31.Name = "label31";
@@ -1310,6 +1215,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtNgheNghiep
             // 
+            this.txtNgheNghiep.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNgheNghiep.Location = new System.Drawing.Point(124, 146);
             this.txtNgheNghiep.Name = "txtNgheNghiep";
             this.txtNgheNghiep.Size = new System.Drawing.Size(333, 32);
@@ -1334,25 +1241,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label32.TabIndex = 24;
             this.label32.Text = "Nghề nghiệp:";
             // 
-            // txtQuocTich
-            // 
-            this.txtQuocTich.Location = new System.Drawing.Point(592, 92);
-            this.txtQuocTich.Name = "txtQuocTich";
-            this.txtQuocTich.Size = new System.Drawing.Size(464, 32);
-            this.txtQuocTich.TabIndex = 23;
-            this.txtQuocTich.xCoTimMoRong = false;
-            this.txtQuocTich.xDataGrid = this.dgrPhieuCamDoanGayMe;
-            this.txtQuocTich.xField_Key = "QuocTich";
-            this.txtQuocTich.xKeep_Old_Value = false;
-            this.txtQuocTich.xTimChinhXac = false;
-            this.txtQuocTich.xTimMoRong = "";
-            this.txtQuocTich.xTimTrenField = "QuocTich";
-            this.txtQuocTich.Enter += new System.EventHandler(this.txtQuocTich_Enter);
-            this.txtQuocTich.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuocTich_KeyPress);
-            this.txtQuocTich.Leave += new System.EventHandler(this.txtQuocTich_Leave);
-            // 
             // label29
             // 
+            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(488, 95);
             this.label29.Name = "label29";
@@ -1362,6 +1253,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtDanToc
             // 
+            this.txtDanToc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDanToc.Location = new System.Drawing.Point(124, 92);
             this.txtDanToc.Name = "txtDanToc";
             this.txtDanToc.Size = new System.Drawing.Size(333, 32);
@@ -1386,44 +1279,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.label30.TabIndex = 20;
             this.label30.Text = "Dân tộc:";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(1148, 45);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(36, 23);
-            this.label28.TabIndex = 19;
-            this.label28.Text = "Nữ";
-            // 
-            // chkNu
-            // 
-            this.chkNu.AutoSize = true;
-            this.chkNu.Location = new System.Drawing.Point(1203, 50);
-            this.chkNu.Name = "chkNu";
-            this.chkNu.Size = new System.Drawing.Size(15, 14);
-            this.chkNu.TabIndex = 18;
-            this.chkNu.UseVisualStyleBackColor = true;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(1062, 45);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(50, 23);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Nam";
-            // 
-            // chkNam
-            // 
-            this.chkNam.AutoSize = true;
-            this.chkNam.Location = new System.Drawing.Point(1117, 50);
-            this.chkNam.Name = "chkNam";
-            this.chkNam.Size = new System.Drawing.Size(15, 14);
-            this.chkNam.TabIndex = 16;
-            this.chkNam.UseVisualStyleBackColor = true;
-            // 
             // txtTuoiBN
             // 
+            this.txtTuoiBN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTuoiBN.Location = new System.Drawing.Point(592, 42);
             this.txtTuoiBN.Name = "txtTuoiBN";
             this.txtTuoiBN.Size = new System.Drawing.Size(464, 32);
@@ -1441,6 +1299,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label26
             // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(512, 45);
             this.label26.Name = "label26";
@@ -1450,6 +1309,8 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // txtTenBN
             // 
+            this.txtTenBN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenBN.Location = new System.Drawing.Point(124, 42);
             this.txtTenBN.Name = "txtTenBN";
             this.txtTenBN.Size = new System.Drawing.Size(333, 32);
@@ -1495,9 +1356,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.Location = new System.Drawing.Point(64, 11);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(1254, 47);
+            this.label23.Size = new System.Drawing.Size(1246, 47);
             this.label23.TabIndex = 2;
             this.label23.Text = resources.GetString("label23.Text");
             // 
@@ -1608,6 +1471,226 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // cIDPhieuChapNhanGayMe
+            // 
+            this.cIDPhieuChapNhanGayMe.DataPropertyName = "IDPhieuChapNhanGayMe";
+            this.cIDPhieuChapNhanGayMe.HeaderText = "ID Phiếu chấp nhận gây mê";
+            this.cIDPhieuChapNhanGayMe.Name = "cIDPhieuChapNhanGayMe";
+            this.cIDPhieuChapNhanGayMe.ReadOnly = true;
+            // 
+            // cTenBacSi
+            // 
+            this.cTenBacSi.DataPropertyName = "TENBACSI";
+            this.cTenBacSi.HeaderText = "Tên bác sĩ";
+            this.cTenBacSi.Name = "cTenBacSi";
+            this.cTenBacSi.ReadOnly = true;
+            this.cTenBacSi.Width = 300;
+            // 
+            // cKhoa
+            // 
+            this.cKhoa.DataPropertyName = "TENCHUYENKHOA";
+            this.cKhoa.HeaderText = "Tên Khoa";
+            this.cKhoa.Name = "cKhoa";
+            this.cKhoa.ReadOnly = true;
+            // 
+            // cMask
+            // 
+            this.cMask.DataPropertyName = "Mask";
+            this.cMask.HeaderText = "Mask";
+            this.cMask.Name = "cMask";
+            this.cMask.ReadOnly = true;
+            // 
+            // cNoiKhiQuan
+            // 
+            this.cNoiKhiQuan.DataPropertyName = "NoiKhiQuan";
+            this.cNoiKhiQuan.HeaderText = "Nội khí quản";
+            this.cNoiKhiQuan.Name = "cNoiKhiQuan";
+            this.cNoiKhiQuan.ReadOnly = true;
+            // 
+            // cMaskThanhQuan
+            // 
+            this.cMaskThanhQuan.DataPropertyName = "MaskThanhQuan";
+            this.cMaskThanhQuan.HeaderText = "Mask thanh quản";
+            this.cMaskThanhQuan.Name = "cMaskThanhQuan";
+            this.cMaskThanhQuan.ReadOnly = true;
+            // 
+            // cNoiPheQuan
+            // 
+            this.cNoiPheQuan.DataPropertyName = "NoiPheQuan";
+            this.cNoiPheQuan.HeaderText = "Nội phế quản";
+            this.cNoiPheQuan.Name = "cNoiPheQuan";
+            this.cNoiPheQuan.ReadOnly = true;
+            // 
+            // cTeTaiCho
+            // 
+            this.cTeTaiCho.DataPropertyName = "TeTaiCho";
+            this.cTeTaiCho.HeaderText = "Tê tại chỗ";
+            this.cTeTaiCho.Name = "cTeTaiCho";
+            this.cTeTaiCho.ReadOnly = true;
+            // 
+            // cTeKhoangXuongCung
+            // 
+            this.cTeKhoangXuongCung.DataPropertyName = "TeKhoangXuongCung";
+            this.cTeKhoangXuongCung.HeaderText = "Tê khoang xương cùng";
+            this.cTeKhoangXuongCung.Name = "cTeKhoangXuongCung";
+            this.cTeKhoangXuongCung.ReadOnly = true;
+            // 
+            // cTeNgoaiMangCung
+            // 
+            this.cTeNgoaiMangCung.DataPropertyName = "TeNgoaiMangCung";
+            this.cTeNgoaiMangCung.HeaderText = "Tê ngoài màng cứng";
+            this.cTeNgoaiMangCung.Name = "cTeNgoaiMangCung";
+            this.cTeNgoaiMangCung.ReadOnly = true;
+            // 
+            // cTeVung
+            // 
+            this.cTeVung.DataPropertyName = "TeVung";
+            this.cTeVung.HeaderText = "Tê vùng";
+            this.cTeVung.Name = "cTeVung";
+            this.cTeVung.ReadOnly = true;
+            // 
+            // cDatDongMachXamLan
+            // 
+            this.cDatDongMachXamLan.DataPropertyName = "DatDongMachXamLan";
+            this.cDatDongMachXamLan.HeaderText = "Đặt động mạch xâm lấn";
+            this.cDatDongMachXamLan.Name = "cDatDongMachXamLan";
+            this.cDatDongMachXamLan.ReadOnly = true;
+            // 
+            // cDatCatheterTinhMach
+            // 
+            this.cDatCatheterTinhMach.DataPropertyName = "DatCatheterTinhMach";
+            this.cDatCatheterTinhMach.HeaderText = "Đặt Catheter tĩnh mạch";
+            this.cDatCatheterTinhMach.Name = "cDatCatheterTinhMach";
+            this.cDatCatheterTinhMach.ReadOnly = true;
+            // 
+            // cTenBenhNhan
+            // 
+            this.cTenBenhNhan.DataPropertyName = "TenBenhNhan";
+            this.cTenBenhNhan.HeaderText = "Tên bệnh nhân";
+            this.cTenBenhNhan.Name = "cTenBenhNhan";
+            this.cTenBenhNhan.ReadOnly = true;
+            // 
+            // cTuoiBenhNhan
+            // 
+            this.cTuoiBenhNhan.DataPropertyName = "TuoiBenhNhan";
+            this.cTuoiBenhNhan.HeaderText = "Tuổi bệnh nhân";
+            this.cTuoiBenhNhan.Name = "cTuoiBenhNhan";
+            this.cTuoiBenhNhan.ReadOnly = true;
+            // 
+            // cGioiTinh
+            // 
+            this.cGioiTinh.DataPropertyName = "GioiTinh";
+            this.cGioiTinh.HeaderText = "Giới tính";
+            this.cGioiTinh.Name = "cGioiTinh";
+            this.cGioiTinh.ReadOnly = true;
+            // 
+            // cDanToc
+            // 
+            this.cDanToc.DataPropertyName = "DanToc";
+            this.cDanToc.HeaderText = "Dân tộc";
+            this.cDanToc.Name = "cDanToc";
+            this.cDanToc.ReadOnly = true;
+            // 
+            // cQuocTich
+            // 
+            this.cQuocTich.DataPropertyName = "TenQuoctich";
+            this.cQuocTich.HeaderText = "Tên quốc tịch";
+            this.cQuocTich.Name = "cQuocTich";
+            this.cQuocTich.ReadOnly = true;
+            // 
+            // cNgheNghiep
+            // 
+            this.cNgheNghiep.DataPropertyName = "NgheNghiep";
+            this.cNgheNghiep.HeaderText = "Nghề nghiệp";
+            this.cNgheNghiep.Name = "cNgheNghiep";
+            this.cNgheNghiep.ReadOnly = true;
+            // 
+            // cNoiLamViec
+            // 
+            this.cNoiLamViec.DataPropertyName = "NoiLamViec";
+            this.cNoiLamViec.HeaderText = "Nơi làm việc";
+            this.cNoiLamViec.Name = "cNoiLamViec";
+            this.cNoiLamViec.ReadOnly = true;
+            // 
+            // cDiaChi
+            // 
+            this.cDiaChi.DataPropertyName = "DiaChi";
+            this.cDiaChi.HeaderText = "Địa chỉ";
+            this.cDiaChi.Name = "cDiaChi";
+            this.cDiaChi.ReadOnly = true;
+            // 
+            // cNguoiDaiDien
+            // 
+            this.cNguoiDaiDien.DataPropertyName = "NguoiDaiDien";
+            this.cNguoiDaiDien.HeaderText = "Người đại diện";
+            this.cNguoiDaiDien.Name = "cNguoiDaiDien";
+            this.cNguoiDaiDien.ReadOnly = true;
+            // 
+            // cDieuTriTaiKhoa
+            // 
+            this.cDieuTriTaiKhoa.DataPropertyName = "TENCHUYENKHOA";
+            this.cDieuTriTaiKhoa.HeaderText = "Tên điều trị tại khoa";
+            this.cDieuTriTaiKhoa.Name = "cDieuTriTaiKhoa";
+            this.cDieuTriTaiKhoa.ReadOnly = true;
+            // 
+            // cTinhTrangBenh
+            // 
+            this.cTinhTrangBenh.DataPropertyName = "TinhTrangBenh";
+            this.cTinhTrangBenh.HeaderText = "Tình trạng bệnh";
+            this.cTinhTrangBenh.Name = "cTinhTrangBenh";
+            this.cTinhTrangBenh.ReadOnly = true;
+            // 
+            // cDongYGayMe
+            // 
+            this.cDongYGayMe.DataPropertyName = "DongYGayMe";
+            this.cDongYGayMe.HeaderText = "Đồng ý gây mê";
+            this.cDongYGayMe.Name = "cDongYGayMe";
+            this.cDongYGayMe.ReadOnly = true;
+            // 
+            // cXoa
+            // 
+            this.cXoa.HeaderText = "Xóa";
+            this.cXoa.Name = "cXoa";
+            this.cXoa.ReadOnly = true;
+            // 
+            // cSua
+            // 
+            this.cSua.HeaderText = "Sửa";
+            this.cSua.Name = "cSua";
+            this.cSua.ReadOnly = true;
+            // 
+            // cMaBacSi
+            // 
+            this.cMaBacSi.DataPropertyName = "MaBacSi";
+            this.cMaBacSi.HeaderText = "Mã bác sĩ";
+            this.cMaBacSi.Name = "cMaBacSi";
+            this.cMaBacSi.ReadOnly = true;
+            this.cMaBacSi.Visible = false;
+            // 
+            // cMaKhoa
+            // 
+            this.cMaKhoa.DataPropertyName = "Khoa";
+            this.cMaKhoa.HeaderText = "Mã khoa";
+            this.cMaKhoa.Name = "cMaKhoa";
+            this.cMaKhoa.ReadOnly = true;
+            this.cMaKhoa.Visible = false;
+            // 
+            // cMaDieuTriTaiKhoa
+            // 
+            this.cMaDieuTriTaiKhoa.DataPropertyName = "DieuTriTaiKhoa";
+            this.cMaDieuTriTaiKhoa.HeaderText = "Mã khoa điều trị";
+            this.cMaDieuTriTaiKhoa.Name = "cMaDieuTriTaiKhoa";
+            this.cMaDieuTriTaiKhoa.ReadOnly = true;
+            this.cMaDieuTriTaiKhoa.Visible = false;
+            // 
+            // cMaQuocTich
+            // 
+            this.cMaQuocTich.DataPropertyName = "QuocTich";
+            this.cMaQuocTich.HeaderText = "Mã quốc tịch";
+            this.cMaQuocTich.Name = "cMaQuocTich";
+            this.cMaQuocTich.ReadOnly = true;
+            this.cMaQuocTich.Visible = false;
+            // 
             // GiayCamDoanChapNhanGayMeHoiSuc
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1639,7 +1722,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel12.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgrPhieuCamDoanGayMe)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1648,6 +1730,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.panel15.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrPhieuCamDoanGayMe)).EndInit();
             this.panel13.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
@@ -1696,9 +1779,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private ControlProject1510.XFilteg txtKhoa;
         private System.Windows.Forms.Label label4;
-        private ControlProject1510.XFilteg txtTenBacSi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -1719,7 +1800,6 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Label label24;
         private ControlProject1510.XFilteg txtTinhTrangBenh;
         private System.Windows.Forms.Label label36;
-        private ControlProject1510.XFilteg txtDieuTriTaiKhoa;
         private System.Windows.Forms.Label label37;
         private ControlProject1510.XFilteg txtTenNguoiDaiDien;
         private System.Windows.Forms.Label label35;
@@ -1731,14 +1811,9 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Label label31;
         private ControlProject1510.XFilteg txtNgheNghiep;
         private System.Windows.Forms.Label label32;
-        private ControlProject1510.XFilteg txtQuocTich;
         private System.Windows.Forms.Label label29;
         private ControlProject1510.XFilteg txtDanToc;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.CheckBox chkNu;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.CheckBox chkNam;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.CheckBox chkDongYGayMe;
         private System.Windows.Forms.Label label40;
@@ -1760,6 +1835,13 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnLoadData;
+        private ControlProject1510.ComboBoxSearch cboKhoa;
+        private ControlProject1510.ComboBoxSearch cboDieuTriTaiKhoa;
+        private ControlProject1510.ComboBoxSearch cboQuocTich;
+        private ControlProject1510.ComboBoxSearch cboTenBacSi;
+        private System.Windows.Forms.RadioButton chkNu;
+        private System.Windows.Forms.RadioButton chkNam;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIDPhieuChapNhanGayMe;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTenBacSi;
         private System.Windows.Forms.DataGridViewTextBoxColumn cKhoa;
@@ -1775,8 +1857,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.DataGridViewTextBoxColumn cDatCatheterTinhMach;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTenBenhNhan;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTuoiBenhNhan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGioiTinhNam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGioiTinhNu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDanToc;
         private System.Windows.Forms.DataGridViewTextBoxColumn cQuocTich;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNgheNghiep;
@@ -1786,10 +1867,11 @@ namespace Report_WinForm_Phiếu_11_9_2023
         private System.Windows.Forms.DataGridViewTextBoxColumn cDieuTriTaiKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTinhTrangBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDongYGayMe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cKhongDongYGayMe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGiaDinhTuViet;
         private System.Windows.Forms.DataGridViewImageColumn cXoa;
         private System.Windows.Forms.DataGridViewImageColumn cSua;
-        private System.Windows.Forms.Button btnLoadData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMaBacSi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMaKhoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMaDieuTriTaiKhoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMaQuocTich;
     }
 }

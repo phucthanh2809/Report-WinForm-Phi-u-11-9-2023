@@ -55,6 +55,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Model
         private string _lieudungthuockhac;
         private string _luuybacsi;
         private string _ngaythangnam;
+        private int _dungthuoc15ngay;
         public PhieuThamKhaoBNtruocPT()
         {
             string connectionString = Properties.Resources.connectStr;
@@ -74,7 +75,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Model
             set
             {
                 _maphuongphapgayme = value;
-                if (value != null)
+                if (value != "")
                 {
                     try
                     {
@@ -105,7 +106,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Model
             set
             {
                 _mabenhviengayme = value;
-                if (value != null)
+                if (value != "")
                 {
                     try
                     {
@@ -162,5 +163,6 @@ namespace Report_WinForm_Phiếu_11_9_2023.Model
         public string Lieudungthuockhac { get => _lieudungthuockhac; set => _lieudungthuockhac = value; }
         public string Luuybacsi { get => _luuybacsi; set => _luuybacsi = value; }
         public string Ngaythangnam { get => _ngaythangnam; set => _ngaythangnam = value; }
+        public int Dungthuoc15ngay { get => _dungthuoc15ngay; set => _dungthuoc15ngay = value; }
     }
 }

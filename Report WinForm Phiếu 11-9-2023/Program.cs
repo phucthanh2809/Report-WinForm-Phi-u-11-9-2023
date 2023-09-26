@@ -18,7 +18,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau ());
+            Application.Run(new frm_Main ());
         }
     }
 }

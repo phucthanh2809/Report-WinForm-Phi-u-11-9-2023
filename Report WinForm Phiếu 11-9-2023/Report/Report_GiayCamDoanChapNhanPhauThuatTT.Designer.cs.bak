@@ -158,7 +158,7 @@
             // xrLine3
             // 
             this.xrLine3.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
-            this.xrLine3.LineStyle = DevExpress.Drawing.DXDashStyle.Dash;
+            this.xrLine3.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(0.0001589457F, 594.0212F);
             this.xrLine3.Name = "xrLine3";
             this.xrLine3.SizeF = new System.Drawing.SizeF(828.9996F, 10.84723F);
@@ -991,7 +991,7 @@
             this.Margins = new DevExpress.Drawing.DXMargins(50F, 50F, 80F, 80F);
             this.PageHeight = 1268;
             this.PageWidth = 929;
-            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4Extra;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4Extra;
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

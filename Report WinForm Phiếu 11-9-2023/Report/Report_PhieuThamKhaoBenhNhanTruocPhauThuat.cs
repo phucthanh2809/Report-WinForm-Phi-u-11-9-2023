@@ -13,7 +13,7 @@ namespace Report_WinForm_Phiếu_11_9_2023.Report
         {
             InitializeComponent();
         }
-        public void InitData(PhieuKhamThaoBenhNhanTruocKhiGayMeGiaiPhau model)
+        public void InitData(PhieuThamKhaoBNtruocPT model)
         {
             objectDataSource1.DataSource = model;
         }
