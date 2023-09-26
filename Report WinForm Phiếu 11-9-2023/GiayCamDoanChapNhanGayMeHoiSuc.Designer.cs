@@ -185,7 +185,7 @@ namespace Report_WinForm_Phiếu_11_9_2023
             this.tabPage3.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlChinh
